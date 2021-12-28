@@ -1,0 +1,3 @@
+/home/amicharski/CLionProjects/footballdraft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/amicharski/CLionProjects/footballdraft/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/amicharski/CLionProjects/footballdraft/cmake-build-debug/CMakeFiles/footballdraft.dir
