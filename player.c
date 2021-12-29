@@ -6,20 +6,23 @@
 #include <stdbool.h>
 #include <string.h>
 
+Player players[PLAYER_CAPACITY] = { 0 };
+int num_of_players = 0;
+
 void generate_player(){
     Player tmp = { .first_name = fetch_first_name(),
                    .last_name = fetch_last_name(),
                    .overall = fetch_overall() };
     print_player(&tmp);
-    *(players + player_capacity++) = tmp;
+    *(players + num_of_players++) = tmp;
 }
 
 char *fetch_first_name(){
     char *tmp = calloc(sizeof(char), 12);
-    first_names = fopen("../data/first_names", "r");
-    if(first_names == NULL){
-        printf("first_names not found\n");
-    }
+
+    FILE *first_names = fopen("../data/first_names", "r");
+    if(first_names == NULL) printf("first_names not found\n");
+
     int r = rand() % (int)(1218 * FIRST_NAME_RARITY) + 1;
     char *line = calloc(13, sizeof(char));
     int l = 1, i = 0;
@@ -42,12 +45,12 @@ char *fetch_first_name(){
 
 char *fetch_last_name(){
     char *tmp = calloc(sizeof(char), 64);
-    last_names = fopen("../data/last_names", "r");
-    if(last_names == NULL){
-        printf("last_names not found\n");
-    }
+
+    FILE *last_names = fopen("../data/last_names", "r");
+    if(last_names == NULL)  printf("last_names not found\n");
+
     int r = rand() % (int)(88798 * LAST_NAME_RARITY) + 1;
-    char *line = calloc(13, sizeof(char));
+    char *line = calloc(64, sizeof(char));
     int l = 1, i = 0;
     char ch;
     do {
@@ -95,8 +98,16 @@ int fetch_overall(){
 }
 
 void print_player(Player *player){
+    char buffer[102];
     printf("%s, %s, %d\n",
            player->first_name,
            player->last_name,
            player->overall);
+    snprintf(buffer, 102, "%s, %s, %d\n",
+             player->first_name,
+             player->last_name,
+             player->overall);
+    FILE *prospects = fopen("../data/output/prospects", "a+");
+    fputs(buffer, prospects);
+    fclose(prospects);
 }

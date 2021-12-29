@@ -3,6 +3,6 @@ project(footballdraft C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(footballdraft main.c player.c)
+add_executable(footballdraft main.c player.c team.c draft.c)
 
 target_link_libraries(footballdraft m)

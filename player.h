@@ -1,6 +1,6 @@
 #include <bits/types/FILE.h>
 
-#define PLAYER_CAPACITY 1024        // the maximum player capacity
+#define PLAYER_CAPACITY 2000        // the maximum player capacity
 #define FIRST_NAME_RARITY 0.5       // higher the percentage, more likely you'll get rare first names
 #define LAST_NAME_RARITY 0.1        // higher the percentage, more likely you'll get rare last names
 
@@ -9,11 +9,8 @@ typedef struct {                    // what a player is composed of
     int overall;
 } Player;
 
-static FILE *first_names;
-static FILE *last_names;
-
-static Player players[PLAYER_CAPACITY] = { 0 };             // an array of players
-static int player_capacity = 0;
+extern Player players[PLAYER_CAPACITY];             // an array of players
+extern int num_of_players;
 void generate_player();             // randomly generates a player and returns that player
 
 double bell_curve(int);

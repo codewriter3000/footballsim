@@ -84,6 +84,18 @@ build CMakeFiles/footballdraft.dir/player.c.o: C_COMPILER__footballdraft_Debug /
   OBJECT_DIR = CMakeFiles/footballdraft.dir
   OBJECT_FILE_DIR = CMakeFiles/footballdraft.dir
 
+build CMakeFiles/footballdraft.dir/team.c.o: C_COMPILER__footballdraft_Debug /home/amicharski/CLionProjects/footballdraft/team.c || cmake_object_order_depends_target_footballdraft
+  DEP_FILE = CMakeFiles/footballdraft.dir/team.c.o.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles/footballdraft.dir
+  OBJECT_FILE_DIR = CMakeFiles/footballdraft.dir
+
+build CMakeFiles/footballdraft.dir/draft.c.o: C_COMPILER__footballdraft_Debug /home/amicharski/CLionProjects/footballdraft/draft.c || cmake_object_order_depends_target_footballdraft
+  DEP_FILE = CMakeFiles/footballdraft.dir/draft.c.o.d
+  FLAGS = -g -std=gnu2x
+  OBJECT_DIR = CMakeFiles/footballdraft.dir
+  OBJECT_FILE_DIR = CMakeFiles/footballdraft.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target footballdraft
@@ -92,7 +104,7 @@ build CMakeFiles/footballdraft.dir/player.c.o: C_COMPILER__footballdraft_Debug /
 #############################################
 # Link the executable footballdraft
 
-build footballdraft: C_EXECUTABLE_LINKER__footballdraft_Debug CMakeFiles/footballdraft.dir/main.c.o CMakeFiles/footballdraft.dir/player.c.o
+build footballdraft: C_EXECUTABLE_LINKER__footballdraft_Debug CMakeFiles/footballdraft.dir/main.c.o CMakeFiles/footballdraft.dir/player.c.o CMakeFiles/footballdraft.dir/team.c.o CMakeFiles/footballdraft.dir/draft.c.o
   FLAGS = -g
   LINK_LIBRARIES = -lm
   OBJECT_DIR = CMakeFiles/footballdraft.dir
