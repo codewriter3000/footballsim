@@ -14,8 +14,8 @@ void clear_teams(){
 void generate_team(){
     Team tmp = { .city = fetch_city(),
                  .mascot = fetch_mascot()};
-    tmp.coach = generate_coach()
-    print_team(&tmp);
+    tmp.coach = generate_coach();
+    print_full_team(&tmp);
     *(teams + num_of_teams++) = tmp;
 }
 

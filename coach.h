@@ -1,7 +1,6 @@
 #ifndef _COACH__H
 #define _COACH__H
 
-#include "team.h"
 #include "player.h"
 
 typedef struct {
@@ -12,8 +11,7 @@ typedef struct {
 
 float generate_lean();
 
-void generate_coach(Team *team);
-int fetch_coaching_overall();
+Coach generate_coach();
 
 void print_coach(Coach*);
 

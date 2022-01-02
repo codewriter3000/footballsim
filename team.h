@@ -26,6 +26,7 @@ char *fetch_city();
 char *fetch_mascot();
 
 void print_team(Team*);
+void print_full_team(Team*);
 
 void write_team(FILE*, Team*);
 void write_coach(FILE*, Coach*);

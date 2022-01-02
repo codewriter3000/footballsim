@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "coach.h"
 
 float generate_lean(){
@@ -6,13 +7,20 @@ float generate_lean(){
     return r;
 }
 
-void generate_coach(Team *team){
+Coach generate_coach(){
     Coach coach = {
             fetch_first_name(),
             fetch_last_name(),
             rand() % 49 + 50,
             generate_lean()
     };
+    return coach;
+}
 
-    team->coach = coach;
+void print_coach(Coach *coach){
+    printf("%s %s, ovr: %d, lean: %f\n",
+           coach->first_name,
+           coach->last_name,
+           coach->overall,
+           coach->lean);
 }
