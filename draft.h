@@ -8,6 +8,6 @@ extern Player free_agents[PLAYER_CAPACITY];
 
 void start_draft();
 
-Player AI_pick();
+Player AI_pick(int, int, double);
 
 #endif

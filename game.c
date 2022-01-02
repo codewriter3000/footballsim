@@ -33,7 +33,7 @@ Team play_game(Team *home_team, Team *away_team){
 }
 
 double multiplier(double x){
-    return OVR_DIFF_MULTIPLIER*x + 1 < 0.75 ? 0.75 : OVR_DIFF_MULTIPLIER*x + 1;
+    return OVR_DIFF_MULTIPLIER*x + 1 < 0.72 ? 0.72 : OVR_DIFF_MULTIPLIER*x + 1;
 }
 
 int drive(Team *team, double ovr_diff){
@@ -60,7 +60,7 @@ int drive(Team *team, double ovr_diff){
 }
 
 int PAT(){
-    int r = rand();
+    double r = (double)(rand()) / (double)RAND_MAX;
     if(r <= 0.95){
         printf("The extra point is good\n");
         return 7;

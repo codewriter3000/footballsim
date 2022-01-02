@@ -15,6 +15,7 @@ typedef struct {
     char *city, *mascot;
     Player roster[ROSTER_CAPACITY];
     Coach coach;
+    int off_players, def_players;
 } Team;
 
 extern Team teams[TEAM_CAPACITY];
