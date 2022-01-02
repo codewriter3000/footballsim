@@ -50,14 +50,12 @@ void start_draft(){
 
 Player AI_pick(){
     for(int i = 99; i > 49; i--){
-        //printf("free_agent overall: %d\n", free_agents[i].overall);
         for(int j = 0; j < num_of_players; j++){
             if(free_agents[j].overall == i){
                 Player pick = free_agents[j];
                 free_agents[j].overall = -1;
                 return pick;
             }
-            //printf("no %d\n", i);
         }
     }
 }
