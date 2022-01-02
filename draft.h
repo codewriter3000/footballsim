@@ -1,6 +1,7 @@
 #ifndef _DRAFT__H
 #define _DRAFT__H
 
+#include "coach.h"
 #include "team.h"
 
 extern Player free_agents[PLAYER_CAPACITY];

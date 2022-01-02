@@ -44,17 +44,31 @@ void process_field(int record, int column, char *field){
             team->mascot = calloc(32, sizeof(char));
             strcpy(team->mascot, field);
             break;
+        case 3:
+            team->coach.first_name = calloc(16, sizeof(char));
+            strcpy(team->coach.first_name, field);
+            break;
+        case 4:
+            team->coach.last_name = calloc(16, sizeof(char));
+            strcpy(team->coach.last_name, field);
+            break;
+        case 5:
+            team->coach.overall = atoi(field);
+            break;
+        case 6:
+            team->coach.lean = atof(field);
+            break;
         default:
             switch(column % 3){
-                case 0:
+                case 1:
                     team->roster[(int)(column/3)-1].first_name = calloc(16, sizeof(char));
                     strcpy(team->roster[(int)(column/3)-1].first_name, field);
                     break;
-                case 1:
+                case 2:
                     team->roster[(int)(column/3)-1].last_name = calloc(32, sizeof(char));
                     strcpy(team->roster[(int)(column/3)-1].last_name, field);
                     break;
-                case 2:
+                case 0:
                     team->roster[(int)(column/3)-1].overall = atoi(field);
                     //printf("ovr: %d\n", team->roster[(int)(column/3)+1].overall);
                     break;

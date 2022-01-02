@@ -98,7 +98,10 @@ int main() {
                 break;
             case '3':
                 return 0;
+            case '\n':
+                break;
             default:
+                printf("You entered %c\n", option);
                 printf("Type 1, 2, or 3 to select one of the options\n");
         }
     }
