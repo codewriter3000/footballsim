@@ -23,22 +23,24 @@ void start_draft(){
         if((i+1) % 2 == 1){
             for(int j = 0; j < TEAM_CAPACITY; j++){
                 Player pick = AI_pick();
-                printf("The %s %s select %s %s: %d ovr\n",
+                printf("The %s %s select %s %s (%s): %d ovr\n",
                        teams[j].city,
                        teams[j].mascot,
                        pick.first_name,
                        pick.last_name,
+                       get_position(&pick, true),
                        pick.overall);
                 teams[j].roster[i] = pick;
             }
         } else {
             for(int j = TEAM_CAPACITY-1; j >= 0; j--){
                 Player pick = AI_pick();
-                printf("The %s %s select %s %s: %d ovr\n",
+                printf("The %s %s select %s %s (%s): %d ovr\n",
                        teams[j].city,
                        teams[j].mascot,
                        pick.first_name,
                        pick.last_name,
+                       get_position(&pick, true),
                        pick.overall);
                 teams[j].roster[i] = pick;
             }

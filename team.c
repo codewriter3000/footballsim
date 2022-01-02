@@ -109,17 +109,19 @@ void write_coach(FILE *fp, Coach *coach){
 }
 
 void write_player(FILE *fp, Player *player, bool is_last){
-    char buffer[102];
+    char buffer[104];
     if(!is_last){
-        snprintf(buffer, 102, "%s, %s, %d, ",
+        snprintf(buffer, 104, "%s, %s, %d, %s, ",
                  player->first_name,
                  player->last_name,
-                 player->overall);
+                 player->overall,
+                 get_position(player, false));
     } else {
-        snprintf(buffer, 101, "%s, %s, %d\n",
+        snprintf(buffer, 104, "%s, %s, %d, %s\n",
                  player->first_name,
                  player->last_name,
-                 player->overall);
+                 player->overall,
+                 get_position(player, false));
     }
     fputs(buffer, fp);
 }
@@ -128,6 +130,28 @@ char *get_team_name(Team *team){
     char *tmp = calloc(49, sizeof(char));
     sprintf(tmp, "%s%s", team->city, team->mascot);
     return tmp;
+}
+
+double average_ovr_offense(Team *team){
+    int sum = 0, count = 0;
+    for(int i = 0; i < ROSTER_CAPACITY; i++){
+        if(team->roster[i].is_offense){
+            sum += team->roster[i].overall;
+            count++;
+        }
+    }
+    return sum * 1.0/count;
+}
+
+double average_ovr_defense(Team *team){
+    int sum = 0, count = 0;
+    for(int i = 0; i < ROSTER_CAPACITY; i++){
+        if(!team->roster[i].is_offense){
+            sum += team->roster[i].overall;
+            count++;
+        }
+    }
+    return sum * 1.0/count;
 }
 
 double average_ovr(Team *team){

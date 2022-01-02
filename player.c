@@ -17,7 +17,8 @@ void clear_players(){
 void generate_player(){
     Player tmp = { .first_name = fetch_first_name(),
                    .last_name = fetch_last_name(),
-                   .overall = fetch_overall() };
+                   .overall = fetch_overall(),
+                   .is_offense = rand() % 2 == 0};
     print_player(&tmp);
     *(players + num_of_players++) = tmp;
 }
@@ -102,16 +103,22 @@ int fetch_overall(){
     return -1;
 }
 
+char *get_position(Player *player, bool verbose){
+    if(verbose) return player->is_offense == true ? "OFF" : "DEF";
+    return player->is_offense == true ? "O" : "D";
+}
+
 void print_player(Player *player){
     char buffer[102];
 //    printf("%s, %s, %d\n",
 //           player->first_name,
 //           player->last_name,
 //           player->overall);
-    snprintf(buffer, 102, "%s, %s, %d\n",
+    snprintf(buffer, 102, "%s, %s, %d, %s\n",
              player->first_name,
              player->last_name,
-             player->overall);
+             player->overall,
+             get_position(player, false));
     FILE *prospects = fopen("../data/output/prospects", "a+");
     fputs(buffer, prospects);
     fclose(prospects);

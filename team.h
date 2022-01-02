@@ -33,6 +33,8 @@ void write_coach(FILE*, Coach*);
 void write_player(FILE*, Player*, bool);
 
 char *get_team_name(Team*);
+double average_ovr_offense(Team*);
+double average_ovr_defense(Team*);
 double average_ovr(Team*);
 
 #endif

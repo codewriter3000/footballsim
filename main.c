@@ -67,10 +67,12 @@ void draft(){
 void play(){
     parse_teams();
     for(int i = 0; i < TEAM_CAPACITY; i++){
-        printf("%d) %s: %2.1f\n",
+        printf("%d) %s: %2.1f (%2.1f OFF, %2.1f DEF)\n",
                i+1,
                get_team_name(&teams[i]),
-               average_ovr(&teams[i]));
+               average_ovr(&teams[i]),
+               average_ovr_offense(&teams[i]),
+               average_ovr_defense(&teams[i]));
     }
     int home_team, away_team;
     printf("Select the home team you want to play...\n");
