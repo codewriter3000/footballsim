@@ -73,6 +73,9 @@ void play(){
                average_ovr(&teams[i]),
                average_ovr_offense(&teams[i]),
                average_ovr_defense(&teams[i]));
+        printf("    coached by: %s %s (%d ovr)\n", teams[i].coach.first_name,
+               teams[i].coach.last_name,
+               teams[i].coach.overall);
     }
     int home_team, away_team;
     printf("Select the home team you want to play...\n");

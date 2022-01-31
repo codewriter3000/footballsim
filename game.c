@@ -13,8 +13,10 @@ Team play_game(Team *home_team, Team *away_team){
     //printf("ovr_diff_away: %f\n", ovr_diff_away);
     for(int i = 0; i < 12; i++){
         printf("\n");
-        home_pts += drive(home_team, i%2 == 0 ? ovr_diff_home : -ovr_diff_home);
-        away_pts += drive(away_team, i%2 == 0 ? ovr_diff_away : -ovr_diff_away);
+//        printf("Home team coach ovr: %d\n", home_team->coach.overall);
+//        printf("Away team coach ovr: %d\n", away_team->coach.overall);
+        home_pts += drive(home_team, ovr_diff_home);
+        away_pts += drive(away_team, ovr_diff_away);
         if(i != 0)  printf("----Score: %d - %d----\n", home_pts, away_pts);
         printf("Press any key to start the next drive");
         char k;
@@ -32,14 +34,20 @@ Team play_game(Team *home_team, Team *away_team){
     }
 }
 
-double multiplier(double x){
-    return OVR_DIFF_MULTIPLIER*x + 1 < 0.72 ? 0.72 : OVR_DIFF_MULTIPLIER*x + 1;
+double multiplier(double plr, double coach){
+    double player_modifier = OVR_DIFF_MULTIPLIER*plr + 1;
+//    printf("player modifier: %f\n", player_modifier);
+//    printf("coach modifier: %f\n", (1.2+coach)/85);
+    double coach_modifier = player_modifier * ((1.2+coach)/85);
+//    printf("total modifier: %f\n", coach_modifier < 0.72 ? 0.72 : coach_modifier);
+    return coach_modifier < 0.72 ? 0.72 : coach_modifier;
 }
 
 int drive(Team *team, double ovr_diff){
     char *team_name = get_team_name(team);
     double r = (double)(rand()) / (double)RAND_MAX;
-    r *= multiplier(ovr_diff);
+//    printf("Coach ovr: %d\n", team->coach.overall);
+    r *= multiplier(ovr_diff, team->coach.overall);
     if(r <= 0.3511) {
         // 17.92% = turnover
         printf("The %s just turned the ball over\n", team_name);
