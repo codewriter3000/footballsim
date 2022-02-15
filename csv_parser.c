@@ -4,6 +4,41 @@
 #include "team.h"
 #include "csv_parser.h"
 
+bool league_is_empty(){
+    FILE *fp = fopen("../data/output/leaguedata", "r");
+    return ftell(fp) == 0;
+}
+
+void parse_league(){
+    FILE *fp = fopen("../data/output/leaguedata", "r");
+    char *tmp = calloc(64, sizeof(char));
+    char ch;
+    int record = 1;
+    int column = 1;
+    int i = 0;
+    do {
+        ch = fgetc(fp);
+        switch(ch){
+            case '\n':
+                tmp[i] = '\0';
+                process_field(record, column, tmp);
+                record++;
+                column = 1;
+                i = 0;
+                break;
+            case ',':
+                tmp[i] = '\0';
+                process_field(record, column, tmp);
+                column++;
+                i = 0;
+                break;
+            default:
+                tmp[i++] = ch;
+        }
+    } while((int)ch != -1);
+    free(tmp);
+}
+
 void parse_teams(){
     FILE *fp = fopen("../data/output/teamdata", "r");
     char *tmp = calloc(64, sizeof(char));
@@ -31,6 +66,7 @@ void parse_teams(){
                 tmp[i++] = ch;
         }
     } while((int)ch != -1);
+    free(tmp);
 }
 
 void process_field(int record, int column, char *field){
