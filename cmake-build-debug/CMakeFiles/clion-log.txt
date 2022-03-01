@@ -1,4 +1,0 @@
-/home/amicharski/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/amicharski/CLionProjects/footballsim
--- Configuring done
--- Generating done
--- Build files have been written to: /home/amicharski/CLionProjects/footballsim/cmake-build-debug

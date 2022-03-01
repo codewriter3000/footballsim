@@ -1,3 +1,0 @@
-/home/amicharski/CLionProjects/footballsim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/amicharski/CLionProjects/footballsim/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/amicharski/CLionProjects/footballsim/cmake-build-debug/CMakeFiles/footballgame.dir
