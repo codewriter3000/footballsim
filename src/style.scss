@@ -1,0 +1,19 @@
+//@import "~bootstrap/scss/functions";
+//@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/bootstrap";
+
+$body-color: #222222;
+$body-bg: #CCCCCC;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.body {
+  background-color: $light;
+  margin-top: 5%;
+  padding: 15px;
+}
