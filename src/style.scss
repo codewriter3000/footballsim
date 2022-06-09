@@ -3,8 +3,14 @@
 //@import "~bootstrap/scss/mixins";
 //@import "~bootstrap/scss/bootstrap";
 
+// Indigo Dye: #08415C
+// Madder Lake: #CC2936
+// Slate Gray: #6B818C
+// Peach Crayola: #F1BF98
+// Lavender Blush: #EEE5E9
+
 $body-color: #222222;
-$body-bg: #CCCCCC;
+$body-bg: #6B818C;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -13,7 +19,15 @@ $body-bg: #CCCCCC;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .body {
-  background-color: $light;
+  background-color: #EEE5E9;
   margin-top: 5%;
   padding: 15px;
+}
+
+.numberBox {
+  background-color: #EEE5E9;
+}
+
+.numberBox:focus {
+  background-color: #EEE5E9;
 }
