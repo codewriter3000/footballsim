@@ -10120,3 +10120,8 @@ textarea.form-control-lg {
 .numberBox:focus {
   background-color: #EEE5E9;
 }
+
+.row {
+  border-style: solid;
+  border-width: 1px;
+}

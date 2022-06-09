@@ -88802,7 +88802,7 @@ AARANT
 AANDERUD
 AALUND
 AALDERINK`;
-        super.max = 5000;
+        super.max = 750;
     }
 }
 
