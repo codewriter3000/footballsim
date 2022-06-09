@@ -1,9 +1,12 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Container, ProgressBar, Row} from "react-bootstrap";
 import PlayerRow from "./PlayerRow";
 import FirstNamesPregenerated from "../pregenerated_objects/FirstNamesPregenerated";
 import LastNamesPregenerated from "../pregenerated_objects/LastNamesPregenerated";
 import HomeStatePregenerated from "../pregenerated_objects/HomeStatePregenerated";
+import {createRoot} from "react-dom";
+
+const ReactDOM = require('react-dom');
 
 class PlayerTable extends React.Component {
 
@@ -13,7 +16,7 @@ class PlayerTable extends React.Component {
     }
 
     showPlayersInTable(players) {
-        return players.map((player) => <PlayerRow firstName={player.firstName}
+        return players.map((player) => <PlayerRow key={player.key} firstName={player.firstName}
                                                   lastName={player.lastName}
                                                   homeState={player.homeState}/>);
     }
@@ -26,27 +29,31 @@ class PlayerTable extends React.Component {
         for (let i = 0; i < num; i++) {
             players.push(
                 {
+                    "key": i,
                     "firstName": firstNames.getRandom(),
                     "lastName": lastNames.getRandom(),
                     "homeState": homeStates.getRandom()
                 });
+            createRoot(<ProgressBar max={this.state.playerNum} now={i} />)
         }
         return players;
     }
 
     render() {
         return (
-            <Container className='table body'>
-                <Row>
-                    <Col><h3>First Name</h3></Col>
-                    <Col><h3>Last Name</h3></Col>
-                    <Col><h3>Home State</h3></Col>
-                </Row>
+            <div>
+                <Container className='table body'>
+                    <Row>
+                        <Col><h3>First Name</h3></Col>
+                        <Col><h3>Last Name</h3></Col>
+                        <Col><h3>Home State</h3></Col>
+                    </Row>
                     {this.showPlayersInTable(
                         this.generatePlayers(
                             this.state.playerNum
                         ))}
-            </Container>
+                </Container>
+            </div>
         );
     }
 }
