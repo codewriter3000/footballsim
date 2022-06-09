@@ -34,7 +34,6 @@ class PlayerTable extends React.Component {
                     "lastName": lastNames.getRandom(),
                     "homeState": homeStates.getRandom()
                 });
-            createRoot(<ProgressBar max={this.state.playerNum} now={i} />)
         }
         return players;
     }
