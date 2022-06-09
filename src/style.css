@@ -10121,7 +10121,10 @@ textarea.form-control-lg {
   background-color: #EEE5E9;
 }
 
-.row {
-  border-style: solid;
-  border-width: 1px;
+.table {
+  border: 1px solid;
+}
+
+.button {
+  margin-left: 10px !important;
 }

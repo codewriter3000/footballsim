@@ -6,31 +6,34 @@ class PlayerGeneratorForm extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {playerNum: 50, playerNumTooSmall: false, generated: false};
-    }
-
-    _playerNum;
-
-    set playerNum(playerNum) {
-        this._playerNum = playerNum;
-    }
-
-    get playerNum() {
-        return this._playerNum;
+        this.state = {playerNum: 50,
+            playerNumTooSmall: false,
+            generated: false,
+            editEnabled: false,
+            submitEnabled: true};
     }
 
     handleSubmit = (event) => {
         event.preventDefault();
         if(!this.state.playerNumTooSmall){
-            this.playerNum = this.state.playerNum;
-            this.setState({generated: true});
+            this.setState({generated: true,
+            editEnabled: true,
+            submitEnabled: false});
         }
     }
 
     changePlayerNum = (event) => this.setState(
-        {playerNum: event.target.value,
-            playerNumTooSmall: event.target.value < 1,
-            generated: false});
+    {playerNum: event.target.value,
+        playerNumTooSmall: event.target.value < 1}
+    );
+
+    handleEdit = () => {
+        this.setState(
+            {editEnabled: false,
+            submitEnabled: true,
+            generated: false}
+        );
+    }
 
     render() {
         return (
@@ -41,16 +44,17 @@ class PlayerGeneratorForm extends React.Component {
                         <FormLabel htmlFor='numberOfPlayers'>Number of Players</FormLabel>
                         <FormControl className='numberBox' name='numberOfPlayers'
                                      type='number' placeholder='Enter number' defaultValue='50'
-                                     onChange={this.changePlayerNum}/>
+                                     onChange={this.changePlayerNum} disabled={this.state.editEnabled}/>
                         {this.state.playerNumTooSmall &&
                             <Alert id='playerNumTooSmall' variant='danger' >
                                 Number of Players must be at least 1.</Alert>}
                     </FormGroup>
                     <div>
-                        <Button type='submit'>Submit</Button>
+                        <Button className='button' onClick={this.handleEdit} disabled={!this.state.editEnabled}>Edit</Button>
+                        <Button className='button' type='submit' disabled={!this.state.submitEnabled}>Submit</Button>
                     </div>
                 </Form>
-                {this.state.generated && <PlayerTable playerNum={this.playerNum}/>}
+                {this.state.generated && <PlayerTable playerNum={this.state.playerNum}/>}
             </Container>
         )
     }

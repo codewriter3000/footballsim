@@ -36,7 +36,7 @@ class PlayerTable extends React.Component {
 
     render() {
         return (
-            <Container className='body'>
+            <Container className='table body'>
                 <Row>
                     <Col><h3>First Name</h3></Col>
                     <Col><h3>Last Name</h3></Col>
