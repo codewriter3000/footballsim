@@ -1,0 +1,3 @@
+/home/alex/footballsim/build/CMakeFiles/footballgame.dir
+/home/alex/footballsim/build/CMakeFiles/edit_cache.dir
+/home/alex/footballsim/build/CMakeFiles/rebuild_cache.dir
