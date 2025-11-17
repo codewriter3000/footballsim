@@ -1,4 +1,5 @@
 import random
+from util import verbose_print
 
 from yardage import get_yardage_on_run_play, get_yardage_on_pass_play
 
@@ -81,28 +82,28 @@ def play_football_game(team1, team2):
 
         yard_line[0] = 100 - yard_line[0]
         if quarter[0] % 2 == 0 and seconds[0] <= 0:
-            print(f'TEAM 1: {team1_points[0]}')
-            print(f'TEAM 2: {team2_points[0]}')
+            verbose_print(f'TEAM 1: {team1_points[0]}')
+            verbose_print(f'TEAM 2: {team2_points[0]}')
             if quarter[0] == 2:
-                print('END OF HALF')
+                verbose_print('END OF HALF')
                 quarter[0] += 1
                 seconds[0] = 900
             else:
-                print('FINAL')
+                verbose_print('FINAL')
                 return {'Team 1': team1_points[0], 'Team 2': team2_points[0]}
 
         run_drive(team2['offense'], team1['defense'], quarter, seconds, yard_line, team2_points, team1_points)
 
         yard_line[0] = 100 - yard_line[0]
         if quarter[0] % 2 == 0 and seconds[0] <= 0:
-            print(f'TEAM 1: {team1_points[0]}')
-            print(f'TEAM 2: {team2_points[0]}')
+            verbose_print(f'TEAM 1: {team1_points[0]}')
+            verbose_print(f'TEAM 2: {team2_points[0]}')
             if quarter[0] == 2:
-                print('END OF HALF')
+                verbose_print('END OF HALF')
                 quarter[0] += 1
                 seconds[0] = 900
             else:
-                print('FINAL')
+                verbose_print('FINAL')
                 return {'Team 1': team1_points[0], 'Team 2': team2_points[0]}
 
 def run_drive(offense, defense, quarter_t, seconds_t, yard_line_t, off_points_t, def_points_t):
@@ -111,24 +112,24 @@ def run_drive(offense, defense, quarter_t, seconds_t, yard_line_t, off_points_t,
 
     while True:
         if yard_line_t[0] < 0:
-            print('SAFETY')
+            verbose_print('SAFETY')
             def_points_t[0] += 2
             yard_line_t[0] = 65
             return
 
-        print(' ')
-        print(f'DOWN: {down}')
-        print(f'DISTANCE: {distance}')
-        print(f'YARDLINE: {yard_line_t[0]}')
-        print(f'QUARTER: {quarter_t[0]}')
-        print(f'TIME: {seconds_t[0]//60}:{seconds_t[0]%60:02d}')
+        verbose_print(' ')
+        verbose_print(f'DOWN: {down}')
+        verbose_print(f'DISTANCE: {distance}')
+        verbose_print(f'YARDLINE: {yard_line_t[0]}')
+        verbose_print(f'QUARTER: {quarter_t[0]}')
+        verbose_print(f'TIME: {seconds_t[0]//60}:{seconds_t[0]%60:02d}')
 
         # Time between plays
         seconds_t[0] -= random.randint(25, 35)
 
         if seconds_t[0] <= 0:
             if quarter_t[0]%2 == 1:
-                print(f'END OF QUARTER')
+                verbose_print(f'END OF QUARTER')
                 quarter_t[0] += 1
                 seconds_t[0] = 900
             else:
@@ -137,14 +138,14 @@ def run_drive(offense, defense, quarter_t, seconds_t, yard_line_t, off_points_t,
         # 4th down logic
         if down == 4:
             if fourth_down_logic(distance, yard_line_t[0]) == 'FIELD GOAL':
-                print('FIELD GOAL IS GOOD')
+                verbose_print('FIELD GOAL IS GOOD')
                 seconds_t[0] -= random.randint(3, 4)
                 off_points_t[0] += 3
                 yard_line_t[0] = 75
                 return
 
             if fourth_down_logic(distance, yard_line_t[0]) == 'PUNT':
-                print('PUNT')
+                verbose_print('PUNT')
                 seconds_t[0] -= random.randint(5, 10)
                 yard_line_t[0] += random.randint(40, 70)
 
@@ -157,23 +158,23 @@ def run_drive(offense, defense, quarter_t, seconds_t, yard_line_t, off_points_t,
         seconds_t[0] -= play_result['play_time']
 
         if play_result['event'] == 'INTERCEPTION':
-            print('INTERCEPTION')
+            verbose_print('INTERCEPTION')
             return
         
         net_yards = play_result['net_yards']
         if net_yards + yard_line_t[0] >= 100:
-            print('TOUCHDOWN')
+            verbose_print('TOUCHDOWN')
             off_points_t[0] += 7
             yard_line_t[0] = 75
             return
         
         if net_yards > distance:
-            print('FIRST DOWN')
+            verbose_print('FIRST DOWN')
             down = 1
             distance = 10
         else:
             if down == 4:
-                print('TURNOVER ON DOWNS')
+                verbose_print('TURNOVER ON DOWNS')
                 return
 
             down += 1
@@ -229,7 +230,7 @@ def run_play(offense, defense):
                     'net_yards': net_yards,
                 }
 
-        interception_coefficient = offense['Q'] / db_strength
+        interception_coefficient = db_strength / offense['Q']
         interception_chance = random.uniform(0, 1.02) * interception_coefficient
 
         if interception_chance >= 1:

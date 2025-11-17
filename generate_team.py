@@ -41,5 +41,5 @@ if __name__ == '__main__':
     print(file_path)
 
     with open(file_path, 'w') as file:
-        file.write(str(generate_ratings()))
+        file.write(str(generate_ratings()).replace("'", '"'))
 
