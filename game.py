@@ -89,7 +89,7 @@ def play_football_game(team1, team2):
                 seconds[0] = 900
             else:
                 print('FINAL')
-                return
+                return {'Team 1': team1_points[0], 'Team 2': team2_points[0]}
 
         run_drive(team2['offense'], team1['defense'], quarter, seconds, yard_line, team2_points, team1_points)
 
@@ -103,7 +103,7 @@ def play_football_game(team1, team2):
                 seconds[0] = 900
             else:
                 print('FINAL')
-                return
+                return {'Team 1': team1_points[0], 'Team 2': team2_points[0]}
 
 def run_drive(offense, defense, quarter_t, seconds_t, yard_line_t, off_points_t, def_points_t):
     down = 1
