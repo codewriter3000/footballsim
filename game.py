@@ -3,6 +3,9 @@ from util import verbose_print
 
 from yardage import get_yardage_on_run_play, get_yardage_on_pass_play
 
+# The higher, the bigger the gap between higher overall teams. Anything under 1 means that lower rated players are better
+COMPETITION_CONSTANT = 1.05
+
 team_1 = {
     'offense': {
         'LT':   80,
@@ -199,12 +202,19 @@ def run_play(offense, defense):
     defensive_play_type = 'base' if random.randint(1, 2) % 2 == 0 else 'blitz'
 
     # 0.0 = worst outcome for offense, 2.0 = best outcome for offense
-    outcome = random.uniform(0, 2)
+    outcome = random.triangular(0, 2, 0.98) #random.uniform(0, 2)
+    if defensive_play_type == 'blitz':
+        outcome = outcome * 0.95 if outcome < 1.15 else outcome * 1.05
 
     play_time = random.randint(4, 6)
 
     if offensive_play_type == 'run':
-        net_run = outcome# * running_o_strength / running_d_strength
+        diff_in_line_strength = running_o_strength - running_d_strength
+        line_strength_constant = diff_in_line_strength / 1000
+        net_run = outcome + line_strength_constant
+
+        if defensive_play_type == 'blitz':
+            net_run = net_run**1.5
 
         net_yards = get_yardage_on_run_play(net_run)
 
@@ -215,6 +225,10 @@ def run_play(offense, defense):
             }
 
     elif offensive_play_type == 'pass':
+        if defensive_play_type == 'blitz':
+            dline_strength *= 1.2
+            outcome *= 1.05
+
         pass_protection_coefficient = dline_strength / oline_strength
         sack_chance = random.uniform(0, 1.1) * pass_protection_coefficient
 

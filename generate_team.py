@@ -41,7 +41,8 @@ def generate_ratings(median=75, stdev=7.5, minimum=50, maximum=99):
 
 def write_single_team(file_path: str):
     """Original behavior: write one team ratings JSON to a specific file."""
-    ratings = generate_ratings()
+    random_rating = random.randint(65, 85)
+    ratings = generate_ratings(median=random_rating)
     os.makedirs(os.path.dirname(file_path) or ".", exist_ok=True)
     with open(file_path, "w", encoding="utf-8") as file:
         json.dump(ratings, file, indent=2)
