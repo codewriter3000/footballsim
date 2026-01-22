@@ -1,129 +1,36 @@
+import bisect
+
+run_thresholds = [
+    0.01, 0.02, 0.03, 0.04, 0.24, 0.40, 0.62,
+    0.90, 1.10, 1.34, 1.46, 1.58, 1.64, 1.68,
+    1.72, 1.76, 1.80, 1.82, 1.84, 1.86, 1.88,
+    1.90, 1.91, 1.92, 1.93, 1.94, 1.95, 1.96, 1.97
+]
+
+run_values = [
+    -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7,
+    8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+    19, 20, 21, 22, 23
+]
+
 def get_yardage_on_run_play(net_run):
-    if   net_run < 0.01:
-        return -5
-    elif net_run < 0.02:
-        return -4
-    elif net_run < 0.03:
-        return -3
-    elif net_run < 0.04:
-        return -2
-    elif net_run < 0.24:
-        return -1
-    elif net_run < 0.40:
-        return 0
-    elif net_run < 0.62:
-        return 1
-    elif net_run < 0.90:
-        return 2
-    elif net_run < 1.10:
-        return 3
-    elif net_run < 1.34:
-        return 4
-    elif net_run < 1.46:
-        return 5
-    elif net_run < 1.58:
-        return 6
-    elif net_run < 1.64:
-        return 7
-    elif net_run < 1.68:
-        return 8
-    elif net_run < 1.72:
-        return 9
-    elif net_run < 1.76:
-        return 10
-    elif net_run < 1.80:
-        return 11
-    elif net_run < 1.82:
-        return 12
-    elif net_run < 1.84:
-        return 13
-    elif net_run < 1.86:
-        return 14
-    elif net_run < 1.88:
-        return 15
-    elif net_run < 1.90:
-        return 16
-    elif net_run < 1.91:
-        return 17
-    elif net_run < 1.92:
-        return 18
-    elif net_run < 1.93:
-        return 19
-    elif net_run < 1.94:
-        return 20
-    elif net_run < 1.95:
-        return 21
-    elif net_run < 1.96:
-        return 22
-    elif net_run < 1.97:
-        return 23
-    else:
-        return 100
+    idx = bisect.bisect_left(run_thresholds, net_run)
+    return run_values[idx] if idx < len(run_values) else 100
+
+pass_thresholds = [
+    0.76, 0.78, 0.80, 0.84, 0.92, 1.02, 1.10, 1.20,
+    1.30, 1.40, 1.45, 1.50, 1.60, 1.70, 1.75, 1.80,
+    1.85, 1.86, 1.87, 1.88, 1.89, 1.90, 1.91, 1.92,
+    1.93, 1.94, 1.95, 1.96, 1.97, 1.98, 1.99
+]
+
+pass_values = [
+    "INCOMPLETE", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+    13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+    26, 27, 28, 29, 30
+]
 
 def get_yardage_on_pass_play(net_pass):
-    if   net_pass < 0.76:
-        return 'INCOMPLETE'
-    elif net_pass < 0.78:
-        return 1
-    elif net_pass < 0.80:
-        return 2
-    elif net_pass < 0.84:
-        return 3
-    elif net_pass < 0.92:
-        return 4
-    elif net_pass < 1.02:
-        return 5
-    elif net_pass < 1.10:
-        return 6
-    elif net_pass < 1.20:
-        return 7
-    elif net_pass < 1.30:
-        return 8
-    elif net_pass < 1.40:
-        return 9
-    elif net_pass < 1.45:
-        return 10
-    elif net_pass < 1.50:
-        return 11
-    elif net_pass < 1.60:
-        return 12
-    elif net_pass < 1.70:
-        return 13
-    elif net_pass < 1.75:
-        return 14
-    elif net_pass < 1.80:
-        return 15
-    elif net_pass < 1.85:
-        return 16
-    elif net_pass < 1.86:
-        return 17
-    elif net_pass < 1.87:
-        return 18
-    elif net_pass < 1.88:
-        return 19
-    elif net_pass < 1.89:
-        return 20
-    elif net_pass < 1.90:
-        return 21
-    elif net_pass < 1.91:
-        return 22
-    elif net_pass < 1.92:
-        return 23
-    elif net_pass < 1.93:
-        return 24
-    elif net_pass < 1.94:
-        return 25
-    elif net_pass < 1.95:
-        return 26
-    elif net_pass < 1.96:
-        return 27
-    elif net_pass < 1.97:
-        return 28
-    elif net_pass < 1.98:
-        return 29
-    elif net_pass < 1.99:
-        return 30
-    else:
-        return 100
-
+    idx = bisect.bisect_left(pass_thresholds, net_pass)
+    return pass_values[idx] if idx < len(pass_values) else 100
 
