@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+body {
+	@apply my-2 mx-4;
+}
+
+h1 {
+	@apply text-3xl;
+}
+
+h2 {
+	@apply text-2xl;
+}
+
+h3 {
+	@apply text-xl;
+}
+
+table {
+	@apply w-full mt-2;
+}
+
+thead {
+	@apply text-red-400 bg-zinc-800 text-left text-lg;
+}
+
+th {
+	@apply font-normal;
+}
+
+table tbody tr:nth-child(even) {
+	@apply bg-zinc-800;
+}

@@ -254,7 +254,7 @@ if __name__ == "__main__":
         teams=dummy_teams,
         regular_season_games=dummy_regular,
         playoff_games=dummy_playoffs,
-        output_path=Path("league_2025.json"),
+        output_path=Path("seasons/league_2025.json"),
         season_year=2025,
         # champion_team=None  # let it infer from is_championship game
     )

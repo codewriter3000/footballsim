@@ -8,7 +8,7 @@ from game import play_football_game
 from records import export_league_to_json
 
 SEASON_YEAR = 2025
-OUTPUT_JSON = Path(__file__).parent / f"league_{SEASON_YEAR}.json"
+OUTPUT_JSON = Path(__file__).parent / f"seasons/league_{SEASON_YEAR}.json"
 TEAMS_DIR = Path(__file__).parent / "teams"
 
 # Pseudo-conference mappings for crossover games
@@ -785,5 +785,8 @@ def run_league() -> None:
 
 
 if __name__ == "__main__":
+    run_league()
+
+def simulate_league(name, **kwargs) -> None:
     run_league()
 
