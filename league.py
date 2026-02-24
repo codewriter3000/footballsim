@@ -6,26 +6,12 @@ from typing import Dict, List, Tuple, Iterable, Any
 
 from game import play_football_game
 from records import export_league_to_json
+from playoffs import simulate_playoffs
+from crossover import simulate_crossover_games
 
 SEASON_YEAR = 2025
 OUTPUT_JSON = Path(__file__).parent / f"seasons/league_{SEASON_YEAR}.json"
 TEAMS_DIR = Path(__file__).parent / "teams"
-
-# Pseudo-conference mappings for crossover games
-EAST_DIVISIONS = {
-    "New England",
-    "Mid-Atlantic",
-    "Chesapeake",
-    "Southeast",
-    "Southwest",
-}
-WEST_DIVISIONS = {
-    "Great Lakes",
-    "Appalachia",
-    "Plains",
-    "Rocky",
-    "Pacific",
-}
 
 
 def load_team_ratings(team_name: str) -> Dict:
@@ -259,6 +245,9 @@ def select_playoff_teams(teams: List[Dict], num_wildcards: int = 6) -> Dict[str,
     for members in divisions.values():
         winner = max(members, key=team_ranking_key)
         division_winners.append(winner)
+    
+    # Sort division winners by ranking
+    division_winners.sort(key=team_ranking_key, reverse=True)
 
     for w in division_winners:
         w["is_division_winner"] = True
@@ -285,306 +274,6 @@ def select_playoff_teams(teams: List[Dict], num_wildcards: int = 6) -> Dict[str,
         t["seed"] = i
 
     return {"qualified": playoff_field, "failed_to_qualify": failed_to_qualify}
-
-
-def simulate_crossover_games(
-    crossover_teams: List[Dict],
-    team_ratings: Dict[str, Dict],
-    regular_season_games: List[Dict[str, Any]],
-    start_week: int,
-    target_games: int = 10,
-) -> None:
-    """
-    Schedule and simulate 'conference crossover' games for teams that did not
-    make the playoffs.
-
-    Every non-playoff team is *guaranteed* up to `target_games` total games
-    (regular season + crossover). We infer current games from wins/losses/ties.
-
-    We fake two conferences by grouping divisions:
-      - East Conf:  New England, Mid-Atlantic, Chesapeake, Southeast, Southwest
-      - West Conf:  Great Lakes, Appalachia, Plains, Rocky, Pacific
-
-    Only games between East/West are scheduled here.
-    """
-    if not crossover_teams:
-        return
-
-    print("\n=== CROSSOVERS ===\n")
-
-    team_state: Dict[str, Dict] = {}
-    already_played = set()  # track crossover matchups we create here
-
-    for t in crossover_teams:
-        name = t["name"]
-        games_played = t["wins"] + t["losses"] + t["ties"]
-        division = t.get("division", "")
-
-        if division in EAST_DIVISIONS:
-            conference = "East"
-        elif division in WEST_DIVISIONS:
-            conference = "West"
-        else:
-            conference = "Ind"
-
-        team_state[name] = {
-            "team": t,  # reference to original dict
-            "name": name,
-            "division": division,
-            "conference": conference,
-            "games_played": games_played,
-            "needed": max(0, target_games - games_played),
-        }
-
-    round_num = 1
-
-    while True:
-        needing = [ts for ts in team_state.values() if ts["needed"] > 0]
-
-        if len(needing) < 2:
-            break
-
-        needing.sort(key=lambda ts: (ts["games_played"], ts["name"]))
-
-        print(f"--- Crossover Week {round_num} ---")
-        used_this_round = set()
-        made_pair = False
-
-        for ts in needing:
-            name = ts["name"]
-            if ts["needed"] <= 0 or name in used_this_round:
-                continue
-
-            conf = ts["conference"]
-            if conf not in ("East", "West"):
-                continue
-
-            desired_opponent_conf = "West" if conf == "East" else "East"
-
-            opponent_ts = None
-            # Try to find a fresh cross-conference opponent
-            for cand in needing:
-                cname = cand["name"]
-                if (
-                    cname == name
-                    or cand["needed"] <= 0
-                    or cname in used_this_round
-                    or cand["conference"] != desired_opponent_conf
-                ):
-                    continue
-
-                matchup_key = frozenset((name, cname))
-                if matchup_key in already_played:
-                    continue
-
-                opponent_ts = cand
-                break
-
-            # If no fresh opponent, allow a repeat if necessary
-            if opponent_ts is None:
-                for cand in needing:
-                    cname = cand["name"]
-                    if (
-                        cname == name
-                        or cand["needed"] <= 0
-                        or cname in used_this_round
-                        or cand["conference"] != desired_opponent_conf
-                    ):
-                        continue
-                    opponent_ts = cand
-                    break
-
-            if opponent_ts is None:
-                continue
-
-            home_name, away_name = name, opponent_ts["name"]
-            if random.choice((True, False)):
-                home_name, away_name = away_name, home_name
-
-            result = play_football_game(
-                team_ratings[home_name],
-                team_ratings[away_name],
-            )
-            home_points = result["Team 1"]
-            away_points = result["Team 2"]
-
-            print(f"  {home_name} {home_points} - {away_points} {away_name}")
-
-            week_number = start_week + round_num - 1
-            regular_season_games.append({
-                "week": week_number,
-                "home": home_name,
-                "away": away_name,
-                "home_score": home_points,
-                "away_score": away_points,
-                "division_game": False, # cross-conference by design
-            })
-
-            home_team = team_state[home_name]["team"]
-            away_team = team_state[away_name]["team"]
-
-            home_team["points_for"] += home_points
-            home_team["points_against"] += away_points
-            away_team["points_for"] += away_points
-            away_team["points_against"] += home_points
-
-            if home_points > away_points:
-                home_team["wins"] += 1
-                away_team["losses"] += 1
-            elif away_points > home_points:
-                away_team["wins"] += 1
-                home_team["losses"] += 1
-            else:
-                home_team["ties"] += 1
-                away_team["ties"] += 1
-
-            for n in (home_name, away_name):
-                team_state[n]["games_played"] += 1
-                if team_state[n]["needed"] > 0:
-                    team_state[n]["needed"] -= 1
-
-            used_this_round.add(home_name)
-            used_this_round.add(away_name)
-            already_played.add(frozenset((home_name, away_name)))
-            made_pair = True
-
-        print()
-
-        if not made_pair:
-            # No pairings possible this week; avoid infinite loop
-            break
-
-        round_num += 1
-
-    print("Crossover scheduling complete.\n")
-
-
-def simulate_playoffs(
-    playoff_teams: List[Dict],
-    team_ratings: Dict[str, Dict],
-    playoff_games: List[Dict[str, any]],
-) -> Dict:
-    """
-    Single-elimination playoff, reseeded each round by seed.
-    If a playoff game ties, winner is chosen by a coin-flip OT.
-
-    Every round, all teams that have been eliminated so far
-    play in consolation games, so everybody keeps playing
-    until the champion is crowned.
-    """
-    print("\n=== PLAYOFFS ===\n")
-
-    seeds = sorted(playoff_teams, key=lambda t: t["seed"])
-    consolation_pool: List[Dict] = []
-
-    round_num = 1
-
-    while len(seeds) > 1:
-        print(f"--- Playoff Round {round_num} ---")
-        new_seeds: List[Dict] = []
-        working = sorted(seeds, key=lambda t: t["seed"])
-        round_losers: List[Dict] = []
-
-        # If odd number of teams, top seed gets a bye
-        if len(working) % 2 == 1:
-            bye_team = working[0]
-            print(f"{bye_team['name']} (Seed {bye_team['seed']}) gets a BYE")
-            new_seeds.append(bye_team)
-            working = working[1:]
-
-        i, j = 0, len(working) - 1
-        while i < j:
-            home = working[i]
-            away = working[j]
-
-            print(f"Matchup: {home['name']} (Seed {home['seed']}) vs {away['name']} (Seed {away['seed']})")
-
-            result = play_football_game(
-                team_ratings[home["name"]],
-                team_ratings[away["name"]],
-            )
-            home_points = result["Team 1"]
-            away_points = result["Team 2"]
-
-            print(f"  Final: {home['name']} {home_points} - {away['name']} {away_points}")
-
-            playoff_games.append({
-                "round": f"Round {round_num}",
-                "home": home["name"],
-                "away": away["name"],
-                "home_score": home_points,
-                "away_score": away_points,
-                "is_championship": False,  # will mark final later
-            })
-
-            if home_points > away_points:
-                winner, loser = home, away
-            elif away_points > home_points:
-                winner, loser = away, home
-            else:
-                winner = random.choice((home, away))
-                loser = away if winner is home else home
-                print(f"  Tie in regulation, {winner['name']} wins in OT (coin flip).")
-
-            new_seeds.append(winner)
-            round_losers.append(loser)
-            i += 1
-            j -= 1
-
-        consolation_pool.extend(round_losers)
-
-        print()
-
-        # Consolation games
-        if consolation_pool:
-            print(f"--- Consolation Games Round {round_num} ---")
-            cons_working = sorted(consolation_pool, key=lambda t: t["seed"])
-            used = set()
-
-            for idx, team_a in enumerate(cons_working):
-                name_a = team_a["name"]
-                if name_a in used:
-                    continue
-
-                opponent = None
-                for team_b in cons_working[idx + 1:]:
-                    name_b = team_b["name"]
-                    if name_b in used or name_b == name_a:
-                        continue
-                    opponent = team_b
-                    break
-
-                if opponent is None:
-                    continue
-
-                home, away = team_a, opponent
-                if random.choice((True, False)):
-                    home, away = away, home
-
-                result = play_football_game(
-                    team_ratings[home["name"]],
-                    team_ratings[away["name"]],
-                )
-                home_points = result["Team 1"]
-                away_points = result["Team 2"]
-
-                print(f"  {home['name']} {home_points} - {away_points} {away['name']}")
-
-                used.add(home["name"])
-                used.add(away["name"])
-
-            print()
-
-        seeds = sorted(new_seeds, key=lambda t: t["seed"])
-        round_num += 1
-
-    champion = seeds[0]
-    print(f"=== CHAMPION: {champion['name']} (Seed {champion['seed']}) ===\n")
-
-    if playoff_games:
-        playoff_games[-1]["is_championship"] = True
-
-    return champion
 
 
 def _make_team(name: str, division: str) -> Dict:
@@ -684,6 +373,8 @@ def run_league() -> None:
     # Game logs
     regular_season_games: List[Dict[str, any]] = []
     playoff_games: List[Dict[str, any]] = []
+    crossover_games: List[Dict[str, any]] = []
+    consolation_games: List[Dict[str, any]] = []
 
     # Regular season
     for week_num, games in enumerate(schedule, start=1):
@@ -762,20 +453,26 @@ def run_league() -> None:
     # Conference Crossover Games
     last_regular_week = len(schedule)
     simulate_crossover_games(
-        failed_to_qualify_teams,
-        team_ratings,
-        regular_season_games,
-        start_week=last_regular_week + 1
+        crossover_teams=failed_to_qualify_teams,
+        team_ratings=team_ratings,
+        crossover_games=crossover_games,
     )
 
     # Playoffs
-    champion = simulate_playoffs(playoff_teams, team_ratings, playoff_games)
+    champion = simulate_playoffs(
+        playoff_teams=playoff_teams, 
+        team_ratings=team_ratings, 
+        playoff_games=playoff_games, 
+        consolation_games=consolation_games
+    )
 
     # Export everything to JSON
     export_league_to_json(
         teams=teams,
         regular_season_games=regular_season_games,
+        crossover_games=crossover_games,
         playoff_games=playoff_games,
+        consolation_games=consolation_games,
         output_path=OUTPUT_JSON,
         season_year=SEASON_YEAR,
         champion_team=champion["name"] if champion else None,

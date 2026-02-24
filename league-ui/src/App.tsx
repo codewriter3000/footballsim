@@ -129,7 +129,11 @@ const App: Component = () => {
     return (
       <Show when={!teamData.loading} fallback={<div>Loading...</div>}>
         <Show when={teamData()} fallback={<div>Team not found</div>}>
-          <TeamDetails team={teamData()!.team} games={teamData()!.games} />
+          <TeamDetails
+            team={teamData()!.team}
+            regularSeasonGames={teamData()!.regular_season_games}
+            postseasonGames={teamData()!.postseason_games}
+          />
         </Show>
       </Show>
     );

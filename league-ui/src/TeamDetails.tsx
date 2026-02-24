@@ -1,16 +1,21 @@
-import { Game, TeamStats } from "./api";
+import { Game, PlayoffGame, TeamStats } from "./api";
 import { Component, For, Show, createResource } from "solid-js";
 import { A } from "@solidjs/router";
 
 type TeamDetailsProps = {
   team: TeamStats;
-  games: Game[];
+  regularSeasonGames: Game[];
+  postseasonGames: PlayoffGame[];
 };
 
 export const TeamDetails: Component<TeamDetailsProps> = (props) => {
-  const { team, games } = props;
+  const { team, regularSeasonGames, postseasonGames } = props;
 
-  console.log("TeamDetails props:", { team, games });
+  console.log("TeamDetails props:", { team, regularSeasonGames, postseasonGames });
+
+  const playoffGames = postseasonGames.filter(g => !g.round.startsWith("C") && !g.round.startsWith("PC"));
+  const crossoverGames = postseasonGames.filter(g => g.round.startsWith("C"));
+  const consolationGames = postseasonGames.filter(g => g.round.startsWith("PC"));
 
   return (
     <>
@@ -25,8 +30,9 @@ export const TeamDetails: Component<TeamDetailsProps> = (props) => {
 
       <div>
         <h2>Games</h2>
+		<h3>Regular Season</h3>
 		<Show
-          when={games && games.length > 0}
+          when={regularSeasonGames && regularSeasonGames.length > 0}
           fallback={<p>No games found.</p>}
         >
 			<table>
@@ -39,7 +45,7 @@ export const TeamDetails: Component<TeamDetailsProps> = (props) => {
 					</tr>
 				</thead>
 				<tbody>
-					<For each={games}>
+					<For each={regularSeasonGames}>
 						{(g) => (
 							<tr>
 								<Show when={g.home === team.name}>
@@ -59,6 +65,114 @@ export const TeamDetails: Component<TeamDetailsProps> = (props) => {
 					</For>
 				</tbody>
 			</table>
+        </Show>
+		<Show
+			when={crossoverGames && crossoverGames.length > 0}
+			fallback={<></>}
+		>
+			<h3 class="mt-2">Crossover Games</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Round</th>
+						<th>Opponent</th>
+						<th>Result</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<For each={crossoverGames}>
+						{(g) => (
+							<tr>
+								<Show when={g.home === team.name}>
+									<td>{g.round}</td>
+									<td><A href={`/team/${encodeURIComponent(g.away)}`}>{g.away}</A></td>
+									<td>{g.away_score === g.home_score ? "T" : g.away_score > g.home_score ? "L" : "W"}</td>
+									<td>{g.home_score + " - " + g.away_score}</td>
+								</Show>
+								<Show when={g.away === team.name}>
+									<td>{g.round}</td>
+									<td><A href={`/team/${encodeURIComponent(g.home)}`}>{g.home}</A></td>
+									<td>{g.home_score === g.away_score ? "T" : g.home_score > g.away_score ? "L" : "W"}</td>
+									<td>{g.away_score + " - " + g.home_score}</td>
+								</Show>
+							</tr>
+						)}
+					</For>
+				</tbody>
+			</table>
+		</Show>
+		<h3 class="mt-2">Playoffs</h3>
+		<Show
+          when={playoffGames && playoffGames.length > 0}
+          fallback={<p>Did not qualify for the playoffs.</p>}
+        >
+			<table>
+				<thead>
+					<tr>
+						<th>Round</th>
+						<th>Opponent</th>
+						<th>Result</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<For each={playoffGames}>
+						{(g) => (
+							<tr>
+								<Show when={g.home === team.name}>
+									<td>{g.round}</td>
+									<td><A href={`/team/${encodeURIComponent(g.away)}`}>{g.away}</A></td>
+									<td>{g.away_score === g.home_score ? "T" : g.away_score > g.home_score ? "L" : "W"}</td>
+									<td>{g.home_score + " - " + g.away_score}</td>
+								</Show>
+								<Show when={g.away === team.name}>
+									<td>{g.round}</td>
+									<td><A href={`/team/${encodeURIComponent(g.home)}`}>{g.home}</A></td>
+									<td>{g.home_score === g.away_score ? "T" : g.home_score > g.away_score ? "L" : "W"}</td>
+									<td>{g.away_score + " - " + g.home_score}</td>
+								</Show>
+							</tr>
+						)}
+					</For>
+				</tbody>
+			</table>
+			<Show
+				when={consolationGames && consolationGames.length > 0}
+				fallback={<p></p>}
+			>
+				<h3 class="mt-2">Consolation Games</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Round</th>
+							<th>Opponent</th>
+							<th>Result</th>
+							<th>Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<For each={consolationGames}>
+							{(g) => (
+								<tr>
+									<Show when={g.home === team.name}>
+										<td>{g.round}</td>
+										<td><A href={`/team/${encodeURIComponent(g.away)}`}>{g.away}</A></td>
+										<td>{g.away_score === g.home_score ? "T" : g.away_score > g.home_score ? "L" : "W"}</td>
+										<td>{g.home_score + " - " + g.away_score}</td>
+									</Show>
+									<Show when={g.away === team.name}>
+										<td>{g.round}</td>
+										<td><A href={`/team/${encodeURIComponent(g.home)}`}>{g.home}</A></td>
+										<td>{g.home_score === g.away_score ? "T" : g.home_score > g.away_score ? "L" : "W"}</td>
+										<td>{g.away_score + " - " + g.home_score}</td>
+									</Show>
+								</tr>
+							)}
+						</For>
+					</tbody>
+				</table>
+			</Show>
         </Show>
       </div>
     </>

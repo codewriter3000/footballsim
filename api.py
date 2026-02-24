@@ -51,13 +51,18 @@ def get_team(team_name: str, season_year: int = 2025):
         raise HTTPException(status_code=404, detail="Season not found")
     with file.open("r", encoding="utf-8") as f:
         data = json.load(f)
+    print(data)
     team = next((t for t in data["teams"] if t["name"] == formatted_team_name), None)
-    games = [g for g in data["regular_season_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
+    regular_season_games = [g for g in data["regular_season_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
     if not team:
         raise HTTPException(status_code=404, detail="Team not found")
-    print(team)
-    print(games)
-    return {"team": team, "games": games}
+    playoff_games = [g for g in data["playoff_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
+    crossover_games = [g for g in data["crossover_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
+    consolation_games = [g for g in data["consolation_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
+    postseason_games = playoff_games + crossover_games + consolation_games
+    return {"team": team, 
+            "regular_season_games": regular_season_games,
+            "postseason_games": postseason_games}
 
 @app.get("/playoffs/{season_year}")
 def get_playoffs(season_year: int = 2025):

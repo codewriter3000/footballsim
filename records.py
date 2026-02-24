@@ -7,7 +7,9 @@ from typing import List, Dict, Any, Optional
 def export_league_to_json(
     teams: List[Dict[str, Any]],
     regular_season_games: List[Dict[str, Any]],
+    crossover_games: List[Dict[str, Any]],
     playoff_games: List[Dict[str, Any]],
+    consolation_games: List[Dict[str, Any]],
     output_path: Path,
     season_year: Optional[int] = None,
     champion_team: Optional[str] = None,
@@ -34,10 +36,19 @@ def export_league_to_json(
             "away_score": 17,
             "division_game": True,     # optional
         }
+    
+    crossover_games: list of dicts like:
+        {
+            "round": "C1",
+            "home": "Alabama",
+            "away": "Alaska",
+            "home_score": 24,
+            "away_score": 17,
+        }
 
     playoff_games: list of dicts like:
         {
-            "round": "Divisional",     # or "Wildcard", "Championship", etc.
+            "round": "1",
             "home": "Alabama",
             "away": "Arizona",
             "home_score": 21,
@@ -136,9 +147,15 @@ def export_league_to_json(
     # -----------------------
     for g in regular_season_games:
         apply_game(g, is_playoff=False)
+    
+    for g in crossover_games:
+        apply_game(g, is_playoff=False)
 
     for g in playoff_games:
         apply_game(g, is_playoff=True)
+    
+    for g in consolation_games:
+        apply_game(g, is_playoff=False)
 
     # -----------------------
     # 4. Determine division titles
@@ -200,7 +217,9 @@ def export_league_to_json(
         "teams": teams,  # raw team metadata
         "teams_stats": team_stats,
         "regular_season_games": regular_season_games,
+        "crossover_games": crossover_games,
         "playoff_games": playoff_games,
+        "consolation_games": consolation_games,
     }
 
     # -----------------------
@@ -253,7 +272,9 @@ if __name__ == "__main__":
     export_league_to_json(
         teams=dummy_teams,
         regular_season_games=dummy_regular,
+        crossover_games=[],
         playoff_games=dummy_playoffs,
+        consolation_games=[],
         output_path=Path("seasons/league_2025.json"),
         season_year=2025,
         # champion_team=None  # let it infer from is_championship game
