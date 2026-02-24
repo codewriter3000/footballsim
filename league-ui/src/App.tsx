@@ -1,9 +1,10 @@
 import type { Component } from 'solid-js';
 import { createSignal, onMount, Show, For, createResource } from 'solid-js';
-import { simulateSeason, getSeason, listSeasons, getTeamInfo, LeagueData } from './api';
+import { simulateSeason, getSeason, listSeasons, getTeamInfo, LeagueData, getPlayoffGames } from './api';
 import { addTeamRatings } from './rankings';
 import { Route, A, useParams } from '@solidjs/router';
 import { TeamDetails } from './TeamDetails';
+import { Playoffs } from './Playoffs';
 
 
 const App: Component = () => {
@@ -22,8 +23,8 @@ const App: Component = () => {
     if (championshipGame) {
       setChampion(
         championshipGame.away_score > championshipGame.home_score
-          ? championshipGame.home
-          : championshipGame.away
+          ? championshipGame.away
+          : championshipGame.home
       );
     } else {
       setChampion(null);
@@ -53,8 +54,9 @@ const App: Component = () => {
               Season {data.season_year} Results
             </h2>
             <p>
-              Champion: <strong>{champion()}</strong>
+              Champion: <b>{champion()}</b>
             </p>
+            <A href={`/playoffs/${data.season_year}`}>Playoffs</A>
             <h3>Standings</h3>
             <div>
               <table>
@@ -92,6 +94,26 @@ const App: Component = () => {
     </>
   );
 
+  const PlayoffDetailsRoute = () => {
+    const params = useParams();
+
+    const [playoffData] = createResource(
+      () => params.season, // must stay inline like this
+      async (season) => {
+        console.log("Fetching:", season);
+        return season ? await getPlayoffGames(2025) : null;
+      }
+    );
+
+    return (
+      <Show when={!playoffData.loading} fallback={<div>Loading...</div>}>
+        <Show when={playoffData()} fallback={<div>No playoff data found</div>}>
+          <Playoffs {...playoffData()} />
+        </Show>
+      </Show>
+    )
+  }
+
   // TeamDetails route wrapper (sync component using createResource)
   const TeamDetailsRoute = () => {
     const params = useParams();
@@ -117,6 +139,7 @@ const App: Component = () => {
     <>
       <Route path="/" component={Home} />
       <Route path="/team/:name" component={TeamDetailsRoute} />
+      <Route path="/playoffs/:season" component={PlayoffDetailsRoute} />
     </>
   );
 };

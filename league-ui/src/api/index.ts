@@ -86,6 +86,20 @@ export interface LeagueData {
   champion?: string | null;
 }
 
+export type Game = {
+  away: string;
+  away_score: number;
+  home: string;
+  home_score: number;
+  week: number;
+  division_game: boolean;
+};
+
+export type TeamInfoResponse = {
+  team: TeamStats;
+  games: Game[];
+};
+
 /* ---------- Helpers ---------- */
 
 async function handleResponse<T>(res: Response): Promise<T> {
@@ -167,16 +181,18 @@ export async function getTeamInfo(
   return (await res.json()) as TeamInfoResponse;
 }
 
-export type Game = {
-  away: string;
-  away_score: number;
-  home: string;
-  home_score: number;
-  week: number;
-  division_game: boolean;
-};
+/**
+ * Get the playoff games for a specific season.
+ * Assumes a GET /playoffs/{season_year} endpoint.
+ */
+export async function getPlayoffGames(year: number): Promise<PlayoffGame[]> {
+  const res = await fetch(`${API_BASE_URL}/playoffs/${year}`, {
+    method: "GET",
+  });
 
-export type TeamInfoResponse = {
-  team: TeamStats;
-  games: Game[];
-};
+  if (!res.ok) {
+    throw new Error(`Failed to fetch playoff games (${res.status})`);
+  }
+  
+  return handleResponse<PlayoffGame[]>(res);
+}

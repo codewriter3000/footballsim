@@ -58,3 +58,14 @@ def get_team(team_name: str, season_year: int = 2025):
     print(team)
     print(games)
     return {"team": team, "games": games}
+
+@app.get("/playoffs/{season_year}")
+def get_playoffs(season_year: int = 2025):
+    file = DATA_DIR / f"league_{season_year}.json"
+    if not file.exists():
+        raise HTTPException(status_code=404, detail="Season not found")
+    with file.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    games = [g for g in data["playoff_games"]]
+    print(games)
+    return games
