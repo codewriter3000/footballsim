@@ -31,3 +31,7 @@ th {
 table tbody tr:nth-child(even) {
 	@apply bg-zinc-800;
 }
+
+a {
+	@apply text-red-200 hover:underline;
+}

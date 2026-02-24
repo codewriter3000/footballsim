@@ -1,5 +1,5 @@
 export const API_BASE_URL =
-	import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000';
+    import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000';
 
 /* ---------- Types shared with your backend ---------- */
 
@@ -56,9 +56,14 @@ export interface TeamTitlesBlock {
 }
 
 export interface TeamStats {
-  team_name: string;
-  division?: string | null;
-  conference?: string | null;
+  division: string;
+  losses: number;
+  name: string;
+  points_against: number;
+  points_for: number;
+  sos: number;
+  ties: number;
+  wins: number;
   regular_season: TeamSeasonStatsBlock;
   playoffs: {
     berth: boolean;
@@ -140,3 +145,38 @@ export async function listSeasons(): Promise<number[]> {
   return handleResponse<number[]>(res);
 }
 
+/**
+ * Get information about a specific team for a given season.
+ * Assumes a GET /seasons/{year}/teams/{teamName} endpoint.
+ */
+export async function getTeamInfo(
+  year: number,
+  teamName: string | null
+): Promise<TeamInfoResponse> {
+  if (!teamName) throw new Error("Team name is required");
+
+  const res = await fetch(
+    `${API_BASE_URL}/teams/${encodeURIComponent(teamName)}?year=${year}`,
+    { method: "GET" }
+  );
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch team info (${res.status})`);
+  }
+
+  return (await res.json()) as TeamInfoResponse;
+}
+
+export type Game = {
+  away: string;
+  away_score: number;
+  home: string;
+  home_score: number;
+  week: number;
+  division_game: boolean;
+};
+
+export type TeamInfoResponse = {
+  team: TeamStats;
+  games: Game[];
+};

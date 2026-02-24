@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 from pathlib import Path
@@ -41,4 +41,20 @@ def get_season(year: int = 2025):
         raise HTTPException(status_code=404, detail="Season not found")
     with file.open("r", encoding="utf-8") as f:
         return json.load(f)
-
+    
+@app.get("/teams/{team_name}")
+def get_team(team_name: str, season_year: int = 2025):
+    formatted_team_name = team_name.replace("%20", " ")
+    print(f"Getting team info for {formatted_team_name} in season {season_year}")
+    file = DATA_DIR / f"league_{season_year}.json"
+    if not file.exists():
+        raise HTTPException(status_code=404, detail="Season not found")
+    with file.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    team = next((t for t in data["teams"] if t["name"] == formatted_team_name), None)
+    games = [g for g in data["regular_season_games"] if g["home"] == formatted_team_name or g["away"] == formatted_team_name]
+    if not team:
+        raise HTTPException(status_code=404, detail="Team not found")
+    print(team)
+    print(games)
+    return {"team": team, "games": games}
