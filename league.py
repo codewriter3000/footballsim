@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Iterable, Any
 
 from game import play_football_game
+from playoff_selection import DivisionWinnersPlusWildcards
+from ranking import rank_default
 from records import export_league_to_json
 from playoffs import simulate_playoffs
 from crossover import simulate_crossover_games
@@ -207,75 +209,6 @@ def compute_strength_of_schedule(teams: List[Dict], schedule: List[List[Tuple[st
         name_to_team[name]["sos"] = sos
 
 
-def team_ranking_key(team: Dict) -> Tuple[float, float, int, int]:
-    """
-    Ranking key used for division winners, wildcards, and seeding.
-
-    Higher is better:
-      1. Win percentage
-      2. Strength of schedule (sos)
-      3. Point differential
-      4. Points for
-    """
-    games = team["wins"] + team["losses"] + team["ties"]
-    win_pct = 0.0 if games == 0 else (team["wins"] + 0.5 * team["ties"]) / games
-    sos = team.get("sos", 0.0)
-    diff = team["points_for"] - team["points_against"]
-    return (win_pct, sos, diff, team["points_for"])
-
-def select_playoff_teams(teams: List[Dict], num_wildcards: int = 6) -> Dict[str, List[Dict]]:
-    """
-    Selects:
-      - All division winners
-      - num_wildcards best remaining teams
-
-    Returns:
-      {
-        'qualified':          ordered list of playoff teams with 'seed' field assigned (1 = best),
-        'failed_to_qualify':  list of teams that did not make the playoff field
-      }
-    """
-    # Group by division
-    divisions: Dict[str, List[Dict]] = {}
-    for t in teams:
-        divisions.setdefault(t["division"], []).append(t)
-
-    # Pick division winners
-    division_winners: List[Dict] = []
-    for members in divisions.values():
-        winner = max(members, key=team_ranking_key)
-        division_winners.append(winner)
-    
-    # Sort division winners by ranking
-    division_winners.sort(key=team_ranking_key, reverse=True)
-
-    for w in division_winners:
-        w["is_division_winner"] = True
-
-    # Use names for set membership (dicts are unhashable)
-    winner_names = {w["name"] for w in division_winners}
-    others = [t for t in teams if t["name"] not in winner_names]
-
-    # Wildcards
-    others_sorted = sorted(others, key=team_ranking_key, reverse=True)
-    wildcards = others_sorted[:num_wildcards]
-
-    # Seed ordering for playoff field
-    div_sorted = sorted(division_winners, key=team_ranking_key, reverse=True)
-    wc_sorted = sorted(wildcards, key=team_ranking_key, reverse=True)
-    playoff_field = div_sorted + wc_sorted
-
-    # Teams that didn't make it
-    playoff_names = {t["name"] for t in playoff_field}
-    failed_to_qualify = [t for t in teams if t["name"] not in playoff_names]
-
-    # Assign seeds (1 = best)
-    for i, t in enumerate(playoff_field, start=1):
-        t["seed"] = i
-
-    return {"qualified": playoff_field, "failed_to_qualify": failed_to_qualify}
-
-
 def _make_team(name: str, division: str) -> Dict:
     """Helper to build a fresh team dict with zeroed stats."""
     return {
@@ -287,6 +220,7 @@ def _make_team(name: str, division: str) -> Dict:
         "points_for": 0,
         "points_against": 0,
         "sos": 0.0,
+        "seed": 0,
     }
 
 
@@ -426,7 +360,7 @@ def run_league() -> None:
     print("Final Regular Season Standings")
 
     def standings_key_for_print(t: Dict) -> Tuple[float, float, int, int]:
-        wp, sos, diff, pf = team_ranking_key(t)
+        wp, sos, diff, pf = rank_default(t)
         # sort descending on each
         return (-wp, -sos, -diff, -pf)
 
@@ -442,18 +376,25 @@ def run_league() -> None:
         )
 
     # Playoff selection: all division winners + 6 wildcards
-    playoff_result = select_playoff_teams(teams, num_wildcards=6)
-    playoff_teams = playoff_result["qualified"]
-    failed_to_qualify_teams = playoff_result["failed_to_qualify"]
+    selection = DivisionWinnersPlusWildcards(rank_key=rank_default, num_wildcards=6)
+    result = selection.select(teams)
+
+    playoff_teams = result["qualified"]
+    missed = result["failed_to_qualify"]
 
     print("\nPlayoff Field (Seeds):")
     for t in sorted(playoff_teams, key=lambda x: x["seed"]):
         print(f"Seed {t['seed']}: {t['name']} ({t['division']})")
+    
+    for t in teams:
+        if t in playoff_teams:
+            t["seed"] = next(pt["seed"] for pt in playoff_teams if pt["name"] == t["name"])
+            print("### DEBUG - Assigned seed", t["name"], "->", t["seed"])
 
     # Conference Crossover Games
     last_regular_week = len(schedule)
     simulate_crossover_games(
-        crossover_teams=failed_to_qualify_teams,
+        crossover_teams=missed,
         team_ratings=team_ratings,
         crossover_games=crossover_games,
     )

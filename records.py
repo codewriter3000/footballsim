@@ -83,6 +83,7 @@ def export_league_to_json(
             },
             "playoffs": {
                 "berth": False,
+                "seed": 0 if "seed" not in t else t["seed"],
                 "games_played": 0,
                 "wins": 0,
                 "losses": 0,

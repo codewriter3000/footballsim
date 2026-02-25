@@ -95,25 +95,44 @@ def handle_period_end(state: GameState) -> bool:
             return True
     return False
 
+def play_overtime(team1, team2, state, is_playoffs: bool = False):
+    while True:
+        state.yard_line = 25
+        run_drive(team1['offense'], team2['defense'], state, offense_is_team1=True, is_overtime=True, is_playoffs=is_playoffs)
+        
+        state.yard_line = 25
+        run_drive(team2['offense'], team1['defense'], state, offense_is_team1=False, is_overtime=True, is_playoffs=is_playoffs)
+        
+        if state.team1_points != state.team2_points or not is_playoffs:
+            return
 
-def play_football_game(team1, team2):
+
+def play_football_game(team1, team2, playoffs=False):
     state = GameState()
 
     while True:
-        run_drive(team1['offense'], team2['defense'], state, True)
+        run_drive(team1['offense'], team2['defense'], state, offense_is_team1=True, is_playoffs=playoffs)
         state.yard_line = 100 - state.yard_line
 
         if handle_period_end(state):
+            if state.team1_points == state.team2_points:
+                verbose_print('OVERTIME!')
+                play_overtime(team1, team2, state, is_playoffs=playoffs)
+            
             return {'Team 1': state.team1_points, 'Team 2': state.team2_points}
 
-        run_drive(team2['offense'], team1['defense'], state, False)
+        run_drive(team2['offense'], team1['defense'], state, offense_is_team1=False, is_playoffs=playoffs)
         state.yard_line = 100 - state.yard_line
 
         if handle_period_end(state):
+            if state.team1_points == state.team2_points:
+                verbose_print('OVERTIME!')
+                play_overtime(team1, team2, state, is_playoffs=playoffs)
+
             return {'Team 1': state.team1_points, 'Team 2': state.team2_points}
 
 
-def run_drive(offense, defense, state: GameState, offense_is_team1: bool):
+def run_drive(offense, defense, state: GameState, offense_is_team1: bool, is_overtime: bool = False, is_playoffs: bool = False):
     down = 1
     distance = 10
 
@@ -136,7 +155,7 @@ def run_drive(offense, defense, state: GameState, offense_is_team1: bool):
 
         state.seconds -= random.randint(PLAY_CLOCK_MIN, PLAY_CLOCK_MAX)
 
-        if state.seconds <= 0:
+        if state.seconds <= 0 and not is_overtime:
             if state.quarter % 2 == 1:
                 verbose_print('END OF QUARTER')
                 state.quarter += 1

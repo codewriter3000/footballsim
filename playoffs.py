@@ -1,110 +1,135 @@
-import random
-from typing import Dict, List
+from __future__ import annotations
 
+from dataclasses import dataclass
+from typing import Any, Callable, Dict, List, Optional, Protocol, Sequence, Tuple
+import random
+
+from consolation import ConsolationStrategy, SeedNeighborFirstUnusedConsolation
 from game import play_football_game
 
+Team = Dict[str, Any]
+Ratings = Dict[str, Dict[str, Any]]
+Matchup = Tuple[Team, Team]
 
-def simulate_consolation_games(round_num: int, 
-                               consolation_pool: List[Dict], 
-                               team_ratings: Dict[str, Dict], 
-                               consolation_games: List[Dict[str, any]]):
-    
-    print(f"--- Consolation Games Round {round_num} ---")
-    cons_working = sorted(consolation_pool, key=lambda t: t["seed"])
-    used = set()
 
-    for idx, team_a in enumerate(cons_working):
-        name_a = team_a["name"]
-        if name_a in used:
-            continue
+class SeedingStrategy(Protocol):
+    """
+    A strategy that decides:
+      - which team (if any) gets a bye
+      - how to pair teams into matchups for this round
+      - how to order / re-seed teams after the round (optional)
+    """
 
-        opponent = None
-        for team_b in cons_working[idx + 1:]:
-            name_b = team_b["name"]
-            if name_b in used or name_b == name_a:
-                continue
-            opponent = team_b
-            break
+    def order_for_round(self, teams: Sequence[Team]) -> List[Team]:
+        """Return teams in the order used to decide byes + matchups."""
+        ...
 
-        if opponent is None:
-            continue
+    def pick_bye(self, ordered: Sequence[Team]) -> Tuple[Optional[Team], List[Team]]:
+        """Return (bye_team_or_none, remaining_teams_to_pair)."""
+        ...
 
-        home, away = team_a, opponent
-        if random.choice((True, False)):
-            home, away = away, home
+    def make_matchups(self, to_pair: Sequence[Team]) -> List[Matchup]:
+        """Return list of (home, away) pairs for this round."""
+        ...
 
-        result = play_football_game(
-            team_ratings[home["name"]],
-            team_ratings[away["name"]],
-        )
-        home_points = result["Team 1"]
-        away_points = result["Team 2"]
+    def reseed_after_round(self, advancing: Sequence[Team]) -> List[Team]:
+        """Return teams for the next round (can reseed or preserve bracket)."""
+        ...
 
-        print(f"  {home['name']} {home_points} - {away_points} {away['name']}")
 
-        consolation_games.append({
-            "round": f"PC{round_num}",
-            "home": home["name"],
-            "away": away["name"],
-            "home_score": home_points,
-            "away_score": away_points,
-        })
+@dataclass(frozen=True)
+class HighVsLowReseedEachRound:
+    """
+    Your current behavior:
+      - sort by seed each round
+      - if odd, top seed gets bye
+      - pair highest vs lowest
+      - reseed (sort) again for next round
+    """
 
-        used.add(home["name"])
-        used.add(away["name"])
+    def order_for_round(self, teams: Sequence[Team]) -> List[Team]:
+        return sorted(teams, key=lambda t: t["seed"])
 
-    print()
+    def pick_bye(self, ordered: Sequence[Team]) -> Tuple[Optional[Team], List[Team]]:
+        working = list(ordered)
+        if len(working) % 2 == 1:
+            return working[0], working[1:]
+        return None, working
+
+    def make_matchups(self, to_pair: Sequence[Team]) -> List[Matchup]:
+        working = list(to_pair)
+        matchups: List[Matchup] = []
+        i, j = 0, len(working) - 1
+        while i < j:
+            matchups.append((working[i], working[j]))
+            i += 1
+            j -= 1
+        return matchups
+
+    def reseed_after_round(self, advancing: Sequence[Team]) -> List[Team]:
+        return sorted(list(advancing), key=lambda t: t["seed"])
+
+
+def resolve_winner_by_score_or_coinflip(home: Team, away: Team, home_points: int, away_points: int) -> Tuple[Team, Team, bool]:
+    """Returns (winner, loser, decided_by_coinflip_ot)."""
+    if home_points > away_points:
+        return home, away, False
+    if away_points > home_points:
+        return away, home, False
+    winner = random.choice((home, away))
+    loser = away if winner is home else home
+    return winner, loser, True
 
 
 def simulate_playoffs(
-    playoff_teams: List[Dict],
-    team_ratings: Dict[str, Dict],
-    playoff_games: List[Dict[str, any]],
-    consolation_games: List[Dict[str, any]],
-) -> Dict:
+    playoff_teams: List[Team],
+    team_ratings: Ratings,
+    playoff_games: List[Dict[str, Any]],
+    consolation_games: List[Dict[str, Any]],
+    seeding: SeedingStrategy = HighVsLowReseedEachRound(),
+    consolation: ConsolationStrategy = SeedNeighborFirstUnusedConsolation(),
+) -> Team:
     """
-    Single-elimination playoff, reseeded each round by seed.
-    If a playoff game ties, winner is chosen by a coin-flip OT.
-
-    Every round, all teams that have been eliminated so far
-    play in consolation games, so everybody keeps playing
-    until the champion is crowned.
+    Single-elimination playoffs with swap-in seeding strategy.
+    Every round, eliminated teams join the consolation pool and keep playing.
     """
     print("\n=== PLAYOFFS ===\n")
 
-    seeds = sorted(playoff_teams, key=lambda t: t["seed"])
-    consolation_pool: List[Dict] = []
-
+    seeds: List[Team] = list(playoff_teams)
+    consolation_pool: List[Team] = []
     round_num = 1
 
     while len(seeds) > 1:
         print(f"--- Playoff Round {round_num} ---")
-        new_seeds: List[Dict] = []
-        working = sorted(seeds, key=lambda t: t["seed"])
-        round_losers: List[Dict] = []
 
-        # If odd number of teams, top seed gets a bye
-        if len(working) % 2 == 1:
-            bye_team = working[0]
+        ordered = seeding.order_for_round(seeds)
+        bye_team, to_pair = seeding.pick_bye(ordered)
+
+        advancing: List[Team] = []
+        round_losers: List[Team] = []
+
+        if bye_team is not None:
             print(f"{bye_team['name']} (Seed {bye_team['seed']}) gets a BYE")
-            new_seeds.append(bye_team)
-            working = working[1:]
+            advancing.append(bye_team)
 
-        i, j = 0, len(working) - 1
-        while i < j:
-            home = working[i]
-            away = working[j]
+        matchups = seeding.make_matchups(to_pair)
 
+        for home, away in matchups:
             print(f"Matchup: {home['name']} (Seed {home['seed']}) vs {away['name']} (Seed {away['seed']})")
 
             result = play_football_game(
                 team_ratings[home["name"]],
                 team_ratings[away["name"]],
+                playoffs=True,
             )
             home_points = result["Team 1"]
             away_points = result["Team 2"]
 
             print(f"  Final: {home['name']} {home_points} - {away['name']} {away_points}")
+
+            winner, loser, coinflip = resolve_winner_by_score_or_coinflip(home, away, home_points, away_points)
+            if coinflip:
+                print(f"  Tie in regulation, {winner['name']} wins in OT (coin flip).")
 
             playoff_games.append({
                 "round": f"Round {round_num}",
@@ -112,37 +137,30 @@ def simulate_playoffs(
                 "away": away["name"],
                 "home_score": home_points,
                 "away_score": away_points,
-                "is_championship": False,  # will mark final later
+                "is_championship": False,  # mark final later
             })
 
-            if home_points > away_points:
-                winner, loser = home, away
-            elif away_points > home_points:
-                winner, loser = away, home
-            else:
-                winner = random.choice((home, away))
-                loser = away if winner is home else home
-                print(f"  Tie in regulation, {winner['name']} wins in OT (coin flip).")
-
-            new_seeds.append(winner)
+            advancing.append(winner)
             round_losers.append(loser)
-            i += 1
-            j -= 1
 
         consolation_pool.extend(round_losers)
-
         print()
 
-        # Consolation games
         if consolation_pool:
-            simulate_consolation_games(
+            consolation.play_round(
                 round_num=round_num,
                 consolation_pool=consolation_pool,
                 team_ratings=team_ratings,
                 consolation_games=consolation_games,
             )
+            # simulate_consolation_games(
+            #     round_num=round_num,
+            #     consolation_pool=consolation_pool,
+            #     team_ratings=team_ratings,
+            #     consolation_games=consolation_games,
+            # )
 
-        seeds = sorted(new_seeds, key=lambda t: t["seed"])
+        seeds = seeding.reseed_after_round(advancing)
         round_num += 1
 
     champion = seeds[0]

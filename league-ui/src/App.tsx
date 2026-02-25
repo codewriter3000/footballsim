@@ -100,8 +100,15 @@ const App: Component = () => {
     const [playoffData] = createResource(
       () => params.season, // must stay inline like this
       async (season) => {
-        console.log("Fetching:", season);
-        return season ? await getPlayoffGames(2025) : null;
+        let data = season ? await getPlayoffGames(2025) : null;
+
+        if (!data)          throw new Error("No data found for season " + season);
+
+        return data.map(game => {
+          console.log("Processing league:", JSON.stringify(league()?.teams));
+          return {...game, away_seed: league()?.teams.find((t: any) => t.name === game.away)?.seed ?? 0,
+            home_seed: league()?.teams.find((t: any) => t.name === game.home)?.seed ?? 0}
+        });
       }
     );
 
@@ -121,7 +128,6 @@ const App: Component = () => {
     const [teamData] = createResource(
       () => params.name, // must stay inline like this
       async (name) => {
-        console.log("Fetching:", name);
         return name ? await getTeamInfo(2025, name) : null;
       }
     );

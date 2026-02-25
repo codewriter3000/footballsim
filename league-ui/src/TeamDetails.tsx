@@ -11,8 +11,6 @@ type TeamDetailsProps = {
 export const TeamDetails: Component<TeamDetailsProps> = (props) => {
   const { team, regularSeasonGames, postseasonGames } = props;
 
-  console.log("TeamDetails props:", { team, regularSeasonGames, postseasonGames });
-
   const playoffGames = postseasonGames.filter(g => !g.round.startsWith("C") && !g.round.startsWith("PC"));
   const crossoverGames = postseasonGames.filter(g => g.round.startsWith("C"));
   const consolationGames = postseasonGames.filter(g => g.round.startsWith("PC"));

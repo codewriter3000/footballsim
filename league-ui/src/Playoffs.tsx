@@ -2,8 +2,6 @@ import { For } from "solid-js";
 import { PlayoffGame } from "./components/PlayoffGame";
 
 export const Playoffs = (playoffs: any) => {
-    console.log(JSON.stringify(playoffs));
-
     return (<>
         <h1>Playoffs</h1>
         <div style="display: flex; gap: 1rem;">
