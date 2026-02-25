@@ -5,6 +5,8 @@ import { addTeamRatings } from './rankings';
 import { Route, A, useParams } from '@solidjs/router';
 import { TeamDetails } from './TeamDetails';
 import { Playoffs } from './Playoffs';
+import { StandingsTable } from './components/StandingsTable';
+import { Layout } from './Layout';
 
 
 const App: Component = () => {
@@ -57,7 +59,20 @@ const App: Component = () => {
               Champion: <b>{champion()}</b>
             </p>
             <A href={`/playoffs/${data.season_year}`}>Playoffs</A>
-            <h3>Standings</h3>
+            <h3>Division Standings</h3>
+            <div class="grid grid-cols-4 gap-4 mb-4">
+              <StandingsTable division="New England" teams={sortedTeams().filter((t: any) => t.division === 'New England')} />
+              <StandingsTable division="Mid-Atlantic" teams={sortedTeams().filter((t: any) => t.division === 'Mid-Atlantic')} />
+              <StandingsTable division="Chesapeake" teams={sortedTeams().filter((t: any) => t.division === 'Chesapeake')} />
+              <StandingsTable division="Southeast" teams={sortedTeams().filter((t: any) => t.division === 'Southeast')} />
+              <StandingsTable division="Great Lakes" teams={sortedTeams().filter((t: any) => t.division === 'Great Lakes')} />
+              <StandingsTable division="Plains" teams={sortedTeams().filter((t: any) => t.division === 'Plains')} />
+              <StandingsTable division="Appalachia" teams={sortedTeams().filter((t: any) => t.division === 'Appalachia')} />
+              <StandingsTable division="Pacific" teams={sortedTeams().filter((t: any) => t.division === 'Pacific')} />
+              <StandingsTable division="Rocky" teams={sortedTeams().filter((t: any) => t.division === 'Rocky')} />
+              <StandingsTable division="Southwest" teams={sortedTeams().filter((t: any) => t.division === 'Southwest')} />
+            </div>
+            <h3>Overall Standings</h3>
             <div>
               <table>
                 <thead>
@@ -146,11 +161,11 @@ const App: Component = () => {
   };
 
   return (
-    <>
+    <Route component={Layout}>
       <Route path="/" component={Home} />
       <Route path="/team/:name" component={TeamDetailsRoute} />
       <Route path="/playoffs/:season" component={PlayoffDetailsRoute} />
-    </>
+    </Route>
   );
 };
 
