@@ -1,7 +1,7 @@
 import random
 from typing import Dict, List
 
-from game import play_football_game
+from ..game_logic.game import play_football_game
 
 # Pseudo-conference mappings for crossover games
 EAST_DIVISIONS = {

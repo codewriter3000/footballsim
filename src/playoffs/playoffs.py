@@ -4,8 +4,8 @@ from dataclasses import dataclass
 from typing import Any, Callable, Dict, List, Optional, Protocol, Sequence, Tuple
 import random
 
-from consolation import ConsolationStrategy, SeedNeighborFirstUnusedConsolation
-from game import play_football_game
+from .consolation import ConsolationStrategy, NoRepeatConsolation
+from ..game_logic.game import play_football_game
 
 Team = Dict[str, Any]
 Ratings = Dict[str, Dict[str, Any]]
@@ -87,11 +87,20 @@ def simulate_playoffs(
     playoff_games: List[Dict[str, Any]],
     consolation_games: List[Dict[str, Any]],
     seeding: SeedingStrategy = HighVsLowReseedEachRound(),
-    consolation: ConsolationStrategy = SeedNeighborFirstUnusedConsolation(),
+    consolation: ConsolationStrategy = NoRepeatConsolation(),
 ) -> Team:
     """
     Single-elimination playoffs with swap-in seeding strategy.
-    Every round, eliminated teams join the consolation pool and keep playing.
+
+    Constraint:
+      If there are N playoff rounds (including the championship round),
+      then there are exactly N-1 consolation rounds.
+
+    Implementation:
+      - We simulate consolation at the *start* of each playoff round AFTER Round 1
+        (i.e., rounds 2..N). That yields exactly N-1 consolation rounds.
+      - Losers from the current playoff round are added to the consolation pool,
+        but they don't play until the *next* consolation round.
     """
     print("\n=== PLAYOFFS ===\n")
 
@@ -101,6 +110,16 @@ def simulate_playoffs(
 
     while len(seeds) > 1:
         print(f"--- Playoff Round {round_num} ---")
+
+        # Consolation happens for rounds 2..N (i.e., N-1 times total).
+        # Important: This uses the pool accumulated from *previous* playoff round losers.
+        if round_num > 1 and consolation_pool:
+            consolation.play_round(
+                round_num=round_num - 1,  # label consolation rounds as 1..N-1
+                consolation_pool=consolation_pool,
+                team_ratings=team_ratings,
+                consolation_games=consolation_games,
+            )
 
         ordered = seeding.order_for_round(seeds)
         bye_team, to_pair = seeding.pick_bye(ordered)
@@ -140,26 +159,24 @@ def simulate_playoffs(
                 "is_championship": False,  # mark final later
             })
 
+            if home_points > away_points:
+                home["wins"] += 1
+                away["losses"] += 1
+            elif away_points > home_points:
+                away["wins"] += 1
+                home["losses"] += 1
+            else:
+                home["ties"] += 1
+                away["ties"] += 1
+
             advancing.append(winner)
             round_losers.append(loser)
 
+        # Add losers AFTER consolation for this loop iteration,
+        # so they play in the next consolation round (if any).
         consolation_pool.extend(round_losers)
+
         print()
-
-        if consolation_pool:
-            consolation.play_round(
-                round_num=round_num,
-                consolation_pool=consolation_pool,
-                team_ratings=team_ratings,
-                consolation_games=consolation_games,
-            )
-            # simulate_consolation_games(
-            #     round_num=round_num,
-            #     consolation_pool=consolation_pool,
-            #     team_ratings=team_ratings,
-            #     consolation_games=consolation_games,
-            # )
-
         seeds = seeding.reseed_after_round(advancing)
         round_num += 1
 

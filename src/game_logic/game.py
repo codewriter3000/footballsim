@@ -1,8 +1,8 @@
 import random
 from dataclasses import dataclass
 
-from util import verbose_print
-from yardage import get_yardage_on_run_play, get_yardage_on_pass_play
+from ..utilities.util import verbose_print
+from .yardage import get_yardage_on_run_play, get_yardage_on_pass_play
 
 # ----- GAME / CLOCK SETTINGS -----
 PLAY_CLOCK_MIN = 25

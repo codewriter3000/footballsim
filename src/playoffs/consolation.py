@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Protocol, Sequence, Tuple
 import random
 
-from game import play_football_game
+from ..game_logic.game import play_football_game
 
 
 Team = Dict[str, Any]
@@ -41,20 +41,43 @@ class ConsolationStrategy(Protocol):
 
 
 @dataclass(frozen=True)
-class SeedNeighborFirstUnusedConsolation:
+class NoRepeatConsolation:
     """
-    Default behavior matching your current function:
-      - sort by seed
-      - walk from lowest seed upward; pair each unused team with the first unused team after it
-      - randomize home/away
-      - teams can remain in the pool across rounds; this method only ensures
-        a team plays at most once *per round*
-    """
+    Consolation pairing that avoids repeat matchups across ALL prior consolation rounds.
 
-    def make_matchups(self, round_num: int, consolation_pool: Sequence[Team]) -> List[Matchup]:
+    Behavior:
+      - sort by seed
+      - pair each unused team with the first unused opponent it has NOT played before
+      - if no unseen opponent exists, (optionally) allow a repeat as a fallback to avoid idling
+      - randomize home/away
+      - a team plays at most once per round
+    """
+    allow_repeat_if_stuck: bool = True
+
+    def _played_pairs(self, consolation_games: Sequence[Dict[str, Any]]) -> Set[Tuple[str, str]]:
+        """
+        Normalize played matchups as unordered (min(name), max(name)) pairs.
+        """
+        played: Set[Tuple[str, str]] = set()
+        for g in consolation_games:
+            a, b = g["home"], g["away"]
+            played.add((a, b) if a < b else (b, a))
+        return played
+
+    def make_matchups(
+        self,
+        round_num: int,
+        consolation_pool: Sequence[Team],
+        consolation_games: Sequence[Dict[str, Any]],
+    ) -> List[Matchup]:
         cons_working = sorted(consolation_pool, key=lambda t: t["seed"])
-        used: set[str] = set()
+        used: Set[str] = set()
         matchups: List[Matchup] = []
+        played = self._played_pairs(consolation_games)
+
+        def has_played(a: str, b: str) -> bool:
+            key = (a, b) if a < b else (b, a)
+            return key in played
 
         for idx, team_a in enumerate(cons_working):
             name_a = team_a["name"]
@@ -62,18 +85,30 @@ class SeedNeighborFirstUnusedConsolation:
                 continue
 
             opponent: Optional[Team] = None
+
+            # First pass: find an opponent team_a has NOT played before
             for team_b in cons_working[idx + 1 :]:
                 name_b = team_b["name"]
                 if name_b in used or name_b == name_a:
                     continue
-                opponent = team_b
-                break
+                if not has_played(name_a, name_b):
+                    opponent = team_b
+                    break
+
+            # Optional fallback: if stuck, allow the first available opponent (repeat)
+            if opponent is None and self.allow_repeat_if_stuck:
+                for team_b in cons_working[idx + 1 :]:
+                    name_b = team_b["name"]
+                    if name_b in used or name_b == name_a:
+                        continue
+                    opponent = team_b
+                    break
 
             if opponent is None:
                 continue
 
             matchups.append((team_a, opponent))
-            used.add(team_a["name"])
+            used.add(name_a)
             used.add(opponent["name"])
 
         return matchups
@@ -94,7 +129,11 @@ class SeedNeighborFirstUnusedConsolation:
     ) -> None:
         print(f"--- Consolation Games Round {round_num} ---")
 
-        matchups = self.make_matchups(round_num, consolation_pool)
+        matchups = self.make_matchups(
+            round_num=round_num,
+            consolation_pool=consolation_pool,
+            consolation_games=consolation_games,
+        )
 
         for matchup in matchups:
             home, away = self.pick_home_away(matchup)
@@ -115,5 +154,15 @@ class SeedNeighborFirstUnusedConsolation:
                 "home_score": home_points,
                 "away_score": away_points,
             })
+
+            if home_points > away_points:
+                home["wins"] += 1
+                away["losses"] += 1
+            elif away_points > home_points:
+                away["wins"] += 1
+                home["losses"] += 1
+            else:
+                home["ties"] += 1
+                away["ties"] += 1
 
         print()

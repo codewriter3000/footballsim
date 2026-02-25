@@ -4,7 +4,7 @@ from typing import Optional
 from pathlib import Path
 import json
 
-from league import simulate_league
+from ..league_mgmt.league import simulate_league
 
 app = FastAPI()
 DATA_DIR = Path("seasons")

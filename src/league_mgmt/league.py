@@ -4,16 +4,16 @@ import random
 from pathlib import Path
 from typing import Dict, List, Tuple, Iterable, Any
 
-from game import play_football_game
-from playoff_selection import DivisionWinnersPlusWildcards
-from ranking import rank_default
-from records import export_league_to_json
-from playoffs import simulate_playoffs
-from crossover import simulate_crossover_games
+from ..game_logic.game import play_football_game
+from ..playoffs.playoff_selection import DivisionWinnersPlusWildcards
+from ..playoffs.ranking import rank_default
+from ..integrations.records import export_league_to_json
+from ..playoffs.playoffs import simulate_playoffs
+from ..playoffs.crossover import simulate_crossover_games
 
 SEASON_YEAR = 2025
-OUTPUT_JSON = Path(__file__).parent / f"seasons/league_{SEASON_YEAR}.json"
-TEAMS_DIR = Path(__file__).parent / "teams"
+OUTPUT_JSON = Path(__file__).parent.parent.parent / f"seasons/league_{SEASON_YEAR}.json"
+TEAMS_DIR = Path(__file__).parent.parent.parent / "teams"
 
 
 def load_team_ratings(team_name: str) -> Dict:
