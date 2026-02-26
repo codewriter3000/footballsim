@@ -96,15 +96,16 @@ def handle_period_end(state: GameState) -> bool:
     return False
 
 def play_overtime(team1, team2, state, is_playoffs: bool = False):
-    while True:
-        state.yard_line = 25
+    series: int = 1
+    while series <= 3 or is_playoffs:
+        state.yard_line = 75
         run_drive(team1['offense'], team2['defense'], state, offense_is_team1=True, is_overtime=True, is_playoffs=is_playoffs)
-        
-        state.yard_line = 25
+        state.yard_line = 75
         run_drive(team2['offense'], team1['defense'], state, offense_is_team1=False, is_overtime=True, is_playoffs=is_playoffs)
         
-        if state.team1_points != state.team2_points or not is_playoffs:
+        if state.team1_points != state.team2_points:
             return
+    
 
 
 def play_football_game(team1, team2, playoffs=False):

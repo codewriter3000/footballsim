@@ -389,7 +389,6 @@ def run_league() -> None:
     for t in teams:
         if t in playoff_teams:
             t["seed"] = next(pt["seed"] for pt in playoff_teams if pt["name"] == t["name"])
-            print("### DEBUG - Assigned seed", t["name"], "->", t["seed"])
 
     # Conference Crossover Games
     last_regular_week = len(schedule)

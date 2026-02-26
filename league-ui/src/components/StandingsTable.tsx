@@ -19,7 +19,7 @@ export const StandingsTable = (props: { teams: any[], division: string }) => {
                     <tr>
                     <td>{i() + 1}</td>
                     <td>
-                        <A href={`/team/${encodeURIComponent(t.name)}`}>{t.name}</A>
+                        <A href={`/team/${encodeURIComponent(t.name)}`}>{t.seed ? `#${t.seed} ${t.name}` : t.name}</A>
                     </td>
                     <td>
                         {t.wins}-{t.losses}-{t.ties}
