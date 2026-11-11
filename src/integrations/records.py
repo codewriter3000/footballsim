@@ -3,6 +3,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
+import src.game_logic.constants as constants
+
 
 def export_league_to_json(
     teams: List[Dict[str, Any]],
@@ -276,8 +278,8 @@ if __name__ == "__main__":
         crossover_games=[],
         playoff_games=dummy_playoffs,
         consolation_games=[],
-        output_path=Path("seasons/league_2025.json"),
-        season_year=2025,
+        output_path=Path(f"seasons/league_{constants.SEASON_YEAR}.json"),
+        season_year=constants.SEASON_YEAR,
         # champion_team=None  # let it infer from is_championship game
     )
 

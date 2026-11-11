@@ -7,12 +7,15 @@ import { TeamDetails } from './TeamDetails';
 import { Playoffs } from './Playoffs';
 import { StandingsTable } from './components/StandingsTable';
 import { Layout } from './Layout';
+import { useSeason } from './SeasonContext';
 
 
 const App: Component = () => {
+  const { season } = useSeason();
+
   const [league, setLeague] = createSignal<LeagueData | null>(null);
   const [error, setError] = createSignal<boolean>(false);
-  const [seasonYear] = createSignal<number>(2025);
+  const [seasonYear] = createSignal<number>(season());
   const [champion, setChampion] = createSignal<string | null>(null);
 
   onMount(async () => {
@@ -115,7 +118,7 @@ const App: Component = () => {
     const [playoffData] = createResource(
       () => params.season, // must stay inline like this
       async (season) => {
-        let data = season ? await getPlayoffGames(2025) : null;
+        let data = season ? await getPlayoffGames(parseInt(season)) : null;
 
         if (!data)          throw new Error("No data found for season " + season);
 
@@ -143,7 +146,7 @@ const App: Component = () => {
     const [teamData] = createResource(
       () => params.name, // must stay inline like this
       async (name) => {
-        return name ? await getTeamInfo(2025, name) : null;
+        return name ? await getTeamInfo(season(), name) : null;
       }
     );
 

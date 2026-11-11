@@ -5,6 +5,7 @@ import 'solid-devtools';
 
 import App from './App';
 import { Router } from '@solidjs/router';
+import { SeasonProvider } from './SeasonContext';
 
 const root = document.getElementById('root');
 
@@ -14,8 +15,13 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => (
-  <Router>
-    <App />
-  </Router>
-), root!);
+render(
+  () => (
+    <SeasonProvider initialSeason={2029}>
+      <Router>
+        <App />
+      </Router>
+    </SeasonProvider>
+  ),
+  document.getElementById("root")!
+);

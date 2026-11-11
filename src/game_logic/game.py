@@ -1,6 +1,7 @@
 import random
 from dataclasses import dataclass
 
+import src.game_logic.constants as constants
 from ..utilities.util import verbose_print
 from .yardage import get_yardage_on_run_play, get_yardage_on_pass_play
 
@@ -60,6 +61,9 @@ BLITZ_GOOD_OUTCOME_MULTIPLIER = 1.05
 BLITZ_RUN_EXPONENT = 1.5
 O_LINE_BLITZ_MULTIPLIER = 1.2
 OUTCOME_BLITZ_MULTIPLIER = 1.05
+
+# ----- COMPETITION CONSTANTS -----
+#COMPETITION_CONSTANT = 1.0
 
 
 @dataclass
@@ -242,7 +246,7 @@ def run_play(offense, defense):
     play_time = random.randint(RUN_PLAY_TIME_MIN, RUN_PLAY_TIME_MAX)
 
     if offensive_play_type == 'run':
-        diff_in_line_strength = running_o_strength - running_d_strength
+        diff_in_line_strength = (running_o_strength - running_d_strength) * constants.COMPETITION_CONSTANT
         net_run = outcome + (diff_in_line_strength / 1000)
         if defensive_play_type == 'blitz':
             net_run = net_run ** BLITZ_RUN_EXPONENT
@@ -255,17 +259,17 @@ def run_play(offense, defense):
         dline_strength *= O_LINE_BLITZ_MULTIPLIER
         outcome *= OUTCOME_BLITZ_MULTIPLIER
 
-    pass_protection = dline_strength / oline_strength
+    pass_protection = (dline_strength / oline_strength) ** constants.COMPETITION_CONSTANT
     sack_chance = random.uniform(0, SACK_CHANCE_MULTIPLIER) * pass_protection
 
     if sack_chance >= 1:
         net_yards = random.randint(SACK_YARDS_MIN, SACK_YARDS_MAX)
         return {'event': 'SACK', 'play_time': play_time, 'net_yards': net_yards}
 
-    net_pass = outcome
+    net_pass = outcome ** constants.COMPETITION_CONSTANT
     net_yards = get_yardage_on_pass_play(net_pass)
 
-    interception_coeff = db_strength / offense['Q']
+    interception_coeff = (db_strength / offense['Q']) ** constants.COMPETITION_CONSTANT
     interception_chance = random.uniform(0, INTERCEPTION_CHANCE_MULTIPLIER) * interception_coeff
 
     if interception_chance >= 1:

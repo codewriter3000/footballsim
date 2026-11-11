@@ -1,0 +1,3972 @@
+{
+  "consolation_games": [
+    {
+      "away": "Arizona",
+      "away_score": 31,
+      "home": "Georgia",
+      "home_score": 24,
+      "round": "PC1"
+    },
+    {
+      "away": "Hawaii",
+      "away_score": 13,
+      "home": "Utah",
+      "home_score": 38,
+      "round": "PC1"
+    },
+    {
+      "away": "Washington",
+      "away_score": 38,
+      "home": "Massachusetts",
+      "home_score": 42,
+      "round": "PC1"
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 30,
+      "home": "Oklahoma",
+      "home_score": 10,
+      "round": "PC1"
+    },
+    {
+      "away": "Georgia",
+      "away_score": 31,
+      "home": "Hawaii",
+      "home_score": 35,
+      "round": "PC2"
+    },
+    {
+      "away": "Arizona",
+      "away_score": 21,
+      "home": "Pennsylvania",
+      "home_score": 41,
+      "round": "PC2"
+    },
+    {
+      "away": "Michigan",
+      "away_score": 31,
+      "home": "Utah",
+      "home_score": 35,
+      "round": "PC2"
+    },
+    {
+      "away": "Maine",
+      "away_score": 56,
+      "home": "Kentucky",
+      "home_score": 35,
+      "round": "PC2"
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 17,
+      "home": "Massachusetts",
+      "home_score": 35,
+      "round": "PC2"
+    },
+    {
+      "away": "Oklahoma",
+      "away_score": 31,
+      "home": "Washington",
+      "home_score": 14,
+      "round": "PC2"
+    },
+    {
+      "away": "Missouri",
+      "away_score": 10,
+      "home": "Iowa",
+      "home_score": 24,
+      "round": "PC3"
+    },
+    {
+      "away": "Pennsylvania",
+      "away_score": 21,
+      "home": "Georgia",
+      "home_score": 40,
+      "round": "PC3"
+    },
+    {
+      "away": "Hawaii",
+      "away_score": 24,
+      "home": "Arizona",
+      "home_score": 22,
+      "round": "PC3"
+    },
+    {
+      "away": "Maine",
+      "away_score": 38,
+      "home": "Utah",
+      "home_score": 21,
+      "round": "PC3"
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 21,
+      "home": "Michigan",
+      "home_score": 28,
+      "round": "PC3"
+    },
+    {
+      "away": "Oklahoma",
+      "away_score": 31,
+      "home": "Massachusetts",
+      "home_score": 59,
+      "round": "PC3"
+    },
+    {
+      "away": "Washington",
+      "away_score": 14,
+      "home": "South Dakota",
+      "home_score": 21,
+      "round": "PC3"
+    }
+  ],
+  "crossover_games": [
+    {
+      "away": "Illinois",
+      "away_score": 19,
+      "division_game": false,
+      "home": "Nevada",
+      "home_score": 17,
+      "round": "C1"
+    },
+    {
+      "away": "Alaska",
+      "away_score": 40,
+      "division_game": false,
+      "home": "Alabama",
+      "home_score": 28,
+      "round": "C1"
+    },
+    {
+      "away": "Arkansas",
+      "away_score": 27,
+      "division_game": false,
+      "home": "Connecticut",
+      "home_score": 19,
+      "round": "C1"
+    },
+    {
+      "away": "California",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Delaware",
+      "home_score": 14,
+      "round": "C1"
+    },
+    {
+      "away": "Colorado",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Florida",
+      "home_score": 14,
+      "round": "C1"
+    },
+    {
+      "away": "Idaho",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Louisiana",
+      "home_score": 7,
+      "round": "C1"
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Indiana",
+      "home_score": 52,
+      "round": "C1"
+    },
+    {
+      "away": "New Hampshire",
+      "away_score": 30,
+      "division_game": false,
+      "home": "Kansas",
+      "home_score": 13,
+      "round": "C1"
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 14,
+      "division_game": false,
+      "home": "New Jersey",
+      "home_score": 37,
+      "round": "C1"
+    },
+    {
+      "away": "Montana",
+      "away_score": 14,
+      "division_game": false,
+      "home": "New Mexico",
+      "home_score": 44,
+      "round": "C1"
+    },
+    {
+      "away": "New York",
+      "away_score": 3,
+      "division_game": false,
+      "home": "Nebraska",
+      "home_score": 31,
+      "round": "C1"
+    },
+    {
+      "away": "North Dakota",
+      "away_score": 38,
+      "division_game": false,
+      "home": "North Carolina",
+      "home_score": 45,
+      "round": "C1"
+    },
+    {
+      "away": "Ohio",
+      "away_score": 26,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 28,
+      "round": "C1"
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 58,
+      "division_game": false,
+      "home": "South Carolina",
+      "home_score": 21,
+      "round": "C1"
+    },
+    {
+      "away": "West Virginia",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Texas",
+      "home_score": 7,
+      "round": "C1"
+    },
+    {
+      "away": "Vermont",
+      "away_score": 40,
+      "division_game": false,
+      "home": "Wisconsin",
+      "home_score": 17,
+      "round": "C1"
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Virginia",
+      "home_score": 45,
+      "round": "C1"
+    },
+    {
+      "away": "Alabama",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Illinois",
+      "home_score": 24,
+      "round": "C2"
+    },
+    {
+      "away": "Nevada",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Alaska",
+      "home_score": 37,
+      "round": "C2"
+    },
+    {
+      "away": "Delaware",
+      "away_score": 37,
+      "division_game": false,
+      "home": "Arkansas",
+      "home_score": 32,
+      "round": "C2"
+    },
+    {
+      "away": "Connecticut",
+      "away_score": 31,
+      "division_game": false,
+      "home": "California",
+      "home_score": 7,
+      "round": "C2"
+    },
+    {
+      "away": "Colorado",
+      "away_score": 36,
+      "division_game": false,
+      "home": "Louisiana",
+      "home_score": 21,
+      "round": "C2"
+    },
+    {
+      "away": "Idaho",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Florida",
+      "home_score": 47,
+      "round": "C2"
+    },
+    {
+      "away": "Indiana",
+      "away_score": 55,
+      "division_game": false,
+      "home": "New Hampshire",
+      "home_score": 34,
+      "round": "C2"
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 10,
+      "division_game": false,
+      "home": "Kansas",
+      "home_score": 33,
+      "round": "C2"
+    },
+    {
+      "away": "New Mexico",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Minnesota",
+      "home_score": 7,
+      "round": "C2"
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 48,
+      "division_game": false,
+      "home": "Montana",
+      "home_score": 14,
+      "round": "C2"
+    },
+    {
+      "away": "Nebraska",
+      "away_score": 35,
+      "division_game": false,
+      "home": "North Carolina",
+      "home_score": 34,
+      "round": "C2"
+    },
+    {
+      "away": "New York",
+      "away_score": 35,
+      "division_game": false,
+      "home": "North Dakota",
+      "home_score": 27,
+      "round": "C2"
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Ohio",
+      "home_score": 24,
+      "round": "C2"
+    },
+    {
+      "away": "South Carolina",
+      "away_score": 23,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 31,
+      "round": "C2"
+    },
+    {
+      "away": "Texas",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Wisconsin",
+      "home_score": 20,
+      "round": "C2"
+    },
+    {
+      "away": "Vermont",
+      "away_score": 21,
+      "division_game": false,
+      "home": "West Virginia",
+      "home_score": 41,
+      "round": "C2"
+    },
+    {
+      "away": "Virginia",
+      "away_score": 30,
+      "division_game": false,
+      "home": "Wyoming",
+      "home_score": 21,
+      "round": "C2"
+    },
+    {
+      "away": "Illinois",
+      "away_score": 28,
+      "division_game": false,
+      "home": "Connecticut",
+      "home_score": 62,
+      "round": "C3"
+    },
+    {
+      "away": "Arkansas",
+      "away_score": 0,
+      "division_game": false,
+      "home": "Nevada",
+      "home_score": 37,
+      "round": "C3"
+    },
+    {
+      "away": "Alabama",
+      "away_score": 24,
+      "division_game": false,
+      "home": "California",
+      "home_score": 44,
+      "round": "C3"
+    },
+    {
+      "away": "Delaware",
+      "away_score": 37,
+      "division_game": false,
+      "home": "Alaska",
+      "home_score": 28,
+      "round": "C3"
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Colorado",
+      "home_score": 52,
+      "round": "C3"
+    },
+    {
+      "away": "Indiana",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Florida",
+      "home_score": 30,
+      "round": "C3"
+    },
+    {
+      "away": "Idaho",
+      "away_score": 34,
+      "division_game": false,
+      "home": "New Hampshire",
+      "home_score": 24,
+      "round": "C3"
+    },
+    {
+      "away": "Kansas",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Louisiana",
+      "home_score": 24,
+      "round": "C3"
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 0,
+      "division_game": false,
+      "home": "New York",
+      "home_score": 30,
+      "round": "C3"
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 41,
+      "division_game": false,
+      "home": "Montana",
+      "home_score": 7,
+      "round": "C3"
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Nebraska",
+      "home_score": 28,
+      "round": "C3"
+    },
+    {
+      "away": "New Mexico",
+      "away_score": 28,
+      "division_game": false,
+      "home": "North Dakota",
+      "home_score": 17,
+      "round": "C3"
+    },
+    {
+      "away": "West Virginia",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Ohio",
+      "home_score": 21,
+      "round": "C3"
+    },
+    {
+      "away": "Texas",
+      "away_score": 10,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 61,
+      "round": "C3"
+    },
+    {
+      "away": "Wisconsin",
+      "away_score": 33,
+      "division_game": false,
+      "home": "South Carolina",
+      "home_score": 19,
+      "round": "C3"
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Vermont",
+      "home_score": 17,
+      "round": "C3"
+    },
+    {
+      "away": "Virginia",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Wyoming",
+      "home_score": 23,
+      "round": "C3"
+    },
+    {
+      "away": "Illinois",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Nevada",
+      "home_score": 27,
+      "round": "C4"
+    }
+  ],
+  "playoff_games": [
+    {
+      "away": "Oklahoma",
+      "away_score": 14,
+      "home": "Maryland",
+      "home_score": 35,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Utah",
+      "away_score": 14,
+      "home": "Pennsylvania",
+      "home_score": 30,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Massachusetts",
+      "away_score": 23,
+      "home": "Missouri",
+      "home_score": 38,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 23,
+      "home": "Georgia",
+      "home_score": 20,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 7,
+      "home": "Iowa",
+      "home_score": 21,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Michigan",
+      "away_score": 35,
+      "home": "Hawaii",
+      "home_score": 19,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Washington",
+      "away_score": 31,
+      "home": "Rhode Island",
+      "home_score": 34,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Maine",
+      "away_score": 28,
+      "home": "Arizona",
+      "home_score": 14,
+      "is_championship": false,
+      "round": "Round 1"
+    },
+    {
+      "away": "Pennsylvania",
+      "away_score": 24,
+      "home": "Maryland",
+      "home_score": 37,
+      "is_championship": false,
+      "round": "Round 2"
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 42,
+      "home": "Missouri",
+      "home_score": 52,
+      "is_championship": false,
+      "round": "Round 2"
+    },
+    {
+      "away": "Michigan",
+      "away_score": 16,
+      "home": "Iowa",
+      "home_score": 45,
+      "is_championship": false,
+      "round": "Round 2"
+    },
+    {
+      "away": "Maine",
+      "away_score": 14,
+      "home": "Rhode Island",
+      "home_score": 48,
+      "is_championship": false,
+      "round": "Round 2"
+    },
+    {
+      "away": "Missouri",
+      "away_score": 0,
+      "home": "Maryland",
+      "home_score": 24,
+      "is_championship": false,
+      "round": "Round 3"
+    },
+    {
+      "away": "Rhode Island",
+      "away_score": 44,
+      "home": "Iowa",
+      "home_score": 35,
+      "is_championship": false,
+      "round": "Round 3"
+    },
+    {
+      "away": "Rhode Island",
+      "away_score": 14,
+      "home": "Maryland",
+      "home_score": 31,
+      "is_championship": true,
+      "round": "Round 4"
+    }
+  ],
+  "regular_season_games": [
+    {
+      "away": "South Dakota",
+      "away_score": 45,
+      "division_game": true,
+      "home": "Kansas",
+      "home_score": 21,
+      "week": 1
+    },
+    {
+      "away": "Arkansas",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Connecticut",
+      "home_score": 3,
+      "week": 1
+    },
+    {
+      "away": "Indiana",
+      "away_score": 30,
+      "division_game": false,
+      "home": "Alaska",
+      "home_score": 7,
+      "week": 1
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 31,
+      "division_game": true,
+      "home": "Pennsylvania",
+      "home_score": 49,
+      "week": 1
+    },
+    {
+      "away": "Washington",
+      "away_score": 15,
+      "division_game": true,
+      "home": "Oregon",
+      "home_score": 31,
+      "week": 1
+    },
+    {
+      "away": "Maryland",
+      "away_score": 17,
+      "division_game": true,
+      "home": "Virginia",
+      "home_score": 13,
+      "week": 1
+    },
+    {
+      "away": "New York",
+      "away_score": 35,
+      "division_game": true,
+      "home": "Ohio",
+      "home_score": 47,
+      "week": 1
+    },
+    {
+      "away": "Florida",
+      "away_score": 44,
+      "division_game": true,
+      "home": "Mississippi",
+      "home_score": 7,
+      "week": 1
+    },
+    {
+      "away": "Arizona",
+      "away_score": 37,
+      "division_game": false,
+      "home": "Georgia",
+      "home_score": 24,
+      "week": 1
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 14,
+      "division_game": true,
+      "home": "West Virginia",
+      "home_score": 31,
+      "week": 1
+    },
+    {
+      "away": "Illinois",
+      "away_score": 32,
+      "division_game": false,
+      "home": "California",
+      "home_score": 27,
+      "week": 1
+    },
+    {
+      "away": "Louisiana",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Alabama",
+      "home_score": 41,
+      "week": 1
+    },
+    {
+      "away": "Maine",
+      "away_score": 42,
+      "division_game": false,
+      "home": "Nebraska",
+      "home_score": 14,
+      "week": 1
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 24,
+      "division_game": true,
+      "home": "Idaho",
+      "home_score": 23,
+      "week": 1
+    },
+    {
+      "away": "Nevada",
+      "away_score": 28,
+      "division_game": true,
+      "home": "New Mexico",
+      "home_score": 31,
+      "week": 1
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Missouri",
+      "home_score": 49,
+      "week": 1
+    },
+    {
+      "away": "Delaware",
+      "away_score": 16,
+      "division_game": true,
+      "home": "South Carolina",
+      "home_score": 2,
+      "week": 1
+    },
+    {
+      "away": "Texas",
+      "away_score": 35,
+      "division_game": true,
+      "home": "Oklahoma",
+      "home_score": 66,
+      "week": 1
+    },
+    {
+      "away": "Massachusetts",
+      "away_score": 16,
+      "division_game": true,
+      "home": "Rhode Island",
+      "home_score": 19,
+      "week": 1
+    },
+    {
+      "away": "Vermont",
+      "away_score": 24,
+      "division_game": true,
+      "home": "New Hampshire",
+      "home_score": 9,
+      "week": 1
+    },
+    {
+      "away": "Montana",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Colorado",
+      "home_score": 38,
+      "week": 1
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 0,
+      "division_game": true,
+      "home": "Michigan",
+      "home_score": 28,
+      "week": 1
+    },
+    {
+      "away": "Iowa",
+      "away_score": 37,
+      "division_game": true,
+      "home": "North Dakota",
+      "home_score": 14,
+      "week": 1
+    },
+    {
+      "away": "California",
+      "away_score": 0,
+      "division_game": true,
+      "home": "Washington",
+      "home_score": 49,
+      "week": 2
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 58,
+      "division_game": true,
+      "home": "Arkansas",
+      "home_score": 21,
+      "week": 2
+    },
+    {
+      "away": "Florida",
+      "away_score": 49,
+      "division_game": false,
+      "home": "Kansas",
+      "home_score": 14,
+      "week": 2
+    },
+    {
+      "away": "Illinois",
+      "away_score": 23,
+      "division_game": true,
+      "home": "Michigan",
+      "home_score": 28,
+      "week": 2
+    },
+    {
+      "away": "New York",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Wyoming",
+      "home_score": 27,
+      "week": 2
+    },
+    {
+      "away": "Alabama",
+      "away_score": 0,
+      "division_game": true,
+      "home": "Georgia",
+      "home_score": 63,
+      "week": 2
+    },
+    {
+      "away": "Alaska",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Hawaii",
+      "home_score": 28,
+      "week": 2
+    },
+    {
+      "away": "Delaware",
+      "away_score": 34,
+      "division_game": false,
+      "home": "New Mexico",
+      "home_score": 14,
+      "week": 2
+    },
+    {
+      "away": "North Dakota",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 24,
+      "week": 2
+    },
+    {
+      "away": "Ohio",
+      "away_score": 31,
+      "division_game": true,
+      "home": "Pennsylvania",
+      "home_score": 17,
+      "week": 2
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 35,
+      "division_game": true,
+      "home": "Connecticut",
+      "home_score": 28,
+      "week": 2
+    },
+    {
+      "away": "Iowa",
+      "away_score": 59,
+      "division_game": true,
+      "home": "Nebraska",
+      "home_score": 28,
+      "week": 2
+    },
+    {
+      "away": "Nevada",
+      "away_score": 54,
+      "division_game": true,
+      "home": "Texas",
+      "home_score": 35,
+      "week": 2
+    },
+    {
+      "away": "Vermont",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Rhode Island",
+      "home_score": 38,
+      "week": 2
+    },
+    {
+      "away": "Missouri",
+      "away_score": 56,
+      "division_game": true,
+      "home": "West Virginia",
+      "home_score": 31,
+      "week": 2
+    },
+    {
+      "away": "South Carolina",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Virginia",
+      "home_score": 20,
+      "week": 2
+    },
+    {
+      "away": "Colorado",
+      "away_score": 23,
+      "division_game": true,
+      "home": "Idaho",
+      "home_score": 27,
+      "week": 2
+    },
+    {
+      "away": "Maryland",
+      "away_score": 20,
+      "division_game": true,
+      "home": "North Carolina",
+      "home_score": 14,
+      "week": 2
+    },
+    {
+      "away": "New Hampshire",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Massachusetts",
+      "home_score": 52,
+      "week": 2
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 21,
+      "division_game": true,
+      "home": "Louisiana",
+      "home_score": 45,
+      "week": 2
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Wisconsin",
+      "home_score": 21,
+      "week": 2
+    },
+    {
+      "away": "Utah",
+      "away_score": 24,
+      "division_game": true,
+      "home": "Montana",
+      "home_score": 14,
+      "week": 2
+    },
+    {
+      "away": "Arizona",
+      "away_score": 16,
+      "division_game": true,
+      "home": "Oklahoma",
+      "home_score": 7,
+      "week": 2
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Indiana",
+      "home_score": 7,
+      "week": 2
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Arkansas",
+      "home_score": 16,
+      "week": 3
+    },
+    {
+      "away": "Louisiana",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Georgia",
+      "home_score": 34,
+      "week": 3
+    },
+    {
+      "away": "Iowa",
+      "away_score": 24,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 28,
+      "week": 3
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 14,
+      "division_game": true,
+      "home": "West Virginia",
+      "home_score": 10,
+      "week": 3
+    },
+    {
+      "away": "Ohio",
+      "away_score": 20,
+      "division_game": true,
+      "home": "Connecticut",
+      "home_score": 24,
+      "week": 3
+    },
+    {
+      "away": "Alaska",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Kansas",
+      "home_score": 7,
+      "week": 3
+    },
+    {
+      "away": "Vermont",
+      "away_score": 42,
+      "division_game": false,
+      "home": "Pennsylvania",
+      "home_score": 51,
+      "week": 3
+    },
+    {
+      "away": "Utah",
+      "away_score": 45,
+      "division_game": false,
+      "home": "Texas",
+      "home_score": 14,
+      "week": 3
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 14,
+      "division_game": false,
+      "home": "New Jersey",
+      "home_score": 42,
+      "week": 3
+    },
+    {
+      "away": "Arizona",
+      "away_score": 59,
+      "division_game": true,
+      "home": "New Mexico",
+      "home_score": 21,
+      "week": 3
+    },
+    {
+      "away": "Rhode Island",
+      "away_score": 44,
+      "division_game": false,
+      "home": "Idaho",
+      "home_score": 21,
+      "week": 3
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 3,
+      "division_game": true,
+      "home": "Missouri",
+      "home_score": 20,
+      "week": 3
+    },
+    {
+      "away": "Washington",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Hawaii",
+      "home_score": 28,
+      "week": 3
+    },
+    {
+      "away": "Oklahoma",
+      "away_score": 24,
+      "division_game": true,
+      "home": "Nevada",
+      "home_score": 21,
+      "week": 3
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Alabama",
+      "home_score": 59,
+      "week": 3
+    },
+    {
+      "away": "Nebraska",
+      "away_score": 28,
+      "division_game": true,
+      "home": "North Dakota",
+      "home_score": 30,
+      "week": 3
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 31,
+      "division_game": true,
+      "home": "Illinois",
+      "home_score": 16,
+      "week": 3
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 31,
+      "division_game": true,
+      "home": "South Carolina",
+      "home_score": 16,
+      "week": 3
+    },
+    {
+      "away": "Michigan",
+      "away_score": 58,
+      "division_game": true,
+      "home": "Wisconsin",
+      "home_score": 14,
+      "week": 3
+    },
+    {
+      "away": "Montana",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Maryland",
+      "home_score": 37,
+      "week": 3
+    },
+    {
+      "away": "Maine",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Florida",
+      "home_score": 16,
+      "week": 3
+    },
+    {
+      "away": "Delaware",
+      "away_score": 17,
+      "division_game": true,
+      "home": "Virginia",
+      "home_score": 34,
+      "week": 3
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Georgia",
+      "home_score": 64,
+      "week": 4
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Arkansas",
+      "home_score": 10,
+      "week": 4
+    },
+    {
+      "away": "New York",
+      "away_score": 23,
+      "division_game": true,
+      "home": "Connecticut",
+      "home_score": 17,
+      "week": 4
+    },
+    {
+      "away": "Oregon",
+      "away_score": 45,
+      "division_game": true,
+      "home": "Hawaii",
+      "home_score": 31,
+      "week": 4
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Colorado",
+      "home_score": 37,
+      "week": 4
+    },
+    {
+      "away": "Kansas",
+      "away_score": 14,
+      "division_game": true,
+      "home": "North Dakota",
+      "home_score": 49,
+      "week": 4
+    },
+    {
+      "away": "Ohio",
+      "away_score": 21,
+      "division_game": true,
+      "home": "New Jersey",
+      "home_score": 7,
+      "week": 4
+    },
+    {
+      "away": "Texas",
+      "away_score": 14,
+      "division_game": true,
+      "home": "New Mexico",
+      "home_score": 48,
+      "week": 4
+    },
+    {
+      "away": "Louisiana",
+      "away_score": 49,
+      "division_game": true,
+      "home": "Florida",
+      "home_score": 59,
+      "week": 4
+    },
+    {
+      "away": "Michigan",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Missouri",
+      "home_score": 35,
+      "week": 4
+    },
+    {
+      "away": "California",
+      "away_score": 49,
+      "division_game": false,
+      "home": "Oklahoma",
+      "home_score": 24,
+      "week": 4
+    },
+    {
+      "away": "Montana",
+      "away_score": 6,
+      "division_game": true,
+      "home": "Idaho",
+      "home_score": 49,
+      "week": 4
+    },
+    {
+      "away": "Nevada",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Virginia",
+      "home_score": 17,
+      "week": 4
+    },
+    {
+      "away": "New Hampshire",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Rhode Island",
+      "home_score": 29,
+      "week": 4
+    },
+    {
+      "away": "Alaska",
+      "away_score": 24,
+      "division_game": true,
+      "home": "Washington",
+      "home_score": 28,
+      "week": 4
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Massachusetts",
+      "home_score": 38,
+      "week": 4
+    },
+    {
+      "away": "Vermont",
+      "away_score": 38,
+      "division_game": true,
+      "home": "Maine",
+      "home_score": 27,
+      "week": 4
+    },
+    {
+      "away": "Indiana",
+      "away_score": 25,
+      "division_game": true,
+      "home": "Wisconsin",
+      "home_score": 31,
+      "week": 4
+    },
+    {
+      "away": "Maryland",
+      "away_score": 16,
+      "division_game": true,
+      "home": "Delaware",
+      "home_score": 11,
+      "week": 4
+    },
+    {
+      "away": "Nebraska",
+      "away_score": 63,
+      "division_game": false,
+      "home": "Minnesota",
+      "home_score": 21,
+      "week": 4
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 21,
+      "division_game": true,
+      "home": "Iowa",
+      "home_score": 22,
+      "week": 4
+    },
+    {
+      "away": "Illinois",
+      "away_score": 21,
+      "division_game": false,
+      "home": "West Virginia",
+      "home_score": 14,
+      "week": 4
+    },
+    {
+      "away": "South Carolina",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Utah",
+      "home_score": 26,
+      "week": 4
+    },
+    {
+      "away": "Ohio",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Tennessee",
+      "home_score": 49,
+      "week": 5
+    },
+    {
+      "away": "Florida",
+      "away_score": 23,
+      "division_game": true,
+      "home": "Georgia",
+      "home_score": 35,
+      "week": 5
+    },
+    {
+      "away": "Alaska",
+      "away_score": 29,
+      "division_game": true,
+      "home": "Oregon",
+      "home_score": 16,
+      "week": 5
+    },
+    {
+      "away": "Hawaii",
+      "away_score": 35,
+      "division_game": true,
+      "home": "California",
+      "home_score": 29,
+      "week": 5
+    },
+    {
+      "away": "Oklahoma",
+      "away_score": 41,
+      "division_game": false,
+      "home": "North Dakota",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "Alabama",
+      "away_score": 10,
+      "division_game": false,
+      "home": "Colorado",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Delaware",
+      "home_score": 26,
+      "week": 5
+    },
+    {
+      "away": "Connecticut",
+      "away_score": 34,
+      "division_game": false,
+      "home": "Washington",
+      "home_score": 35,
+      "week": 5
+    },
+    {
+      "away": "Idaho",
+      "away_score": 30,
+      "division_game": false,
+      "home": "Louisiana",
+      "home_score": 7,
+      "week": 5
+    },
+    {
+      "away": "Arkansas",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Missouri",
+      "home_score": 48,
+      "week": 5
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Montana",
+      "home_score": 17,
+      "week": 5
+    },
+    {
+      "away": "Texas",
+      "away_score": 17,
+      "division_game": true,
+      "home": "Arizona",
+      "home_score": 49,
+      "week": 5
+    },
+    {
+      "away": "Maine",
+      "away_score": 35,
+      "division_game": true,
+      "home": "Massachusetts",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "Michigan",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Vermont",
+      "home_score": 31,
+      "week": 5
+    },
+    {
+      "away": "Nebraska",
+      "away_score": 44,
+      "division_game": true,
+      "home": "Kansas",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "Wisconsin",
+      "away_score": 3,
+      "division_game": false,
+      "home": "Rhode Island",
+      "home_score": 30,
+      "week": 5
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 30,
+      "division_game": true,
+      "home": "Utah",
+      "home_score": 17,
+      "week": 5
+    },
+    {
+      "away": "Pennsylvania",
+      "away_score": 12,
+      "division_game": false,
+      "home": "Iowa",
+      "home_score": 35,
+      "week": 5
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 26,
+      "division_game": true,
+      "home": "New York",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "West Virginia",
+      "away_score": 48,
+      "division_game": false,
+      "home": "Nevada",
+      "home_score": 35,
+      "week": 5
+    },
+    {
+      "away": "New Hampshire",
+      "away_score": 35,
+      "division_game": false,
+      "home": "South Dakota",
+      "home_score": 38,
+      "week": 5
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 21,
+      "division_game": true,
+      "home": "Indiana",
+      "home_score": 54,
+      "week": 5
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 31,
+      "division_game": true,
+      "home": "Virginia",
+      "home_score": 14,
+      "week": 5
+    },
+    {
+      "away": "South Carolina",
+      "away_score": 17,
+      "division_game": true,
+      "home": "Maryland",
+      "home_score": 45,
+      "week": 5
+    },
+    {
+      "away": "South Carolina",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Tennessee",
+      "home_score": 48,
+      "week": 6
+    },
+    {
+      "away": "Kentucky",
+      "away_score": 21,
+      "division_game": false,
+      "home": "Ohio",
+      "home_score": 27,
+      "week": 6
+    },
+    {
+      "away": "Washington",
+      "away_score": 51,
+      "division_game": false,
+      "home": "Colorado",
+      "home_score": 7,
+      "week": 6
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 19,
+      "division_game": true,
+      "home": "North Dakota",
+      "home_score": 7,
+      "week": 6
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 30,
+      "division_game": false,
+      "home": "Missouri",
+      "home_score": 28,
+      "week": 6
+    },
+    {
+      "away": "Maine",
+      "away_score": 29,
+      "division_game": true,
+      "home": "Rhode Island",
+      "home_score": 17,
+      "week": 6
+    },
+    {
+      "away": "Mississippi",
+      "away_score": 28,
+      "division_game": false,
+      "home": "Massachusetts",
+      "home_score": 34,
+      "week": 6
+    },
+    {
+      "away": "Alaska",
+      "away_score": 36,
+      "division_game": true,
+      "home": "California",
+      "home_score": 28,
+      "week": 6
+    },
+    {
+      "away": "New Mexico",
+      "away_score": 10,
+      "division_game": true,
+      "home": "Oklahoma",
+      "home_score": 31,
+      "week": 6
+    },
+    {
+      "away": "New York",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Georgia",
+      "home_score": 27,
+      "week": 6
+    },
+    {
+      "away": "New Hampshire",
+      "away_score": 7,
+      "division_game": false,
+      "home": "Hawaii",
+      "home_score": 27,
+      "week": 6
+    },
+    {
+      "away": "Michigan",
+      "away_score": 13,
+      "division_game": true,
+      "home": "Indiana",
+      "home_score": 14,
+      "week": 6
+    },
+    {
+      "away": "Florida",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Alabama",
+      "home_score": 31,
+      "week": 6
+    },
+    {
+      "away": "Louisiana",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Maryland",
+      "home_score": 40,
+      "week": 6
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Virginia",
+      "home_score": 56,
+      "week": 6
+    },
+    {
+      "away": "Iowa",
+      "away_score": 38,
+      "division_game": true,
+      "home": "Kansas",
+      "home_score": 24,
+      "week": 6
+    },
+    {
+      "away": "Arkansas",
+      "away_score": 35,
+      "division_game": true,
+      "home": "West Virginia",
+      "home_score": 41,
+      "week": 6
+    },
+    {
+      "away": "Nevada",
+      "away_score": 13,
+      "division_game": true,
+      "home": "Arizona",
+      "home_score": 21,
+      "week": 6
+    },
+    {
+      "away": "Texas",
+      "away_score": 41,
+      "division_game": false,
+      "home": "Wisconsin",
+      "home_score": 30,
+      "week": 6
+    },
+    {
+      "away": "Idaho",
+      "away_score": 30,
+      "division_game": true,
+      "home": "Utah",
+      "home_score": 33,
+      "week": 6
+    },
+    {
+      "away": "Pennsylvania",
+      "away_score": 27,
+      "division_game": true,
+      "home": "Connecticut",
+      "home_score": 7,
+      "week": 6
+    },
+    {
+      "away": "Wyoming",
+      "away_score": 10,
+      "division_game": true,
+      "home": "Montana",
+      "home_score": 38,
+      "week": 6
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 27,
+      "division_game": true,
+      "home": "Kentucky",
+      "home_score": 38,
+      "week": 7
+    },
+    {
+      "away": "Colorado",
+      "away_score": 37,
+      "division_game": true,
+      "home": "Utah",
+      "home_score": 30,
+      "week": 7
+    },
+    {
+      "away": "North Carolina",
+      "away_score": 7,
+      "division_game": true,
+      "home": "Delaware",
+      "home_score": 23,
+      "week": 7
+    },
+    {
+      "away": "California",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Oregon",
+      "home_score": 27,
+      "week": 7
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 35,
+      "division_game": false,
+      "home": "New Mexico",
+      "home_score": 38,
+      "week": 7
+    },
+    {
+      "away": "New York",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Pennsylvania",
+      "home_score": 49,
+      "week": 7
+    },
+    {
+      "away": "Maine",
+      "away_score": 17,
+      "division_game": true,
+      "home": "New Hampshire",
+      "home_score": 31,
+      "week": 7
+    },
+    {
+      "away": "South Dakota",
+      "away_score": 35,
+      "division_game": true,
+      "home": "Nebraska",
+      "home_score": 28,
+      "week": 7
+    },
+    {
+      "away": "Alabama",
+      "away_score": 38,
+      "division_game": false,
+      "home": "Indiana",
+      "home_score": 29,
+      "week": 7
+    },
+    {
+      "away": "Vermont",
+      "away_score": 28,
+      "division_game": true,
+      "home": "Massachusetts",
+      "home_score": 31,
+      "week": 7
+    },
+    {
+      "away": "Wisconsin",
+      "away_score": 14,
+      "division_game": true,
+      "home": "Illinois",
+      "home_score": 28,
+      "week": 7
+    },
+    {
+      "away": "Arizona",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Hawaii",
+      "home_score": 35,
+      "week": 7
+    },
+    {
+      "away": "North Dakota",
+      "away_score": 27,
+      "division_game": false,
+      "home": "Wyoming",
+      "home_score": 14,
+      "week": 7
+    },
+    {
+      "away": "Indiana",
+      "away_score": 31,
+      "division_game": true,
+      "home": "Illinois",
+      "home_score": 30,
+      "week": 8
+    },
+    {
+      "away": "Missouri",
+      "away_score": 73,
+      "division_game": false,
+      "home": "Mississippi",
+      "home_score": 0,
+      "week": 8
+    },
+    {
+      "away": "Oklahoma",
+      "away_score": 35,
+      "division_game": false,
+      "home": "North Carolina",
+      "home_score": 31,
+      "week": 8
+    },
+    {
+      "away": "Pennsylvania",
+      "away_score": 67,
+      "division_game": false,
+      "home": "New Hampshire",
+      "home_score": 56,
+      "week": 8
+    },
+    {
+      "away": "Arizona",
+      "away_score": 25,
+      "division_game": false,
+      "home": "Iowa",
+      "home_score": 28,
+      "week": 8
+    },
+    {
+      "away": "Michigan",
+      "away_score": 28,
+      "division_game": false,
+      "home": "Virginia",
+      "home_score": 23,
+      "week": 8
+    },
+    {
+      "away": "Tennessee",
+      "away_score": 37,
+      "division_game": false,
+      "home": "Oregon",
+      "home_score": 21,
+      "week": 8
+    },
+    {
+      "away": "Kansas",
+      "away_score": 14,
+      "division_game": false,
+      "home": "Georgia",
+      "home_score": 24,
+      "week": 8
+    },
+    {
+      "away": "Utah",
+      "away_score": 41,
+      "division_game": false,
+      "home": "Alaska",
+      "home_score": 19,
+      "week": 8
+    },
+    {
+      "away": "New York",
+      "away_score": 13,
+      "division_game": false,
+      "home": "Idaho",
+      "home_score": 24,
+      "week": 8
+    },
+    {
+      "away": "Hawaii",
+      "away_score": 35,
+      "division_game": false,
+      "home": "Arkansas",
+      "home_score": 42,
+      "week": 8
+    },
+    {
+      "away": "Maryland",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Florida",
+      "home_score": 12,
+      "week": 8
+    },
+    {
+      "away": "Nebraska",
+      "away_score": 45,
+      "division_game": false,
+      "home": "Louisiana",
+      "home_score": 21,
+      "week": 8
+    },
+    {
+      "away": "Texas",
+      "away_score": 13,
+      "division_game": false,
+      "home": "Washington",
+      "home_score": 34,
+      "week": 8
+    },
+    {
+      "away": "Wisconsin",
+      "away_score": 7,
+      "division_game": false,
+      "home": "West Virginia",
+      "home_score": 48,
+      "week": 8
+    },
+    {
+      "away": "Connecticut",
+      "away_score": 47,
+      "division_game": false,
+      "home": "Montana",
+      "home_score": 14,
+      "week": 8
+    },
+    {
+      "away": "Minnesota",
+      "away_score": 17,
+      "division_game": false,
+      "home": "South Carolina",
+      "home_score": 0,
+      "week": 8
+    },
+    {
+      "away": "Colorado",
+      "away_score": 31,
+      "division_game": false,
+      "home": "Rhode Island",
+      "home_score": 35,
+      "week": 8
+    },
+    {
+      "away": "California",
+      "away_score": 12,
+      "division_game": false,
+      "home": "Delaware",
+      "home_score": 17,
+      "week": 8
+    },
+    {
+      "away": "Vermont",
+      "away_score": 45,
+      "division_game": false,
+      "home": "Alabama",
+      "home_score": 38,
+      "week": 8
+    },
+    {
+      "away": "New Jersey",
+      "away_score": 28,
+      "division_game": false,
+      "home": "Kentucky",
+      "home_score": 35,
+      "week": 8
+    },
+    {
+      "away": "New Mexico",
+      "away_score": 17,
+      "division_game": false,
+      "home": "Massachusetts",
+      "home_score": 21,
+      "week": 8
+    },
+    {
+      "away": "Maine",
+      "away_score": 28,
+      "division_game": false,
+      "home": "Ohio",
+      "home_score": 19,
+      "week": 8
+    }
+  ],
+  "season_year": 2028,
+  "teams": [
+    {
+      "division": "New England",
+      "losses": 3,
+      "name": "Maine",
+      "points_against": 149,
+      "points_for": 213,
+      "seed": 11,
+      "sos": 0.5306122448979592,
+      "ties": 0,
+      "wins": 8
+    },
+    {
+      "division": "New England",
+      "losses": 8,
+      "name": "New Hampshire",
+      "points_against": 356,
+      "points_for": 247,
+      "seed": 0,
+      "sos": 0.7142857142857143,
+      "ties": 0,
+      "wins": 2
+    },
+    {
+      "division": "New England",
+      "losses": 5,
+      "name": "Vermont",
+      "points_against": 294,
+      "points_for": 314,
+      "seed": 0,
+      "sos": 0.6122448979591837,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "New England",
+      "losses": 3,
+      "name": "Massachusetts",
+      "points_against": 168,
+      "points_for": 206,
+      "seed": 13,
+      "sos": 0.4489795918367347,
+      "ties": 0,
+      "wins": 8
+    },
+    {
+      "division": "New England",
+      "is_division_winner": true,
+      "losses": 2,
+      "name": "Rhode Island",
+      "points_against": 142,
+      "points_for": 212,
+      "seed": 3,
+      "sos": 0.489795918367347,
+      "ties": 0,
+      "wins": 9
+    },
+    {
+      "division": "Mid-Atlantic",
+      "losses": 6,
+      "name": "Connecticut",
+      "points_against": 237,
+      "points_for": 272,
+      "seed": 0,
+      "sos": 0.42857142857142855,
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "division": "Mid-Atlantic",
+      "losses": 7,
+      "name": "New York",
+      "points_against": 275,
+      "points_for": 198,
+      "seed": 0,
+      "sos": 0.5714285714285714,
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "division": "Mid-Atlantic",
+      "losses": 4,
+      "name": "New Jersey",
+      "points_against": 273,
+      "points_for": 324,
+      "seed": 0,
+      "sos": 0.5102040816326531,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Mid-Atlantic",
+      "is_division_winner": true,
+      "losses": 4,
+      "name": "Pennsylvania",
+      "points_against": 216,
+      "points_for": 272,
+      "seed": 8,
+      "sos": 0.4285714285714285,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Mid-Atlantic",
+      "losses": 4,
+      "name": "Ohio",
+      "points_against": 244,
+      "points_for": 267,
+      "seed": 0,
+      "sos": 0.5102040816326531,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Chesapeake",
+      "is_division_winner": true,
+      "losses": 0,
+      "name": "Maryland",
+      "points_against": 88,
+      "points_for": 192,
+      "seed": 1,
+      "sos": 0.32653061224489793,
+      "ties": 0,
+      "wins": 11
+    },
+    {
+      "division": "Chesapeake",
+      "losses": 4,
+      "name": "Virginia",
+      "points_against": 227,
+      "points_for": 286,
+      "seed": 0,
+      "sos": 0.4965986394557823,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Chesapeake",
+      "losses": 3,
+      "name": "Delaware",
+      "points_against": 183,
+      "points_for": 232,
+      "seed": 0,
+      "sos": 0.36734693877551017,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Chesapeake",
+      "losses": 5,
+      "name": "North Carolina",
+      "points_against": 254,
+      "points_for": 298,
+      "seed": 0,
+      "sos": 0.6326530612244898,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "Chesapeake",
+      "losses": 10,
+      "name": "South Carolina",
+      "points_against": 325,
+      "points_for": 126,
+      "seed": 0,
+      "sos": 0.6122448979591837,
+      "ties": 0,
+      "wins": 0
+    },
+    {
+      "division": "Southeast",
+      "is_division_winner": true,
+      "losses": 4,
+      "name": "Georgia",
+      "points_against": 102,
+      "points_for": 271,
+      "seed": 5,
+      "sos": 0.2857142857142857,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Southeast",
+      "losses": 4,
+      "name": "Florida",
+      "points_against": 226,
+      "points_for": 322,
+      "seed": 0,
+      "sos": 0.4693877551020408,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Southeast",
+      "losses": 6,
+      "name": "Alabama",
+      "points_against": 301,
+      "points_for": 286,
+      "seed": 0,
+      "sos": 0.44897959183673464,
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "division": "Southeast",
+      "losses": 10,
+      "name": "Mississippi",
+      "points_against": 482,
+      "points_for": 115,
+      "seed": 0,
+      "sos": 0.6122448979591837,
+      "ties": 0,
+      "wins": 0
+    },
+    {
+      "division": "Southeast",
+      "losses": 9,
+      "name": "Louisiana",
+      "points_against": 354,
+      "points_for": 202,
+      "seed": 0,
+      "sos": 0.5510204081632653,
+      "ties": 0,
+      "wins": 1
+    },
+    {
+      "division": "Southwest",
+      "is_division_winner": true,
+      "losses": 5,
+      "name": "Arizona",
+      "points_against": 145,
+      "points_for": 238,
+      "seed": 6,
+      "sos": 0.5782312925170068,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Southwest",
+      "losses": 9,
+      "name": "Texas",
+      "points_against": 441,
+      "points_for": 200,
+      "seed": 0,
+      "sos": 0.5374149659863946,
+      "ties": 0,
+      "wins": 1
+    },
+    {
+      "division": "Southwest",
+      "losses": 6,
+      "name": "Nevada",
+      "points_against": 239,
+      "points_for": 301,
+      "seed": 0,
+      "sos": 0.5,
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "division": "Southwest",
+      "losses": 5,
+      "name": "Oklahoma",
+      "points_against": 176,
+      "points_for": 228,
+      "seed": 16,
+      "sos": 0.3945578231292517,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Southwest",
+      "losses": 4,
+      "name": "New Mexico",
+      "points_against": 260,
+      "points_for": 285,
+      "seed": 0,
+      "sos": 0.5374149659863946,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Great Lakes",
+      "losses": 7,
+      "name": "Minnesota",
+      "points_against": 321,
+      "points_for": 174,
+      "seed": 0,
+      "sos": 0.37755102040816324,
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "division": "Great Lakes",
+      "is_division_winner": true,
+      "losses": 5,
+      "name": "Michigan",
+      "points_against": 140,
+      "points_for": 207,
+      "seed": 10,
+      "sos": 0.49999999999999994,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Great Lakes",
+      "losses": 4,
+      "name": "Indiana",
+      "points_against": 246,
+      "points_for": 314,
+      "seed": 0,
+      "sos": 0.4795918367346938,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Great Lakes",
+      "losses": 5,
+      "name": "Illinois",
+      "points_against": 268,
+      "points_for": 228,
+      "seed": 0,
+      "sos": 0.42857142857142855,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "Great Lakes",
+      "losses": 7,
+      "name": "Wisconsin",
+      "points_against": 331,
+      "points_for": 190,
+      "seed": 0,
+      "sos": 0.520408163265306,
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "division": "Appalachia",
+      "losses": 5,
+      "name": "Kentucky",
+      "points_against": 179,
+      "points_for": 215,
+      "seed": 12,
+      "sos": 0.4897959183673469,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Appalachia",
+      "losses": 4,
+      "name": "Tennessee",
+      "points_against": 220,
+      "points_for": 306,
+      "seed": 0,
+      "sos": 0.5102040816326531,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Appalachia",
+      "is_division_winner": true,
+      "losses": 3,
+      "name": "Missouri",
+      "points_against": 116,
+      "points_for": 309,
+      "seed": 4,
+      "sos": 0.44897959183673464,
+      "ties": 0,
+      "wins": 8
+    },
+    {
+      "division": "Appalachia",
+      "losses": 4,
+      "name": "West Virginia",
+      "points_against": 231,
+      "points_for": 312,
+      "seed": 0,
+      "sos": 0.48639455782312924,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Appalachia",
+      "losses": 7,
+      "name": "Arkansas",
+      "points_against": 337,
+      "points_for": 211,
+      "seed": 0,
+      "sos": 0.6122448979591837,
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "division": "Plains",
+      "losses": 7,
+      "name": "North Dakota",
+      "points_against": 285,
+      "points_for": 237,
+      "seed": 0,
+      "sos": 0.5510204081632653,
+      "ties": 0,
+      "wins": 3
+    },
+    {
+      "division": "Plains",
+      "losses": 4,
+      "name": "South Dakota",
+      "points_against": 162,
+      "points_for": 193,
+      "seed": 15,
+      "sos": 0.4081632653061224,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Plains",
+      "losses": 8,
+      "name": "Kansas",
+      "points_against": 348,
+      "points_for": 185,
+      "seed": 0,
+      "sos": 0.5918367346938774,
+      "ties": 0,
+      "wins": 2
+    },
+    {
+      "division": "Plains",
+      "losses": 5,
+      "name": "Nebraska",
+      "points_against": 294,
+      "points_for": 344,
+      "seed": 0,
+      "sos": 0.4693877551020408,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "Plains",
+      "is_division_winner": true,
+      "losses": 2,
+      "name": "Iowa",
+      "points_against": 152,
+      "points_for": 243,
+      "seed": 2,
+      "sos": 0.5102040816326531,
+      "ties": 0,
+      "wins": 9
+    },
+    {
+      "division": "Rocky",
+      "losses": 4,
+      "name": "Idaho",
+      "points_against": 228,
+      "points_for": 269,
+      "seed": 0,
+      "sos": 0.4489795918367347,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Rocky",
+      "is_division_winner": true,
+      "losses": 4,
+      "name": "Utah",
+      "points_against": 158,
+      "points_for": 216,
+      "seed": 9,
+      "sos": 0.3469387755102041,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Rocky",
+      "losses": 9,
+      "name": "Montana",
+      "points_against": 373,
+      "points_for": 145,
+      "seed": 0,
+      "sos": 0.6326530612244897,
+      "ties": 0,
+      "wins": 1
+    },
+    {
+      "division": "Rocky",
+      "losses": 6,
+      "name": "Wyoming",
+      "points_against": 284,
+      "points_for": 201,
+      "seed": 0,
+      "sos": 0.4081632653061224,
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "division": "Rocky",
+      "losses": 4,
+      "name": "Colorado",
+      "points_against": 216,
+      "points_for": 282,
+      "seed": 0,
+      "sos": 0.5918367346938774,
+      "ties": 0,
+      "wins": 6
+    },
+    {
+      "division": "Pacific",
+      "losses": 6,
+      "name": "California",
+      "points_against": 289,
+      "points_for": 255,
+      "seed": 0,
+      "sos": 0.6224489795918368,
+      "ties": 0,
+      "wins": 4
+    },
+    {
+      "division": "Pacific",
+      "losses": 3,
+      "name": "Oregon",
+      "points_against": 237,
+      "points_for": 312,
+      "seed": 0,
+      "sos": 0.5714285714285714,
+      "ties": 0,
+      "wins": 7
+    },
+    {
+      "division": "Pacific",
+      "losses": 6,
+      "name": "Washington",
+      "points_against": 137,
+      "points_for": 226,
+      "seed": 14,
+      "sos": 0.4285714285714285,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "Pacific",
+      "losses": 5,
+      "name": "Alaska",
+      "points_against": 278,
+      "points_for": 269,
+      "seed": 0,
+      "sos": 0.5102040816326531,
+      "ties": 0,
+      "wins": 5
+    },
+    {
+      "division": "Pacific",
+      "is_division_winner": true,
+      "losses": 4,
+      "name": "Hawaii",
+      "points_against": 182,
+      "points_for": 219,
+      "seed": 7,
+      "sos": 0.4489795918367347,
+      "ties": 0,
+      "wins": 7
+    }
+  ],
+  "teams_stats": {
+    "Alabama": {
+      "conference": null,
+      "division": "Southeast",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 6,
+        "points_against": 301,
+        "points_for": 286,
+        "ties": 0,
+        "wins": 4
+      },
+      "team_name": "Alabama",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Alaska": {
+      "conference": null,
+      "division": "Pacific",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 278,
+        "points_for": 269,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Alaska",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Arizona": {
+      "conference": null,
+      "division": "Southwest",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 28,
+        "points_for": 14,
+        "seed": 6,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 234,
+        "points_for": 312,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Arizona",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Arkansas": {
+      "conference": null,
+      "division": "Appalachia",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 7,
+        "points_against": 337,
+        "points_for": 211,
+        "ties": 0,
+        "wins": 3
+      },
+      "team_name": "Arkansas",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "California": {
+      "conference": null,
+      "division": "Pacific",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 6,
+        "points_against": 289,
+        "points_for": 255,
+        "ties": 0,
+        "wins": 4
+      },
+      "team_name": "California",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Colorado": {
+      "conference": null,
+      "division": "Rocky",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 216,
+        "points_for": 282,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Colorado",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Connecticut": {
+      "conference": null,
+      "division": "Mid-Atlantic",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 6,
+        "points_against": 237,
+        "points_for": 272,
+        "ties": 0,
+        "wins": 4
+      },
+      "team_name": "Connecticut",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Delaware": {
+      "conference": null,
+      "division": "Chesapeake",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 183,
+        "points_for": 232,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Delaware",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Florida": {
+      "conference": null,
+      "division": "Southeast",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 226,
+        "points_for": 322,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Florida",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Georgia": {
+      "conference": null,
+      "division": "Southeast",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 23,
+        "points_for": 20,
+        "seed": 5,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 189,
+        "points_for": 366,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Georgia",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Hawaii": {
+      "conference": null,
+      "division": "Pacific",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 35,
+        "points_for": 19,
+        "seed": 7,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 273,
+        "points_for": 291,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Hawaii",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Idaho": {
+      "conference": null,
+      "division": "Rocky",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 228,
+        "points_for": 269,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Idaho",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Illinois": {
+      "conference": null,
+      "division": "Great Lakes",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 268,
+        "points_for": 228,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Illinois",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Indiana": {
+      "conference": null,
+      "division": "Great Lakes",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 246,
+        "points_for": 314,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Indiana",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Iowa": {
+      "conference": null,
+      "division": "Plains",
+      "playoffs": {
+        "berth": true,
+        "games_played": 3,
+        "losses": 1,
+        "points_against": 67,
+        "points_for": 101,
+        "seed": 2,
+        "ties": 0,
+        "wins": 2
+      },
+      "regular_season": {
+        "games_played": 8,
+        "losses": 1,
+        "points_against": 162,
+        "points_for": 267,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Iowa",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Kansas": {
+      "conference": null,
+      "division": "Plains",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 8,
+        "points_against": 348,
+        "points_for": 185,
+        "ties": 0,
+        "wins": 2
+      },
+      "team_name": "Kansas",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Kentucky": {
+      "conference": null,
+      "division": "Appalachia",
+      "playoffs": {
+        "berth": true,
+        "games_played": 2,
+        "losses": 1,
+        "points_against": 72,
+        "points_for": 65,
+        "seed": 12,
+        "ties": 0,
+        "wins": 1
+      },
+      "regular_season": {
+        "games_played": 9,
+        "losses": 4,
+        "points_against": 263,
+        "points_for": 271,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Kentucky",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Louisiana": {
+      "conference": null,
+      "division": "Southeast",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 9,
+        "points_against": 354,
+        "points_for": 202,
+        "ties": 0,
+        "wins": 1
+      },
+      "team_name": "Louisiana",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Maine": {
+      "conference": null,
+      "division": "New England",
+      "playoffs": {
+        "berth": true,
+        "games_played": 2,
+        "losses": 1,
+        "points_against": 62,
+        "points_for": 42,
+        "seed": 11,
+        "ties": 0,
+        "wins": 1
+      },
+      "regular_season": {
+        "games_played": 9,
+        "losses": 2,
+        "points_against": 205,
+        "points_for": 307,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Maine",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Maryland": {
+      "conference": null,
+      "division": "Chesapeake",
+      "playoffs": {
+        "berth": true,
+        "games_played": 4,
+        "losses": 0,
+        "points_against": 52,
+        "points_for": 127,
+        "seed": 1,
+        "ties": 0,
+        "wins": 4
+      },
+      "regular_season": {
+        "games_played": 7,
+        "losses": 0,
+        "points_against": 88,
+        "points_for": 192,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Maryland",
+      "titles": {
+        "championships": 1,
+        "division_champion": true
+      }
+    },
+    "Massachusetts": {
+      "conference": null,
+      "division": "New England",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 38,
+        "points_for": 23,
+        "seed": 13,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 2,
+        "points_against": 254,
+        "points_for": 342,
+        "ties": 0,
+        "wins": 8
+      },
+      "team_name": "Massachusetts",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Michigan": {
+      "conference": null,
+      "division": "Great Lakes",
+      "playoffs": {
+        "berth": true,
+        "games_played": 2,
+        "losses": 1,
+        "points_against": 64,
+        "points_for": 51,
+        "seed": 10,
+        "ties": 0,
+        "wins": 1
+      },
+      "regular_season": {
+        "games_played": 9,
+        "losses": 4,
+        "points_against": 196,
+        "points_for": 266,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Michigan",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Minnesota": {
+      "conference": null,
+      "division": "Great Lakes",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 7,
+        "points_against": 321,
+        "points_for": 174,
+        "ties": 0,
+        "wins": 3
+      },
+      "team_name": "Minnesota",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Mississippi": {
+      "conference": null,
+      "division": "Southeast",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 10,
+        "points_against": 482,
+        "points_for": 115,
+        "ties": 0,
+        "wins": 0
+      },
+      "team_name": "Mississippi",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Missouri": {
+      "conference": null,
+      "division": "Appalachia",
+      "playoffs": {
+        "berth": true,
+        "games_played": 3,
+        "losses": 1,
+        "points_against": 89,
+        "points_for": 90,
+        "seed": 4,
+        "ties": 0,
+        "wins": 2
+      },
+      "regular_season": {
+        "games_played": 8,
+        "losses": 2,
+        "points_against": 140,
+        "points_for": 319,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Missouri",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Montana": {
+      "conference": null,
+      "division": "Rocky",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 9,
+        "points_against": 373,
+        "points_for": 145,
+        "ties": 0,
+        "wins": 1
+      },
+      "team_name": "Montana",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Nebraska": {
+      "conference": null,
+      "division": "Plains",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 294,
+        "points_for": 344,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Nebraska",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Nevada": {
+      "conference": null,
+      "division": "Southwest",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 6,
+        "points_against": 239,
+        "points_for": 301,
+        "ties": 0,
+        "wins": 4
+      },
+      "team_name": "Nevada",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "New Hampshire": {
+      "conference": null,
+      "division": "New England",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 8,
+        "points_against": 356,
+        "points_for": 247,
+        "ties": 0,
+        "wins": 2
+      },
+      "team_name": "New Hampshire",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "New Jersey": {
+      "conference": null,
+      "division": "Mid-Atlantic",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 273,
+        "points_for": 324,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "New Jersey",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "New Mexico": {
+      "conference": null,
+      "division": "Southwest",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 260,
+        "points_for": 285,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "New Mexico",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "New York": {
+      "conference": null,
+      "division": "Mid-Atlantic",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 7,
+        "points_against": 275,
+        "points_for": 198,
+        "ties": 0,
+        "wins": 3
+      },
+      "team_name": "New York",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "North Carolina": {
+      "conference": null,
+      "division": "Chesapeake",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 254,
+        "points_for": 298,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "North Carolina",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "North Dakota": {
+      "conference": null,
+      "division": "Plains",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 7,
+        "points_against": 285,
+        "points_for": 237,
+        "ties": 0,
+        "wins": 3
+      },
+      "team_name": "North Dakota",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Ohio": {
+      "conference": null,
+      "division": "Mid-Atlantic",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 244,
+        "points_for": 267,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Ohio",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Oklahoma": {
+      "conference": null,
+      "division": "Southwest",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 35,
+        "points_for": 14,
+        "seed": 16,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 279,
+        "points_for": 300,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Oklahoma",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Oregon": {
+      "conference": null,
+      "division": "Pacific",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 237,
+        "points_for": 312,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Oregon",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Pennsylvania": {
+      "conference": null,
+      "division": "Mid-Atlantic",
+      "playoffs": {
+        "berth": true,
+        "games_played": 2,
+        "losses": 1,
+        "points_against": 51,
+        "points_for": 54,
+        "seed": 8,
+        "ties": 0,
+        "wins": 1
+      },
+      "regular_season": {
+        "games_played": 9,
+        "losses": 3,
+        "points_against": 277,
+        "points_for": 334,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Pennsylvania",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Rhode Island": {
+      "conference": null,
+      "division": "New England",
+      "playoffs": {
+        "berth": true,
+        "games_played": 4,
+        "losses": 1,
+        "points_against": 111,
+        "points_for": 140,
+        "seed": 3,
+        "ties": 0,
+        "wins": 3
+      },
+      "regular_season": {
+        "games_played": 7,
+        "losses": 1,
+        "points_against": 142,
+        "points_for": 212,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Rhode Island",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "South Carolina": {
+      "conference": null,
+      "division": "Chesapeake",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 10,
+        "points_against": 325,
+        "points_for": 126,
+        "ties": 0,
+        "wins": 0
+      },
+      "team_name": "South Carolina",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "South Dakota": {
+      "conference": null,
+      "division": "Plains",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 21,
+        "points_for": 7,
+        "seed": 15,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 221,
+        "points_for": 261,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "South Dakota",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Tennessee": {
+      "conference": null,
+      "division": "Appalachia",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 220,
+        "points_for": 306,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Tennessee",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Texas": {
+      "conference": null,
+      "division": "Southwest",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 9,
+        "points_against": 441,
+        "points_for": 200,
+        "ties": 0,
+        "wins": 1
+      },
+      "team_name": "Texas",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Utah": {
+      "conference": null,
+      "division": "Rocky",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 30,
+        "points_for": 14,
+        "seed": 9,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 3,
+        "points_against": 240,
+        "points_for": 310,
+        "ties": 0,
+        "wins": 7
+      },
+      "team_name": "Utah",
+      "titles": {
+        "championships": 0,
+        "division_champion": true
+      }
+    },
+    "Vermont": {
+      "conference": null,
+      "division": "New England",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 294,
+        "points_for": 314,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Vermont",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Virginia": {
+      "conference": null,
+      "division": "Chesapeake",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 227,
+        "points_for": 286,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "Virginia",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Washington": {
+      "conference": null,
+      "division": "Pacific",
+      "playoffs": {
+        "berth": true,
+        "games_played": 1,
+        "losses": 1,
+        "points_against": 34,
+        "points_for": 31,
+        "seed": 14,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 5,
+        "points_against": 231,
+        "points_for": 292,
+        "ties": 0,
+        "wins": 5
+      },
+      "team_name": "Washington",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "West Virginia": {
+      "conference": null,
+      "division": "Appalachia",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 4,
+        "points_against": 231,
+        "points_for": 312,
+        "ties": 0,
+        "wins": 6
+      },
+      "team_name": "West Virginia",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Wisconsin": {
+      "conference": null,
+      "division": "Great Lakes",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 7,
+        "points_against": 331,
+        "points_for": 190,
+        "ties": 0,
+        "wins": 3
+      },
+      "team_name": "Wisconsin",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    },
+    "Wyoming": {
+      "conference": null,
+      "division": "Rocky",
+      "playoffs": {
+        "berth": false,
+        "games_played": 0,
+        "losses": 0,
+        "points_against": 0,
+        "points_for": 0,
+        "seed": 0,
+        "ties": 0,
+        "wins": 0
+      },
+      "regular_season": {
+        "games_played": 10,
+        "losses": 6,
+        "points_against": 284,
+        "points_for": 201,
+        "ties": 0,
+        "wins": 4
+      },
+      "team_name": "Wyoming",
+      "titles": {
+        "championships": 0,
+        "division_champion": false
+      }
+    }
+  }
+}

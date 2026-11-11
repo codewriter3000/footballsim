@@ -1,5 +1,6 @@
-import json
+import argparse
 import ast
+import json
 import random
 from pathlib import Path
 from typing import Dict, List, Tuple, Iterable, Any
@@ -10,9 +11,8 @@ from ..playoffs.ranking import rank_default
 from ..integrations.records import export_league_to_json
 from ..playoffs.playoffs import simulate_playoffs
 from ..playoffs.crossover import simulate_crossover_games
+import src.game_logic.constants as constants
 
-SEASON_YEAR = 2025
-OUTPUT_JSON = Path(__file__).parent.parent.parent / f"seasons/league_{SEASON_YEAR}.json"
 TEAMS_DIR = Path(__file__).parent.parent.parent / "teams"
 
 
@@ -225,6 +225,7 @@ def _make_team(name: str, division: str) -> Dict:
 
 
 def run_league() -> None:
+
     # All 50 states, 10 divisions of 5 teams each
     teams: List[Dict] = [
         # New England
@@ -319,7 +320,7 @@ def run_league() -> None:
 
             result = play_football_game(
                 team_ratings[home_name],
-                team_ratings[away_name],
+                team_ratings[away_name]
             )
 
             home_points = result["Team 1"]
@@ -406,6 +407,11 @@ def run_league() -> None:
         consolation_games=consolation_games
     )
 
+    OUTPUT_JSON = Path(__file__).parent.parent.parent / f"seasons/league_{constants.SEASON_YEAR}.json"
+
+    import os
+    print("RECORD PID:", os.getpid(), "SEASON_YEAR:", constants.SEASON_YEAR, "FILE:", constants.__file__)
+
     # Export everything to JSON
     export_league_to_json(
         teams=teams,
@@ -414,7 +420,7 @@ def run_league() -> None:
         playoff_games=playoff_games,
         consolation_games=consolation_games,
         output_path=OUTPUT_JSON,
-        season_year=SEASON_YEAR,
+        season_year=constants.SEASON_YEAR,
         champion_team=champion["name"] if champion else None,
     )
 
@@ -422,6 +428,17 @@ def run_league() -> None:
 
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description="Simulate a football league season.")
+    parser.add_argument("--season", type=int, default=2025, help="Season year (default: 2025)")
+    parser.add_argument("--competition_constant", type=float, default=1.0, help="Competition constant (default: 1.0)")
+    args = parser.parse_args()
+
+    constants.init(season_year=args.season, competition_constant=args.competition_constant)
+
+    import os
+    print("MAIN PID:", os.getpid(), "SEASON_YEAR:", constants.SEASON_YEAR, "FILE:", constants.__file__)
+
     run_league()
 
 def simulate_league(name, **kwargs) -> None:

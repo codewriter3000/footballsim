@@ -1,0 +1,1957 @@
+MAIN PID: 22523 SEASON_YEAR: 2025 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+Week 1
+  Idaho 23 - 21 Montana
+  Wyoming 21 - 17 Wisconsin
+  Arkansas 0 - 24 Kentucky
+  Minnesota 3 - 17 Utah
+  Louisiana 7 - 27 Ohio
+  California 0 - 24 Alaska
+  Massachusetts 24 - 31 Vermont
+  Arizona 14 - 24 Nevada
+  South Dakota 21 - 9 Kansas
+  New Mexico 24 - 9 Michigan
+  Maryland 20 - 24 North Carolina
+  Washington 7 - 27 Florida
+  Delaware 30 - 14 Mississippi
+  Colorado 47 - 21 South Carolina
+  Nebraska 0 - 35 Iowa
+  Connecticut 7 - 5 New York
+  West Virginia 10 - 23 Tennessee
+  New Jersey 7 - 14 Oklahoma
+  Oregon 7 - 17 Hawaii
+  New Hampshire 7 - 36 Rhode Island
+  Indiana 23 - 10 Illinois
+  Georgia 14 - 21 Alabama
+  Missouri 7 - 38 Pennsylvania
+
+Week 2
+  Colorado 24 - 14 Wyoming
+  Hawaii 14 - 21 California
+  Texas 28 - 45 Arizona
+  Alabama 27 - 28 Louisiana
+  Arkansas 7 - 24 Maryland
+  Indiana 17 - 21 Massachusetts
+  Vermont 20 - 35 Maine
+  West Virginia 42 - 24 South Dakota
+  Minnesota 9 - 40 Michigan
+  Iowa 12 - 10 Kansas
+  Connecticut 7 - 10 New Jersey
+  Oklahoma 3 - 24 Nevada
+  South Carolina 7 - 28 Virginia
+  Oregon 3 - 10 Alaska
+  North Carolina 9 - 21 Delaware
+  Nebraska 17 - 21 North Dakota
+  Idaho 27 - 13 Utah
+  Pennsylvania 0 - 7 New York
+  Wisconsin 24 - 7 Illinois
+  Kentucky 7 - 10 Tennessee
+  Florida 41 - 10 Mississippi
+  Ohio 35 - 0 New Hampshire
+  Georgia 24 - 7 Rhode Island
+
+Week 3
+  Florida 36 - 14 Louisiana
+  Arizona 24 - 10 New Mexico
+  Illinois 9 - 35 Vermont
+  Alabama 28 - 21 Mississippi
+  Rhode Island 28 - 24 California
+  Michigan 16 - 7 New Hampshire
+  Colorado 17 - 7 Utah
+  Massachusetts 21 - 17 Maine
+  Arkansas 3 - 13 Missouri
+  North Carolina 33 - 9 Texas
+  New York 27 - 17 South Carolina
+  Wyoming 7 - 37 Idaho
+  Indiana 48 - 7 Wisconsin
+  North Dakota 35 - 0 Kansas
+  Hawaii 7 - 26 Alaska
+  Iowa 27 - 21 South Dakota
+  Maryland 20 - 7 Delaware
+  Oregon 17 - 14 Washington
+  Kentucky 7 - 17 West Virginia
+  Connecticut 31 - 17 Pennsylvania
+  New Jersey 27 - 0 Ohio
+  Montana 21 - 31 Virginia
+  Minnesota 0 - 23 Nebraska
+
+Week 4
+  Iowa 27 - 21 Florida
+  Oklahoma 17 - 24 Arizona
+  Louisiana 21 - 24 Oregon
+  Wisconsin 10 - 35 Michigan
+  Arkansas 24 - 35 Tennessee
+  Kansas 3 - 21 Virginia
+  Vermont 21 - 10 Rhode Island
+  New Hampshire 7 - 34 Massachusetts
+  Ohio 9 - 35 North Dakota
+  Hawaii 52 - 56 Washington
+  New York 0 - 14 New Jersey
+  Montana 14 - 24 Utah
+  California 42 - 14 Minnesota
+  Nebraska 31 - 10 South Dakota
+  Alaska 14 - 42 Nevada
+  Mississippi 21 - 62 Georgia
+  Idaho 7 - 12 Colorado
+  Illinois 30 - 27 North Carolina
+  Delaware 20 - 9 South Carolina
+  Texas 21 - 6 New Mexico
+  Kentucky 3 - 38 Missouri
+  Connecticut 28 - 21 Wyoming
+  Pennsylvania 0 - 10 West Virginia
+  Maine 21 - 27 Indiana
+
+Week 5
+  New Mexico 13 - 24 Oklahoma
+  Nebraska 30 - 0 Kansas
+  Colorado 45 - 17 Tennessee
+  New York 7 - 33 Ohio
+  North Dakota 35 - 24 Iowa
+  Louisiana 38 - 7 Mississippi
+  Minnesota 3 - 13 Wisconsin
+  Delaware 44 - 0 New Hampshire
+  California 20 - 7 Washington
+  Texas 10 - 45 New Jersey
+  Illinois 10 - 16 Michigan
+  Arkansas 21 - 10 Nevada
+  Wyoming 31 - 13 Utah
+  Rhode Island 3 - 7 Arizona
+  Maryland 21 - 20 Virginia
+  Georgia 3 - 16 Florida
+  Oregon 31 - 14 Montana
+  Idaho 7 - 24 Maine
+  Connecticut 14 - 28 Missouri
+  North Carolina 20 - 9 South Carolina
+  Massachusetts 21 - 17 Pennsylvania
+  Alabama 0 - 24 Vermont
+
+Week 6
+  North Dakota 26 - 0 South Dakota
+  Alabama 21 - 17 Oklahoma
+  Montana 0 - 37 Colorado
+  Minnesota 7 - 43 Indiana
+  Maine 27 - 0 Washington
+  California 21 - 17 Oregon
+  Vermont 17 - 14 Tennessee
+  Maryland 31 - 17 Iowa
+  Utah 28 - 7 Wisconsin
+  Texas 17 - 34 Nevada
+  Idaho 21 - 10 Kansas
+  Pennsylvania 7 - 42 New Jersey
+  Georgia 16 - 3 Louisiana
+  North Carolina 33 - 0 Virginia
+  Massachusetts 33 - 6 Nebraska
+  Ohio 14 - 17 Connecticut
+  New Mexico 13 - 17 Kentucky
+  New York 13 - 16 Alaska
+  Hawaii 28 - 3 Mississippi
+  West Virginia 17 - 14 Missouri
+
+Week 7
+  Texas 0 - 34 Oklahoma
+  Minnesota 11 - 35 Illinois
+  Montana 17 - 14 Wyoming
+  Maine 7 - 21 Rhode Island
+  Indiana 7 - 30 Michigan
+  Ohio 14 - 17 Pennsylvania
+  Tennessee 24 - 28 Missouri
+  Alaska 24 - 17 Washington
+  Alabama 0 - 10 Florida
+  Hawaii 23 - 19 Georgia
+  Arizona 33 - 12 North Dakota
+  Delaware 7 - 10 Virginia
+  Maryland 33 - 0 South Carolina
+  New Hampshire 17 - 16 Vermont
+  New Mexico 14 - 7 Nevada
+  Arkansas 16 - 21 West Virginia
+  California 14 - 17 South Dakota
+  New Jersey 27 - 10 Kentucky
+
+Week 8
+  South Dakota 28 - 14 Montana
+  Maine 45 - 10 New Hampshire
+  Georgia 17 - 3 Indiana
+  Massachusetts 10 - 7 Rhode Island
+  Virginia 13 - 21 Kentucky
+  Alabama 28 - 35 Nebraska
+  New York 7 - 20 Wyoming
+  Alaska 41 - 7 Mississippi
+  Maryland 22 - 0 Florida
+  South Carolina 14 - 34 Oklahoma
+  North Carolina 31 - 17 Missouri
+  Arizona 37 - 3 Wisconsin
+  Hawaii 31 - 35 Tennessee
+  Michigan 21 - 27 Kansas
+  Idaho 28 - 7 Connecticut
+  Arkansas 21 - 20 Iowa
+  West Virginia 17 - 20 Delaware
+  Washington 2 - 28 North Dakota
+  Illinois 10 - 17 Nevada
+  New Mexico 10 - 12 Oregon
+  Louisiana 7 - 31 Utah
+  Colorado 14 - 10 Texas
+
+Final Regular Season Standings
+Colorado (Rocky): 7-0-0  WP=1.000  SoS=0.367  PF=196  PA=76  DIFF=120
+Maryland (Chesapeake): 6-1-0  WP=0.857  SoS=0.510  PF=171  PA=75  DIFF=96
+Arizona (Southwest): 6-1-0  WP=0.857  SoS=0.469  PF=184  PA=97  DIFF=87
+Massachusetts (New England): 6-1-0  WP=0.857  SoS=0.469  PF=164  PA=102  DIFF=62
+North Dakota (Plains): 6-1-0  WP=0.857  SoS=0.449  PF=192  PA=85  DIFF=107
+New Jersey (Mid-Atlantic): 6-1-0  WP=0.857  SoS=0.388  PF=172  PA=48  DIFF=124
+Alaska (Pacific): 6-1-0  WP=0.857  SoS=0.388  PF=155  PA=89  DIFF=66
+Idaho (Rocky): 5-2-0  WP=0.714  SoS=0.490  PF=150  PA=94  DIFF=56
+West Virginia (Appalachia): 5-2-0  WP=0.714  SoS=0.469  PF=134  PA=104  DIFF=30
+Nevada (Southwest): 5-2-0  WP=0.714  SoS=0.469  PF=158  PA=93  DIFF=65
+Vermont (New England): 5-2-0  WP=0.714  SoS=0.469  PF=164  PA=109  DIFF=55
+North Carolina (Chesapeake): 5-2-0  WP=0.714  SoS=0.449  PF=177  PA=106  DIFF=71
+Delaware (Chesapeake): 5-2-0  WP=0.714  SoS=0.429  PF=149  PA=79  DIFF=70
+Florida (Southeast): 5-2-0  WP=0.714  SoS=0.408  PF=151  PA=83  DIFF=68
+Michigan (Great Lakes): 5-2-0  WP=0.714  SoS=0.245  PF=167  PA=94  DIFF=73
+Tennessee (Appalachia): 4-3-0  WP=0.571  SoS=0.592  PF=158  PA=162  DIFF=-4
+Iowa (Plains): 4-3-0  WP=0.571  SoS=0.551  PF=162  PA=139  DIFF=23
+Maine (New England): 4-3-0  WP=0.571  SoS=0.510  PF=176  PA=106  DIFF=70
+Missouri (Appalachia): 4-3-0  WP=0.571  SoS=0.510  PF=145  PA=130  DIFF=15
+Connecticut (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.510  PF=111  PA=123  DIFF=-12
+Indiana (Great Lakes): 4-3-0  WP=0.571  SoS=0.469  PF=168  PA=113  DIFF=55
+Oklahoma (Southwest): 4-3-0  WP=0.571  SoS=0.469  PF=143  PA=103  DIFF=40
+Nebraska (Plains): 4-3-0  WP=0.571  SoS=0.469  PF=142  PA=127  DIFF=15
+Virginia (Chesapeake): 4-3-0  WP=0.571  SoS=0.429  PF=123  PA=113  DIFF=10
+Georgia (Southeast): 4-3-0  WP=0.571  SoS=0.408  PF=155  PA=94  DIFF=61
+Utah (Rocky): 4-3-0  WP=0.571  SoS=0.408  PF=133  PA=106  DIFF=27
+California (Pacific): 4-3-0  WP=0.571  SoS=0.408  PF=142  PA=121  DIFF=21
+Oregon (Pacific): 4-3-0  WP=0.571  SoS=0.388  PF=111  PA=107  DIFF=4
+Rhode Island (New England): 3-4-0  WP=0.429  SoS=0.612  PF=112  PA=100  DIFF=12
+Kentucky (Appalachia): 3-4-0  WP=0.429  SoS=0.551  PF=89  PA=118  DIFF=-29
+South Dakota (Plains): 3-4-0  WP=0.429  SoS=0.510  PF=121  PA=163  DIFF=-42
+Wyoming (Rocky): 3-4-0  WP=0.429  SoS=0.510  PF=128  PA=143  DIFF=-15
+Alabama (Southeast): 3-4-0  WP=0.429  SoS=0.490  PF=125  PA=149  DIFF=-24
+Ohio (Mid-Atlantic): 3-4-0  WP=0.429  SoS=0.469  PF=132  PA=110  DIFF=22
+Hawaii (Pacific): 3-4-0  WP=0.429  SoS=0.469  PF=172  PA=167  DIFF=5
+Arkansas (Appalachia): 2-5-0  WP=0.286  SoS=0.633  PF=92  PA=147  DIFF=-55
+Pennsylvania (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.612  PF=96  PA=132  DIFF=-36
+New Mexico (Southwest): 2-5-0  WP=0.286  SoS=0.571  PF=90  PA=114  DIFF=-24
+Illinois (Great Lakes): 2-5-0  WP=0.286  SoS=0.531  PF=111  PA=153  DIFF=-42
+New York (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.490  PF=66  PA=107  DIFF=-41
+Wisconsin (Great Lakes): 2-5-0  WP=0.286  SoS=0.490  PF=81  PA=179  DIFF=-98
+Louisiana (Southeast): 2-5-0  WP=0.286  SoS=0.469  PF=118  PA=168  DIFF=-50
+Texas (Southwest): 1-6-0  WP=0.143  SoS=0.714  PF=95  PA=211  DIFF=-116
+Washington (Pacific): 1-6-0  WP=0.143  SoS=0.653  PF=103  PA=195  DIFF=-92
+Kansas (Plains): 1-6-0  WP=0.143  SoS=0.633  PF=59  PA=161  DIFF=-102
+New Hampshire (New England): 1-6-0  WP=0.143  SoS=0.633  PF=48  PA=226  DIFF=-178
+Montana (Rocky): 1-6-0  WP=0.143  SoS=0.612  PF=101  PA=188  DIFF=-87
+South Carolina (Chesapeake): 0-7-0  WP=0.000  SoS=0.673  PF=77  PA=209  DIFF=-132
+Mississippi (Southeast): 0-7-0  WP=0.000  SoS=0.571  PF=83  PA=268  DIFF=-185
+Minnesota (Great Lakes): 0-7-0  WP=0.000  SoS=0.510  PF=47  PA=213  DIFF=-166
+
+Playoff Field (Seeds):
+Seed 1: Colorado (Rocky)
+Seed 2: Maryland (Chesapeake)
+Seed 3: Arizona (Southwest)
+Seed 4: Massachusetts (New England)
+Seed 5: North Dakota (Plains)
+Seed 6: New Jersey (Mid-Atlantic)
+Seed 7: Alaska (Pacific)
+Seed 8: West Virginia (Appalachia)
+Seed 9: Florida (Southeast)
+Seed 10: Michigan (Great Lakes)
+Seed 11: Idaho (Rocky)
+Seed 12: Nevada (Southwest)
+Seed 13: Vermont (New England)
+Seed 14: North Carolina (Chesapeake)
+Seed 15: Delaware (Chesapeake)
+Seed 16: Tennessee (Appalachia)
+
+=== CROSSOVERS ===
+
+--- Crossover Week 1 ---
+  Alabama 35 - 24 Arkansas
+  Connecticut 27 - 0 California
+  Georgia 29 - 3 Hawaii
+  Illinois 21 - 31 Louisiana
+  Indiana 0 - 28 Maine
+  Mississippi 14 - 40 Iowa
+  New Hampshire 16 - 28 Kansas
+  Kentucky 20 - 27 New Mexico
+  Minnesota 17 - 31 New York
+  Ohio 34 - 21 Missouri
+  Montana 21 - 20 Oklahoma
+  Nebraska 20 - 14 Pennsylvania
+  Oregon 20 - 24 Rhode Island
+  South Carolina 10 - 31 South Dakota
+  Utah 21 - 35 Texas
+  Virginia 24 - 17 Washington
+
+--- Crossover Week 2 ---
+  Wisconsin 14 - 34 Alabama
+  Connecticut 0 - 23 Wyoming
+  Georgia 23 - 14 Arkansas
+  California 24 - 12 Louisiana
+  Hawaii 0 - 11 Maine
+  Mississippi 17 - 20 Illinois
+  Indiana 23 - 21 New Hampshire
+  New Mexico 14 - 32 Iowa
+  New York 7 - 13 Kansas
+  Kentucky 17 - 7 Ohio
+  Oklahoma 27 - 7 Minnesota
+  Pennsylvania 15 - 6 Missouri
+  Rhode Island 19 - 7 Montana
+  Nebraska 20 - 10 South Carolina
+  Texas 7 - 30 Oregon
+  Virginia 17 - 24 South Dakota
+
+--- Crossover Week 3 ---
+  Alabama 20 - 14 Utah
+  Washington 7 - 24 Connecticut
+  Georgia 37 - 14 Wisconsin
+  Louisiana 12 - 6 Wyoming
+  Maine 14 - 0 Arkansas
+  California 20 - 24 Mississippi
+  New Hampshire 7 - 42 Hawaii
+  Illinois 31 - 17 New Mexico
+  Indiana 24 - 27 New York
+  Iowa 13 - 16 Ohio
+  Oklahoma 13 - 21 Kansas
+  Pennsylvania 56 - 17 Kentucky
+  Minnesota 7 - 20 Rhode Island
+  Missouri 35 - 0 South Carolina
+  Montana 21 - 14 Texas
+  Nebraska 3 - 13 Virginia
+
+--- Crossover Week 4 ---
+
+Crossover scheduling complete.
+
+
+=== PLAYOFFS ===
+
+--- Playoff Round 1 ---
+Matchup: Colorado (Seed 1) vs Tennessee (Seed 16)
+  Final: Colorado 9 - Tennessee 0
+Matchup: West Virginia (Seed 8) vs Florida (Seed 9)
+  Final: West Virginia 7 - Florida 40
+Matchup: Massachusetts (Seed 4) vs Vermont (Seed 13)
+  Final: Massachusetts 21 - Vermont 14
+Matchup: North Dakota (Seed 5) vs Nevada (Seed 12)
+  Final: North Dakota 17 - Nevada 28
+Matchup: Maryland (Seed 2) vs Delaware (Seed 15)
+  Final: Maryland 10 - Delaware 17
+Matchup: Alaska (Seed 7) vs Michigan (Seed 10)
+  Final: Alaska 14 - Michigan 21
+Matchup: Arizona (Seed 3) vs North Carolina (Seed 14)
+  Final: Arizona 17 - North Carolina 19
+Matchup: New Jersey (Seed 6) vs Idaho (Seed 11)
+  Final: New Jersey 28 - Idaho 21
+
+--- Playoff Round 2 ---
+--- Consolation Games Round 1 ---
+  Maryland 14 - 17 Arizona
+  Alaska 24 - 22 North Dakota
+  Idaho 14 - 17 West Virginia
+  Tennessee 28 - 7 Vermont
+
+Matchup: Colorado (Seed 1) vs Florida (Seed 9)
+  Final: Colorado 42 - Florida 21
+Matchup: Massachusetts (Seed 4) vs Nevada (Seed 12)
+  Final: Massachusetts 16 - Nevada 14
+Matchup: Delaware (Seed 15) vs Michigan (Seed 10)
+  Final: Delaware 21 - Michigan 14
+Matchup: North Carolina (Seed 14) vs New Jersey (Seed 6)
+  Final: North Carolina 10 - New Jersey 17
+
+--- Playoff Round 3 ---
+--- Consolation Games Round 2 ---
+  Maryland 9 - 20 North Dakota
+  Arizona 28 - 7 Alaska
+  West Virginia 28 - 35 Florida
+  Michigan 40 - 17 Idaho
+  Vermont 13 - 6 Nevada
+  Tennessee 14 - 10 North Carolina
+
+Matchup: Colorado (Seed 1) vs Massachusetts (Seed 4)
+  Final: Colorado 17 - Massachusetts 13
+Matchup: Delaware (Seed 15) vs New Jersey (Seed 6)
+  Final: Delaware 15 - New Jersey 9
+
+--- Playoff Round 4 ---
+--- Consolation Games Round 3 ---
+  Massachusetts 14 - 9 Maryland
+  North Dakota 20 - 28 Arizona
+  New Jersey 28 - 14 Alaska
+  West Virginia 10 - 30 Michigan
+  Idaho 3 - 20 Florida
+  North Carolina 31 - 7 Nevada
+  Tennessee 21 - 17 Vermont
+
+Matchup: Colorado (Seed 1) vs Delaware (Seed 15)
+  Final: Colorado 9 - Delaware 14
+
+=== CHAMPION: Delaware (Seed 15) ===
+
+RECORD PID: 22523 SEASON_YEAR: 2025 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+League data written to /home/codewriter3000/Coding/football-sim/seasons/league_None.json
+MAIN PID: 22527 SEASON_YEAR: 2026 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+Week 1
+  Minnesota 7 - 45 Ohio
+  Oregon 7 - 14 Tennessee
+  Illinois 14 - 26 North Carolina
+  Indiana 36 - 35 Mississippi
+  Kentucky 49 - 0 Arkansas
+  Wyoming 24 - 21 Montana
+  California 13 - 31 Hawaii
+  Utah 21 - 6 Colorado
+  New Mexico 14 - 24 Oklahoma
+  Virginia 14 - 17 Idaho
+  South Dakota 21 - 24 Kansas
+  Pennsylvania 42 - 17 Connecticut
+  New York 14 - 24 New Jersey
+  Louisiana 14 - 24 Alabama
+  Texas 14 - 7 Arizona
+  West Virginia 31 - 24 Missouri
+  Vermont 24 - 23 Massachusetts
+  South Carolina 29 - 24 Alaska
+  North Dakota 19 - 21 Nebraska
+  Maine 13 - 7 New Hampshire
+  Nevada 7 - 37 Georgia
+  Maryland 26 - 7 Florida
+  Michigan 22 - 7 Wisconsin
+
+Week 2
+  Illinois 3 - 24 Michigan
+  Iowa 10 - 9 Wyoming
+  California 14 - 35 Washington
+  Indiana 38 - 7 Wisconsin
+  Utah 31 - 14 Idaho
+  South Carolina 21 - 55 Virginia
+  Maine 31 - 20 Connecticut
+  Alaska 31 - 27 Hawaii
+  Ohio 21 - 17 Pennsylvania
+  Georgia 14 - 9 Mississippi
+  Arizona 30 - 10 New Mexico
+  New Hampshire 14 - 24 Vermont
+  Kansas 14 - 52 Nebraska
+  Tennessee 7 - 14 Kentucky
+  Oklahoma 35 - 14 Nevada
+  Montana 5 - 15 Oregon
+  Maryland 28 - 21 North Carolina
+  Missouri 38 - 7 Arkansas
+  South Dakota 28 - 17 Minnesota
+  North Dakota 7 - 12 Rhode Island
+  Alabama 12 - 18 Delaware
+  Massachusetts 14 - 35 New York
+  West Virginia 20 - 10 Florida
+  Colorado 38 - 14 Louisiana
+
+Week 3
+  South Dakota 13 - 0 Illinois
+  Wyoming 20 - 10 Utah
+  Arkansas 14 - 28 California
+  North Carolina 23 - 35 Virginia
+  Washington 7 - 14 Oregon
+  Connecticut 24 - 28 Ohio
+  Nevada 42 - 23 New Mexico
+  Mississippi 7 - 17 Louisiana
+  Michigan 16 - 14 Pennsylvania
+  Montana 0 - 42 Idaho
+  Colorado 20 - 34 Nebraska
+  Hawaii 17 - 20 Vermont
+  Iowa 24 - 17 North Dakota
+  Delaware 7 - 26 Maryland
+  Tennessee 14 - 7 West Virginia
+  Kentucky 20 - 28 Missouri
+  Texas 7 - 20 Kansas
+  Minnesota 0 - 3 Wisconsin
+  New Jersey 35 - 21 Arizona
+  Rhode Island 30 - 16 New Hampshire
+  Alabama 14 - 20 Florida
+  Massachusetts 3 - 10 Maine
+  Oklahoma 34 - 7 Alaska
+
+Week 4
+  Vermont 24 - 10 Wyoming
+  Illinois 44 - 0 Wisconsin
+  Alaska 21 - 13 California
+  Colorado 14 - 28 Washington
+  Virginia 31 - 14 Massachusetts
+  New Mexico 7 - 10 Texas
+  South Dakota 27 - 35 Iowa
+  Louisiana 7 - 38 Nevada
+  Maryland 48 - 14 South Carolina
+  Utah 35 - 27 Pennsylvania
+  Michigan 41 - 14 Minnesota
+  Ohio 38 - 31 New York
+  Montana 21 - 42 Hawaii
+  Mississippi 23 - 16 Alabama
+  Delaware 17 - 9 North Carolina
+  Tennessee 24 - 14 New Jersey
+  Kentucky 21 - 17 West Virginia
+  Kansas 6 - 17 North Dakota
+  Missouri 35 - 27 Oklahoma
+  Florida 7 - 22 Georgia
+  Rhode Island 19 - 17 Maine
+  Arizona 24 - 17 Arkansas
+  New Hampshire 10 - 28 Connecticut
+
+Week 5
+  Wyoming 17 - 14 Idaho
+  Virginia 17 - 0 Delaware
+  Alaska 10 - 17 Ohio
+  Hawaii 13 - 17 Washington
+  Montana 9 - 19 Colorado
+  New Jersey 7 - 13 Pennsylvania
+  Texas 0 - 52 Georgia
+  Nebraska 14 - 21 Iowa
+  New Mexico 21 - 38 Maryland
+  Michigan 21 - 24 Indiana
+  Minnesota 23 - 17 Illinois
+  Wisconsin 14 - 45 Missouri
+  New Hampshire 7 - 37 Massachusetts
+  North Dakota 58 - 30 South Carolina
+  California 6 - 10 Oregon
+  Connecticut 9 - 13 New York
+  Oklahoma 31 - 24 Arizona
+  West Virginia 17 - 14 Alabama
+  Arkansas 21 - 45 Tennessee
+  Vermont 28 - 14 Rhode Island
+  Florida 45 - 10 Mississippi
+  Kansas 24 - 42 Nevada
+
+Week 6
+  Maryland 28 - 14 Virginia
+  Delaware 24 - 14 South Carolina
+  Kansas 7 - 28 Iowa
+  Idaho 17 - 21 Colorado
+  Utah 28 - 7 Montana
+  Louisiana 21 - 45 Georgia
+  Hawaii 26 - 31 Oregon
+  Indiana 26 - 12 Illinois
+  South Dakota 21 - 30 Nebraska
+  Massachusetts 21 - 0 Rhode Island
+  Ohio 21 - 23 New Jersey
+  North Carolina 48 - 14 Wisconsin
+  Arizona 43 - 7 Nevada
+  Washington 30 - 21 Alaska
+  West Virginia 30 - 7 Arkansas
+  Oklahoma 42 - 0 Texas
+  Missouri 7 - 24 Tennessee
+  Pennsylvania 27 - 19 New York
+  California 24 - 10 Mississippi
+  Michigan 27 - 21 New Hampshire
+  Vermont 24 - 37 Maine
+  New Mexico 17 - 13 Kentucky
+
+Week 7
+  Washington 23 - 14 Kansas
+  New York 14 - 31 Iowa
+  Indiana 23 - 16 Kentucky
+  Connecticut 41 - 14 New Jersey
+  Georgia 16 - 5 Alabama
+  Delaware 14 - 31 Maine
+  South Carolina 9 - 27 North Carolina
+  Nebraska 47 - 7 Louisiana
+  Colorado 23 - 14 Wyoming
+  Oregon 20 - 9 Alaska
+  Utah 14 - 27 Rhode Island
+  Idaho 17 - 24 Oklahoma
+  North Dakota 24 - 25 South Dakota
+  Texas 0 - 31 Nevada
+  Florida 28 - 21 Arkansas
+  Ohio 51 - 7 Wisconsin
+  West Virginia 27 - 7 New Hampshire
+  Hawaii 47 - 31 Minnesota
+  Missouri 35 - 21 California
+
+Week 8
+  Minnesota 14 - 48 Indiana
+  Louisiana 7 - 30 Florida
+  Massachusetts 28 - 17 Utah
+  Texas 7 - 45 Oregon
+  Maryland 28 - 21 New Jersey
+  Connecticut 17 - 24 Delaware
+  Tennessee 38 - 21 Illinois
+  Alabama 3 - 9 Vermont
+  Michigan 14 - 17 Georgia
+  North Dakota 12 - 23 New York
+  Rhode Island 10 - 28 Virginia
+  New Mexico 22 - 35 Iowa
+  Wyoming 21 - 20 Nebraska
+  Montana 3 - 23 Maine
+  Arizona 21 - 33 Pennsylvania
+  Mississippi 9 - 24 South Carolina
+  South Dakota 35 - 24 Idaho
+  Kentucky 27 - 20 Washington
+
+Final Regular Season Standings
+Maryland (Chesapeake): 7-0-0  WP=1.000  SoS=0.459  PF=222  PA=105  DIFF=117
+Iowa (Plains): 7-0-0  WP=1.000  SoS=0.429  PF=184  PA=110  DIFF=74
+Georgia (Southeast): 7-0-0  WP=1.000  SoS=0.367  PF=203  PA=63  DIFF=140
+Indiana (Great Lakes): 6-0-0  WP=1.000  SoS=0.310  PF=195  PA=105  DIFF=90
+Tennessee (Appalachia): 6-1-0  WP=0.857  SoS=0.490  PF=166  PA=91  DIFF=75
+Vermont (New England): 6-1-0  WP=0.857  SoS=0.429  PF=153  PA=118  DIFF=35
+Oregon (Pacific): 6-1-0  WP=0.857  SoS=0.408  PF=142  PA=74  DIFF=68
+Maine (New England): 6-1-0  WP=0.857  SoS=0.388  PF=162  PA=90  DIFF=72
+Oklahoma (Southwest): 6-1-0  WP=0.857  SoS=0.388  PF=217  PA=111  DIFF=106
+Ohio (Mid-Atlantic): 6-1-0  WP=0.857  SoS=0.327  PF=221  PA=119  DIFF=102
+Virginia (Chesapeake): 5-2-0  WP=0.714  SoS=0.520  PF=194  PA=113  DIFF=81
+Nebraska (Plains): 5-2-0  WP=0.714  SoS=0.490  PF=218  PA=123  DIFF=95
+Missouri (Appalachia): 5-2-0  WP=0.714  SoS=0.490  PF=212  PA=144  DIFF=68
+Washington (Pacific): 5-2-0  WP=0.714  SoS=0.469  PF=160  PA=117  DIFF=43
+Michigan (Great Lakes): 5-2-0  WP=0.714  SoS=0.429  PF=165  PA=100  DIFF=65
+West Virginia (Appalachia): 5-2-0  WP=0.714  SoS=0.408  PF=149  PA=97  DIFF=52
+Kentucky (Appalachia): 4-3-0  WP=0.571  SoS=0.592  PF=160  PA=112  DIFF=48
+Wyoming (Rocky): 4-3-0  WP=0.571  SoS=0.571  PF=115  PA=122  DIFF=-7
+Delaware (Chesapeake): 4-3-0  WP=0.571  SoS=0.541  PF=104  PA=126  DIFF=-22
+Rhode Island (New England): 4-3-0  WP=0.571  SoS=0.531  PF=112  PA=131  DIFF=-19
+Pennsylvania (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.531  PF=173  PA=136  DIFF=37
+Florida (Southeast): 4-3-0  WP=0.571  SoS=0.449  PF=147  PA=120  DIFF=27
+Nevada (Southwest): 4-3-0  WP=0.571  SoS=0.449  PF=181  PA=169  DIFF=12
+Colorado (Rocky): 4-3-0  WP=0.571  SoS=0.429  PF=141  PA=137  DIFF=4
+Utah (Rocky): 4-3-0  WP=0.571  SoS=0.429  PF=156  PA=129  DIFF=27
+South Dakota (Plains): 4-3-0  WP=0.571  SoS=0.408  PF=170  PA=154  DIFF=16
+North Carolina (Chesapeake): 3-3-0  WP=0.500  SoS=0.476  PF=154  PA=117  DIFF=37
+New Jersey (Mid-Atlantic): 3-4-0  WP=0.429  SoS=0.633  PF=138  PA=162  DIFF=-24
+Massachusetts (New England): 3-4-0  WP=0.429  SoS=0.571  PF=140  PA=124  DIFF=16
+New York (Mid-Atlantic): 3-4-0  WP=0.429  SoS=0.551  PF=149  PA=155  DIFF=-6
+Hawaii (Pacific): 3-4-0  WP=0.429  SoS=0.449  PF=203  PA=164  DIFF=39
+Arizona (Southwest): 3-4-0  WP=0.429  SoS=0.408  PF=170  PA=147  DIFF=23
+Alaska (Pacific): 2-5-0  WP=0.286  SoS=0.612  PF=123  PA=170  DIFF=-47
+Kansas (Plains): 2-5-0  WP=0.286  SoS=0.592  PF=109  PA=190  DIFF=-81
+Texas (Southwest): 2-5-0  WP=0.286  SoS=0.592  PF=38  PA=204  DIFF=-166
+Idaho (Rocky): 2-5-0  WP=0.286  SoS=0.551  PF=145  PA=142  DIFF=3
+North Dakota (Plains): 2-5-0  WP=0.286  SoS=0.551  PF=154  PA=141  DIFF=13
+Connecticut (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.531  PF=156  PA=162  DIFF=-6
+South Carolina (Chesapeake): 2-5-0  WP=0.286  SoS=0.500  PF=141  PA=245  DIFF=-104
+California (Pacific): 2-5-0  WP=0.286  SoS=0.449  PF=119  PA=156  DIFF=-37
+New Mexico (Southwest): 1-6-0  WP=0.143  SoS=0.673  PF=114  PA=192  DIFF=-78
+Wisconsin (Great Lakes): 1-6-0  WP=0.143  SoS=0.582  PF=52  PA=248  DIFF=-196
+Alabama (Southeast): 1-6-0  WP=0.143  SoS=0.571  PF=88  PA=117  DIFF=-29
+Illinois (Great Lakes): 1-6-0  WP=0.143  SoS=0.561  PF=111  PA=150  DIFF=-39
+Minnesota (Great Lakes): 1-6-0  WP=0.143  SoS=0.551  PF=106  PA=229  DIFF=-123
+Louisiana (Southeast): 1-6-0  WP=0.143  SoS=0.531  PF=87  PA=229  DIFF=-142
+Mississippi (Southeast): 1-6-0  WP=0.143  SoS=0.490  PF=103  PA=176  DIFF=-73
+New Hampshire (New England): 0-7-0  WP=0.000  SoS=0.633  PF=82  PA=186  DIFF=-104
+Arkansas (Appalachia): 0-7-0  WP=0.000  SoS=0.592  PF=87  PA=242  DIFF=-155
+Montana (Rocky): 0-7-0  WP=0.000  SoS=0.592  PF=66  PA=193  DIFF=-127
+
+Playoff Field (Seeds):
+Seed 1: Maryland (Chesapeake)
+Seed 2: Iowa (Plains)
+Seed 3: Georgia (Southeast)
+Seed 4: Indiana (Great Lakes)
+Seed 5: Tennessee (Appalachia)
+Seed 6: Vermont (New England)
+Seed 7: Oregon (Pacific)
+Seed 8: Oklahoma (Southwest)
+Seed 9: Ohio (Mid-Atlantic)
+Seed 10: Wyoming (Rocky)
+Seed 11: Maine (New England)
+Seed 12: Virginia (Chesapeake)
+Seed 13: Nebraska (Plains)
+Seed 14: Missouri (Appalachia)
+Seed 15: Washington (Pacific)
+Seed 16: Michigan (Great Lakes)
+
+=== CROSSOVERS ===
+
+--- Crossover Week 1 ---
+  North Carolina 14 - 24 Alaska
+  Alabama 35 - 16 Arkansas
+  Arizona 27 - 21 California
+  Connecticut 28 - 23 Colorado
+  Delaware 23 - 12 Hawaii
+  Idaho 28 - 27 Florida
+  Louisiana 23 - 27 Illinois
+  Massachusetts 24 - 9 Kansas
+  Mississippi 7 - 59 Kentucky
+  Nevada 44 - 7 Minnesota
+  Montana 10 - 16 New Hampshire
+  North Dakota 17 - 7 New Jersey
+  South Dakota 14 - 17 New Mexico
+  New York 9 - 42 Utah
+  West Virginia 31 - 35 Pennsylvania
+  Rhode Island 42 - 23 Wisconsin
+
+--- Crossover Week 2 ---
+  North Carolina 44 - 7 Arkansas
+  South Carolina 9 - 10 Alaska
+  California 31 - 28 Texas
+  Alabama 26 - 33 Colorado
+  Arizona 14 - 17 Hawaii
+  Idaho 30 - 17 Connecticut
+  Delaware 47 - 21 Illinois
+  Kansas 14 - 49 Florida
+  Kentucky 48 - 0 Louisiana
+  Massachusetts 24 - 7 Minnesota
+  Mississippi 42 - 14 Montana
+  Nevada 42 - 49 North Dakota
+  New Hampshire 10 - 35 South Dakota
+  New Jersey 45 - 14 Utah
+  New Mexico 34 - 35 West Virginia
+  Wisconsin 7 - 16 New York
+
+--- Crossover Week 3 ---
+  California 14 - 33 North Carolina
+  Alaska 17 - 24 Pennsylvania
+  Arkansas 7 - 38 Rhode Island
+  South Carolina 0 - 36 Colorado
+  Hawaii 20 - 0 Texas
+  Alabama 0 - 24 Idaho
+  Arizona 27 - 14 Illinois
+  Kansas 0 - 28 Connecticut
+  Delaware 23 - 7 Kentucky
+  Minnesota 0 - 52 Florida
+  Louisiana 3 - 14 Montana
+  North Dakota 10 - 20 Massachusetts
+  Mississippi 28 - 48 South Dakota
+  Utah 7 - 34 Nevada
+  New Hampshire 7 - 42 West Virginia
+  Wisconsin 17 - 31 New Jersey
+
+--- Crossover Week 4 ---
+
+Crossover scheduling complete.
+
+
+=== PLAYOFFS ===
+
+--- Playoff Round 1 ---
+Matchup: Maryland (Seed 1) vs Michigan (Seed 16)
+  Final: Maryland 23 - Michigan 10
+Matchup: Oklahoma (Seed 8) vs Ohio (Seed 9)
+  Final: Oklahoma 0 - Ohio 27
+Matchup: Indiana (Seed 4) vs Nebraska (Seed 13)
+  Final: Indiana 35 - Nebraska 14
+Matchup: Tennessee (Seed 5) vs Virginia (Seed 12)
+  Final: Tennessee 24 - Virginia 6
+Matchup: Iowa (Seed 2) vs Washington (Seed 15)
+  Final: Iowa 17 - Washington 31
+Matchup: Oregon (Seed 7) vs Wyoming (Seed 10)
+  Final: Oregon 7 - Wyoming 30
+Matchup: Georgia (Seed 3) vs Missouri (Seed 14)
+  Final: Georgia 14 - Missouri 7
+Matchup: Vermont (Seed 6) vs Maine (Seed 11)
+  Final: Vermont 21 - Maine 0
+
+--- Playoff Round 2 ---
+--- Consolation Games Round 1 ---
+  Oregon 30 - 14 Iowa
+  Maine 15 - 3 Oklahoma
+  Nebraska 28 - 14 Virginia
+  Missouri 35 - 7 Michigan
+
+Matchup: Maryland (Seed 1) vs Ohio (Seed 9)
+  Final: Maryland 6 - Ohio 10
+Matchup: Indiana (Seed 4) vs Tennessee (Seed 5)
+  Final: Indiana 0 - Tennessee 32
+Matchup: Washington (Seed 15) vs Wyoming (Seed 10)
+  Final: Washington 42 - Wyoming 10
+Matchup: Georgia (Seed 3) vs Vermont (Seed 6)
+  Final: Georgia 14 - Vermont 31
+
+--- Playoff Round 3 ---
+--- Consolation Games Round 2 ---
+  Iowa 24 - 37 Maryland
+  Georgia 13 - 17 Indiana
+  Oklahoma 20 - 16 Oregon
+  Maine 33 - 14 Wyoming
+  Virginia 7 - 13 Missouri
+  Michigan 28 - 10 Nebraska
+
+Matchup: Ohio (Seed 9) vs Tennessee (Seed 5)
+  Final: Ohio 35 - Tennessee 21
+Matchup: Washington (Seed 15) vs Vermont (Seed 6)
+  Final: Washington 13 - Vermont 16
+
+--- Playoff Round 4 ---
+--- Consolation Games Round 3 ---
+  Georgia 17 - 24 Maryland
+  Indiana 17 - 40 Iowa
+  Oregon 3 - 14 Tennessee
+  Oklahoma 23 - 0 Wyoming
+  Virginia 13 - 14 Maine
+  Nebraska 14 - 7 Missouri
+  Michigan 16 - 18 Washington
+
+Matchup: Ohio (Seed 9) vs Vermont (Seed 6)
+  Final: Ohio 28 - Vermont 14
+
+=== CHAMPION: Ohio (Seed 9) ===
+
+RECORD PID: 22527 SEASON_YEAR: 2026 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+League data written to /home/codewriter3000/Coding/football-sim/seasons/league_None.json
+MAIN PID: 22531 SEASON_YEAR: 2027 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+Week 1
+  Idaho 49 - 34 Montana
+  Illinois 30 - 38 Hawaii
+  Florida 21 - 7 New Mexico
+  Minnesota 28 - 7 Wisconsin
+  Georgia 31 - 14 Ohio
+  Rhode Island 21 - 3 Colorado
+  Maryland 42 - 16 Michigan
+  Vermont 17 - 31 Massachusetts
+  Kentucky 31 - 2 Washington
+  Pennsylvania 7 - 28 New York
+  Arizona 38 - 45 Texas
+  Kansas 21 - 35 South Dakota
+  Delaware 17 - 16 North Carolina
+  Alaska 43 - 7 Mississippi
+  Maine 21 - 24 Oklahoma
+  California 14 - 7 Oregon
+  Connecticut 30 - 28 New Jersey
+  Virginia 35 - 7 Nebraska
+  Alabama 38 - 31 Wyoming
+  Iowa 39 - 7 North Dakota
+  Tennessee 45 - 14 Arkansas
+  Utah 31 - 28 South Carolina
+  Missouri 28 - 35 West Virginia
+
+Week 2
+  Minnesota 0 - 35 West Virginia
+  Illinois 10 - 30 Michigan
+  Idaho 14 - 28 Utah
+  Colorado 12 - 42 Florida
+  Texas 23 - 16 New Mexico
+  Rhode Island 16 - 21 Massachusetts
+  Alaska 17 - 24 Washington
+  Oregon 16 - 35 Hawaii
+  Louisiana 14 - 24 Mississippi
+  Vermont 28 - 21 Pennsylvania
+  Oklahoma 20 - 21 Nevada
+  Virginia 7 - 21 Maryland
+  Wyoming 21 - 17 Montana
+  Missouri 38 - 21 Kentucky
+  Nebraska 13 - 7 South Dakota
+  Connecticut 35 - 30 New York
+  North Carolina 30 - 14 South Carolina
+  Indiana 12 - 14 Alabama
+  Maine 50 - 21 New Hampshire
+  Kansas 21 - 28 North Dakota
+  New Jersey 24 - 21 Ohio
+  Iowa 24 - 14 Delaware
+  Wisconsin 21 - 48 Arizona
+
+Week 3
+  West Virginia 19 - 24 Kentucky
+  New Hampshire 35 - 38 Massachusetts
+  Minnesota 13 - 16 Illinois
+  Indiana 21 - 47 Michigan
+  Alabama 0 - 54 Florida
+  North Carolina 21 - 17 Hawaii
+  California 20 - 10 Alaska
+  Maine 31 - 6 Rhode Island
+  Maryland 22 - 7 Nevada
+  Wyoming 16 - 34 Utah
+  North Dakota 24 - 8 South Dakota
+  Connecticut 17 - 21 Mississippi
+  Montana 14 - 30 Colorado
+  Georgia 31 - 28 Louisiana
+  Oregon 13 - 6 Arkansas
+  Missouri 13 - 31 Tennessee
+  Delaware 14 - 7 South Carolina
+  Arizona 10 - 24 Oklahoma
+  Pennsylvania 35 - 14 Ohio
+  Kansas 7 - 35 Iowa
+  New Jersey 26 - 0 New York
+  Virginia 34 - 28 Idaho
+  New Mexico 27 - 7 Washington
+
+Week 4
+  New Jersey 17 - 42 Massachusetts
+  Michigan 35 - 21 Wisconsin
+  Vermont 21 - 17 Maine
+  West Virginia 24 - 11 Idaho
+  Connecticut 30 - 34 North Carolina
+  New Hampshire 14 - 45 Rhode Island
+  California 17 - 23 Hawaii
+  South Carolina 7 - 17 Maryland
+  North Dakota 24 - 35 Kentucky
+  South Dakota 21 - 24 Iowa
+  Louisiana 0 - 34 Florida
+  Alaska 28 - 14 Oregon
+  Montana 7 - 38 Tennessee
+  Minnesota 14 - 22 Indiana
+  New Mexico 7 - 14 Nevada
+  Oklahoma 24 - 14 Nebraska
+  Arizona 38 - 0 Kansas
+  Ohio 51 - 28 New York
+  Utah 9 - 45 Colorado
+  Georgia 14 - 21 Alabama
+  Virginia 21 - 28 Delaware
+  Missouri 45 - 24 Arkansas
+
+Week 5
+  New Hampshire 17 - 12 Vermont
+  Illinois 21 - 20 Wisconsin
+  Ohio 35 - 21 Connecticut
+  Virginia 16 - 26 North Carolina
+  Louisiana 21 - 13 Alabama
+  Kentucky 24 - 31 Tennessee
+  Montana 21 - 35 Utah
+  Washington 7 - 21 Oregon
+  Idaho 51 - 7 Wyoming
+  New York 7 - 14 South Dakota
+  Georgia 24 - 17 Florida
+  California 24 - 21 Missouri
+  Maryland 22 - 21 Delaware
+  North Dakota 27 - 31 Nebraska
+  Kansas 10 - 35 Alaska
+  Oklahoma 48 - 21 Texas
+  Arizona 10 - 6 Nevada
+  New Jersey 27 - 21 Pennsylvania
+  Massachusetts 52 - 17 South Carolina
+  Arkansas 14 - 34 West Virginia
+  Michigan 44 - 14 Minnesota
+  Indiana 45 - 31 Mississippi
+
+Week 6
+  Kentucky 34 - 23 Arkansas
+  Florida 42 - 10 Mississippi
+  Minnesota 38 - 2 Louisiana
+  Vermont 21 - 3 Indiana
+  Hawaii 27 - 24 Washington
+  New Hampshire 21 - 20 Wisconsin
+  Wyoming 14 - 31 New Jersey
+  Maryland 10 - 42 North Carolina
+  Pennsylvania 34 - 17 Arizona
+  Missouri 21 - 24 Maine
+  Idaho 7 - 23 North Dakota
+  Nevada 38 - 9 Texas
+  Oregon 6 - 10 Iowa
+  Tennessee 35 - 7 West Virginia
+  South Dakota 63 - 59 Virginia
+  Rhode Island 24 - 7 Montana
+  Nebraska 56 - 7 Kansas
+  Illinois 14 - 30 Georgia
+  New Mexico 41 - 38 Oklahoma
+  New York 23 - 20 California
+  Colorado 23 - 9 Delaware
+
+Week 7
+  Louisiana 0 - 44 Utah
+  Indiana 23 - 10 Wisconsin
+  Michigan 31 - 14 New Hampshire
+  New Mexico 21 - 49 Arizona
+  Colorado 31 - 45 Wyoming
+  Arkansas 28 - 38 Nevada
+  Iowa 35 - 0 Nebraska
+  Pennsylvania 17 - 10 Connecticut
+  Mississippi 7 - 16 Georgia
+  Vermont 24 - 28 Rhode Island
+  Washington 28 - 21 Ohio
+  South Carolina 3 - 41 Virginia
+  Maine 16 - 28 Massachusetts
+  Alaska 7 - 42 Hawaii
+  Alabama 17 - 21 California
+  Illinois 35 - 17 Montana
+  West Virginia 28 - 17 Oklahoma
+  Texas 17 - 38 South Dakota
+  Minnesota 0 - 63 New Jersey
+  Tennessee 47 - 7 North Dakota
+
+Week 8
+  Delaware 56 - 7 Wisconsin
+  Illinois 14 - 20 Indiana
+  Alabama 39 - 7 Mississippi
+  Colorado 17 - 24 Idaho
+  California 7 - 19 Washington
+  Tennessee 23 - 3 New Mexico
+  Utah 35 - 28 Maine
+  Kansas 7 - 44 Massachusetts
+  Alaska 9 - 13 Kentucky
+  Missouri 41 - 21 South Carolina
+  Wyoming 31 - 27 Connecticut
+  Nebraska 14 - 23 Michigan
+  Vermont 21 - 10 Nevada
+  Hawaii 49 - 42 Louisiana
+  Georgia 23 - 19 Iowa
+  Ohio 31 - 17 Oregon
+  New York 3 - 20 Maryland
+  Arkansas 14 - 28 North Carolina
+  Rhode Island 38 - 37 Florida
+  Pennsylvania 42 - 14 New Hampshire
+
+Final Regular Season Standings
+Massachusetts (New England): 7-0-0  WP=1.000  SoS=0.388  PF=256  PA=125  DIFF=131
+Tennessee (Appalachia): 7-0-0  WP=1.000  SoS=0.367  PF=250  PA=75  DIFF=175
+Maryland (Chesapeake): 6-1-0  WP=0.857  SoS=0.510  PF=154  PA=103  DIFF=51
+Georgia (Southeast): 6-1-0  WP=0.857  SoS=0.490  PF=169  PA=120  DIFF=49
+Iowa (Plains): 6-1-0  WP=0.857  SoS=0.449  PF=186  PA=78  DIFF=108
+Hawaii (Pacific): 6-1-0  WP=0.857  SoS=0.449  PF=231  PA=157  DIFF=74
+North Carolina (Chesapeake): 6-1-0  WP=0.857  SoS=0.429  PF=197  PA=118  DIFF=79
+Michigan (Great Lakes): 6-1-0  WP=0.857  SoS=0.408  PF=226  PA=136  DIFF=90
+Utah (Rocky): 6-1-0  WP=0.857  SoS=0.265  PF=216  PA=152  DIFF=64
+Rhode Island (New England): 5-2-0  WP=0.714  SoS=0.490  PF=178  PA=137  DIFF=41
+Kentucky (Appalachia): 5-2-0  WP=0.714  SoS=0.490  PF=182  PA=146  DIFF=36
+West Virginia (Appalachia): 5-2-0  WP=0.714  SoS=0.490  PF=182  PA=129  DIFF=53
+Florida (Southeast): 5-2-0  WP=0.714  SoS=0.469  PF=247  PA=91  DIFF=156
+New Jersey (Mid-Atlantic): 5-2-0  WP=0.714  SoS=0.469  PF=216  PA=128  DIFF=88
+Vermont (New England): 4-3-0  WP=0.571  SoS=0.592  PF=144  PA=127  DIFF=17
+Alabama (Southeast): 4-3-0  WP=0.571  SoS=0.510  PF=142  PA=160  DIFF=-18
+Delaware (Chesapeake): 4-3-0  WP=0.571  SoS=0.490  PF=159  PA=120  DIFF=39
+Oklahoma (Southwest): 4-3-0  WP=0.571  SoS=0.486  PF=195  PA=156  DIFF=39
+California (Pacific): 4-3-0  WP=0.571  SoS=0.469  PF=123  PA=120  DIFF=3
+Nevada (Southwest): 4-3-0  WP=0.571  SoS=0.465  PF=134  PA=117  DIFF=17
+Pennsylvania (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.449  PF=177  PA=138  DIFF=39
+Indiana (Great Lakes): 4-3-0  WP=0.571  SoS=0.429  PF=146  PA=151  DIFF=-5
+South Dakota (Plains): 4-3-0  WP=0.571  SoS=0.404  PF=186  PA=165  DIFF=21
+Arizona (Southwest): 4-3-0  WP=0.571  SoS=0.343  PF=210  PA=151  DIFF=59
+Maine (New England): 3-4-0  WP=0.429  SoS=0.633  PF=187  PA=156  DIFF=31
+North Dakota (Plains): 3-4-0  WP=0.429  SoS=0.571  PF=140  PA=188  DIFF=-48
+Virginia (Chesapeake): 3-4-0  WP=0.429  SoS=0.531  PF=213  PA=176  DIFF=37
+Nebraska (Plains): 3-4-0  WP=0.429  SoS=0.531  PF=135  PA=158  DIFF=-23
+Colorado (Rocky): 3-4-0  WP=0.429  SoS=0.531  PF=161  PA=164  DIFF=-3
+Washington (Pacific): 3-4-0  WP=0.429  SoS=0.510  PF=111  PA=151  DIFF=-40
+Illinois (Great Lakes): 3-4-0  WP=0.429  SoS=0.490  PF=140  PA=168  DIFF=-28
+Missouri (Appalachia): 3-4-0  WP=0.429  SoS=0.490  PF=207  PA=180  DIFF=27
+Ohio (Mid-Atlantic): 3-4-0  WP=0.429  SoS=0.490  PF=187  PA=184  DIFF=3
+Idaho (Rocky): 3-4-0  WP=0.429  SoS=0.469  PF=184  PA=167  DIFF=17
+Wyoming (Rocky): 3-4-0  WP=0.429  SoS=0.469  PF=165  PA=229  DIFF=-64
+Alaska (Pacific): 3-4-0  WP=0.429  SoS=0.449  PF=149  PA=130  DIFF=19
+Texas (Southwest): 2-3-0  WP=0.400  SoS=0.514  PF=115  PA=178  DIFF=-63
+New Mexico (Southwest): 2-5-0  WP=0.286  SoS=0.608  PF=122  PA=175  DIFF=-53
+New Hampshire (New England): 2-5-0  WP=0.286  SoS=0.592  PF=136  PA=238  DIFF=-102
+New York (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.571  PF=119  PA=173  DIFF=-54
+Oregon (Pacific): 2-5-0  WP=0.286  SoS=0.510  PF=94  PA=131  DIFF=-37
+Mississippi (Southeast): 2-5-0  WP=0.286  SoS=0.510  PF=107  PA=216  DIFF=-109
+Connecticut (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.510  PF=170  PA=196  DIFF=-26
+Minnesota (Great Lakes): 2-5-0  WP=0.286  SoS=0.490  PF=107  PA=189  DIFF=-82
+Louisiana (Southeast): 1-6-0  WP=0.143  SoS=0.633  PF=107  PA=233  DIFF=-126
+South Carolina (Chesapeake): 0-7-0  WP=0.000  SoS=0.714  PF=97  PA=226  DIFF=-129
+Arkansas (Appalachia): 0-7-0  WP=0.000  SoS=0.653  PF=123  PA=237  DIFF=-114
+Montana (Rocky): 0-7-0  WP=0.000  SoS=0.612  PF=117  PA=232  DIFF=-115
+Kansas (Plains): 0-7-0  WP=0.000  SoS=0.612  PF=73  PA=271  DIFF=-198
+Wisconsin (Great Lakes): 0-7-0  WP=0.000  SoS=0.510  PF=106  PA=232  DIFF=-126
+
+Playoff Field (Seeds):
+Seed 1: Massachusetts (New England)
+Seed 2: Tennessee (Appalachia)
+Seed 3: Maryland (Chesapeake)
+Seed 4: Georgia (Southeast)
+Seed 5: Iowa (Plains)
+Seed 6: Hawaii (Pacific)
+Seed 7: Michigan (Great Lakes)
+Seed 8: Utah (Rocky)
+Seed 9: New Jersey (Mid-Atlantic)
+Seed 10: Oklahoma (Southwest)
+Seed 11: North Carolina (Chesapeake)
+Seed 12: Rhode Island (New England)
+Seed 13: Kentucky (Appalachia)
+Seed 14: West Virginia (Appalachia)
+Seed 15: Florida (Southeast)
+Seed 16: Vermont (New England)
+
+=== CROSSOVERS ===
+
+--- Crossover Week 1 ---
+  Texas 28 - 38 Alaska
+  Arkansas 0 - 24 Alabama
+  California 14 - 30 Arizona
+  Connecticut 7 - 28 Colorado
+  Delaware 24 - 14 Idaho
+  Illinois 19 - 24 Louisiana
+  Indiana 10 - 26 Maine
+  Mississippi 2 - 30 Kansas
+  Nevada 17 - 10 Minnesota
+  New Hampshire 28 - 44 Missouri
+  New Mexico 56 - 10 Montana
+  New York 0 - 16 Nebraska
+  Ohio 16 - 10 North Dakota
+  Pennsylvania 14 - 17 Oregon
+  South Dakota 48 - 24 South Carolina
+  Washington 14 - 59 Virginia
+
+--- Crossover Week 2 ---
+  Wisconsin 14 - 34 Texas
+  Alabama 51 - 44 Wyoming
+  Arizona 35 - 21 Alaska
+  Connecticut 28 - 13 Arkansas
+  Delaware 14 - 24 California
+  Louisiana 21 - 37 Colorado
+  Idaho 16 - 22 Maine
+  Illinois 20 - 14 Mississippi
+  Indiana 33 - 14 Nevada
+  Kansas 19 - 21 New Hampshire
+  Minnesota 16 - 17 New Mexico
+  Missouri 21 - 28 New York
+  Montana 0 - 33 Ohio
+  Pennsylvania 34 - 14 Nebraska
+  South Carolina 21 - 48 North Dakota
+  Oregon 14 - 28 Virginia
+
+--- Crossover Week 3 ---
+  South Dakota 27 - 21 Texas
+  Alabama 0 - 31 Washington
+  Wisconsin 0 - 36 Arizona
+  Wyoming 35 - 27 Connecticut
+  Delaware 15 - 7 Alaska
+  Arkansas 28 - 42 Louisiana
+  California 35 - 34 Maine
+  Mississippi 17 - 51 Colorado
+  Idaho 30 - 24 Nevada
+  Illinois 35 - 15 New Hampshire
+  New Mexico 6 - 42 Indiana
+  New York 24 - 10 Kansas
+  Ohio 60 - 0 Minnesota
+  Missouri 14 - 42 Pennsylvania
+  South Carolina 31 - 34 Montana
+  Virginia 42 - 17 Nebraska
+
+--- Crossover Week 4 ---
+  Texas 21 - 27 North Dakota
+
+--- Crossover Week 5 ---
+  Oregon 24 - 14 Texas
+
+--- Crossover Week 6 ---
+
+Crossover scheduling complete.
+
+
+=== PLAYOFFS ===
+
+--- Playoff Round 1 ---
+Matchup: Massachusetts (Seed 1) vs Vermont (Seed 16)
+  Final: Massachusetts 21 - Vermont 6
+Matchup: Utah (Seed 8) vs New Jersey (Seed 9)
+  Final: Utah 21 - New Jersey 28
+Matchup: Georgia (Seed 4) vs Kentucky (Seed 13)
+  Final: Georgia 10 - Kentucky 18
+Matchup: Iowa (Seed 5) vs Rhode Island (Seed 12)
+  Final: Iowa 7 - Rhode Island 28
+Matchup: Tennessee (Seed 2) vs Florida (Seed 15)
+  Final: Tennessee 28 - Florida 17
+Matchup: Michigan (Seed 7) vs Oklahoma (Seed 10)
+  Final: Michigan 21 - Oklahoma 35
+Matchup: Maryland (Seed 3) vs West Virginia (Seed 14)
+  Final: Maryland 33 - West Virginia 7
+Matchup: Hawaii (Seed 6) vs North Carolina (Seed 11)
+  Final: Hawaii 35 - North Carolina 23
+
+--- Playoff Round 2 ---
+--- Consolation Games Round 1 ---
+  Iowa 14 - 21 Georgia
+  Utah 23 - 28 Michigan
+  West Virginia 27 - 28 North Carolina
+  Vermont 17 - 16 Florida
+
+Matchup: Massachusetts (Seed 1) vs New Jersey (Seed 9)
+  Final: Massachusetts 24 - New Jersey 22
+Matchup: Kentucky (Seed 13) vs Rhode Island (Seed 12)
+  Final: Kentucky 41 - Rhode Island 19
+Matchup: Tennessee (Seed 2) vs Oklahoma (Seed 10)
+  Final: Tennessee 31 - Oklahoma 21
+Matchup: Maryland (Seed 3) vs Hawaii (Seed 6)
+  Final: Maryland 28 - Hawaii 30
+
+--- Playoff Round 3 ---
+--- Consolation Games Round 2 ---
+  Maryland 31 - 7 Georgia
+  Iowa 26 - 34 Michigan
+  New Jersey 56 - 24 Utah
+  North Carolina 24 - 14 Oklahoma
+  Rhode Island 31 - 21 West Virginia
+  Vermont 31 - 21 Florida
+
+Matchup: Massachusetts (Seed 1) vs Kentucky (Seed 13)
+  Final: Massachusetts 56 - Kentucky 7
+Matchup: Tennessee (Seed 2) vs Hawaii (Seed 6)
+  Final: Tennessee 21 - Hawaii 34
+
+--- Playoff Round 4 ---
+--- Consolation Games Round 3 ---
+  Maryland 35 - 10 Tennessee
+  Georgia 15 - 31 Michigan
+  Iowa 17 - 7 Utah
+  New Jersey 14 - 21 Oklahoma
+  Rhode Island 10 - 21 North Carolina
+  West Virginia 21 - 31 Kentucky
+  Vermont 35 - 27 Florida
+
+Matchup: Massachusetts (Seed 1) vs Hawaii (Seed 6)
+  Final: Massachusetts 17 - Hawaii 7
+
+=== CHAMPION: Massachusetts (Seed 1) ===
+
+RECORD PID: 22531 SEASON_YEAR: 2027 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+League data written to /home/codewriter3000/Coding/football-sim/seasons/league_None.json
+MAIN PID: 22535 SEASON_YEAR: 2028 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+Week 1
+  Nebraska 21 - 28 North Dakota
+  Texas 14 - 41 Arizona
+  Wyoming 14 - 62 Utah
+  California 21 - 23 Hawaii
+  Colorado 15 - 17 Wisconsin
+  Kansas 17 - 30 Maine
+  New Jersey 62 - 17 Mississippi
+  Montana 28 - 49 Arkansas
+  Massachusetts 22 - 28 New Hampshire
+  Delaware 42 - 28 Georgia
+  Ohio 35 - 28 Pennsylvania
+  North Carolina 14 - 35 Maryland
+  Washington 45 - 41 Alaska
+  Connecticut 28 - 9 Oregon
+  Indiana 27 - 28 Michigan
+  Kentucky 35 - 34 Missouri
+  Tennessee 45 - 0 Minnesota
+  New Mexico 56 - 33 Nevada
+  Florida 24 - 17 Alabama
+  South Dakota 14 - 35 Iowa
+  Virginia 38 - 21 Idaho
+  Vermont 17 - 22 Rhode Island
+
+Week 2
+  South Dakota 28 - 3 North Dakota
+  Wyoming 21 - 24 New York
+  Nebraska 35 - 17 Nevada
+  Texas 35 - 31 Oklahoma
+  Colorado 29 - 30 Idaho
+  Alaska 38 - 10 California
+  Alabama 23 - 27 Hawaii
+  Delaware 24 - 17 North Carolina
+  Mississippi 10 - 16 Louisiana
+  Florida 26 - 17 Georgia
+  Arizona 19 - 24 Illinois
+  Arkansas 27 - 35 West Virginia
+  Rhode Island 45 - 17 Maine
+  Kentucky 28 - 41 Tennessee
+  Massachusetts 10 - 24 Vermont
+  Washington 0 - 21 New Mexico
+  Ohio 24 - 35 Virginia
+  Indiana 70 - 7 Wisconsin
+  Connecticut 14 - 17 Pennsylvania
+  Montana 7 - 27 Utah
+  Missouri 26 - 10 Maryland
+  Kansas 21 - 38 Iowa
+  Minnesota 0 - 54 Michigan
+  South Carolina 21 - 26 New Jersey
+
+Week 3
+  Wyoming 21 - 42 South Carolina
+  Kansas 28 - 66 Nebraska
+  New Mexico 51 - 0 Texas
+  New York 17 - 20 Pennsylvania
+  New Jersey 58 - 21 North Dakota
+  Hawaii 13 - 7 Alaska
+  Oklahoma 21 - 17 Arizona
+  Mississippi 16 - 48 Alabama
+  Delaware 20 - 14 Maryland
+  Louisiana 21 - 27 Georgia
+  South Dakota 27 - 45 California
+  Rhode Island 35 - 30 Massachusetts
+  Arkansas 14 - 68 Tennessee
+  Wisconsin 21 - 34 Illinois
+  Maine 44 - 14 New Hampshire
+  Colorado 28 - 24 Utah
+  Missouri 24 - 7 West Virginia
+  Vermont 28 - 19 Indiana
+  North Carolina 34 - 7 Nevada
+  Connecticut 7 - 14 Kentucky
+  Montana 38 - 16 Idaho
+  Oregon 28 - 41 Washington
+
+Week 4
+  Idaho 34 - 28 Wyoming
+  North Carolina 37 - 7 South Carolina
+  Alabama 6 - 38 Georgia
+  California 14 - 27 Washington
+  Missouri 40 - 31 Nebraska
+  Arizona 17 - 31 Tennessee
+  Kansas 16 - 20 North Dakota
+  Delaware 14 - 23 Rhode Island
+  Maine 2 - 35 Massachusetts
+  Maryland 25 - 22 West Virginia
+  Pennsylvania 59 - 21 Mississippi
+  South Dakota 14 - 31 Ohio
+  Kentucky 36 - 7 Arkansas
+  Louisiana 30 - 62 Alaska
+  New York 16 - 24 Michigan
+  Hawaii 70 - 21 Montana
+  New Mexico 21 - 12 Indiana
+  Colorado 12 - 14 Illinois
+  Texas 16 - 45 Nevada
+  Vermont 15 - 26 Florida
+  Connecticut 23 - 10 New Jersey
+  Minnesota 7 - 42 Wisconsin
+  New Hampshire 7 - 44 Oklahoma
+  Oregon 21 - 35 Virginia
+
+Week 5
+  Wyoming 28 - 10 Montana
+  Iowa 38 - 31 Nebraska
+  Texas 17 - 14 Washington
+  Massachusetts 35 - 43 Pennsylvania
+  Utah 24 - 31 Idaho
+  Missouri 35 - 42 Tennessee
+  Maine 21 - 31 Vermont
+  Delaware 55 - 14 South Carolina
+  Oregon 31 - 17 California
+  Georgia 30 - 14 Mississippi
+  Alabama 38 - 24 Michigan
+  Arizona 31 - 3 Nevada
+  West Virginia 27 - 14 Kentucky
+  Indiana 44 - 7 Minnesota
+  Connecticut 17 - 36 Ohio
+  Virginia 17 - 28 North Carolina
+  New Mexico 35 - 28 Oklahoma
+  New Hampshire 17 - 25 Rhode Island
+  Kansas 21 - 35 South Dakota
+  New Jersey 48 - 14 New York
+  Florida 52 - 14 Louisiana
+  Illinois 17 - 16 Arkansas
+
+Week 6
+  Hawaii 37 - 3 Washington
+  Iowa 34 - 6 Maine
+  Utah 31 - 35 Alaska
+  South Dakota 35 - 24 Nebraska
+  Wyoming 24 - 27 Colorado
+  West Virginia 9 - 31 Tennessee
+  Mississippi 14 - 65 Florida
+  Missouri 38 - 34 Arkansas
+  New Jersey 38 - 54 Pennsylvania
+  Virginia 10 - 13 Delaware
+  Illinois 38 - 27 Minnesota
+  Ohio 36 - 32 New York
+  Wisconsin 14 - 30 Michigan
+  Oklahoma 24 - 21 Nevada
+  Idaho 14 - 24 North Dakota
+  Maryland 38 - 17 South Carolina
+  New Hampshire 24 - 42 Vermont
+  Texas 31 - 2 Louisiana
+  Kentucky 17 - 30 Oregon
+  New Mexico 21 - 35 Arizona
+  North Carolina 40 - 7 Kansas
+
+Week 7
+  New Jersey 21 - 14 Ohio
+  Iowa 34 - 23 Massachusetts
+  Virginia 48 - 7 South Carolina
+  Oregon 10 - 35 Alaska
+  Illinois 14 - 30 Indiana
+  North Carolina 40 - 14 Wisconsin
+  Florida 21 - 0 Utah
+  Georgia 21 - 31 West Virginia
+  Connecticut 7 - 34 New York
+  Kansas 28 - 45 Oklahoma
+  Louisiana 21 - 34 Alabama
+  Minnesota 21 - 38 Arkansas
+  Montana 35 - 30 Colorado
+  Michigan 24 - 42 Wyoming
+  Missouri 10 - 21 Hawaii
+  Maryland 41 - 7 Arizona
+  California 45 - 52 North Dakota
+  Washington 64 - 7 Mississippi
+
+Week 8
+  Iowa 25 - 3 North Dakota
+  Illinois 23 - 28 Michigan
+  Virginia 21 - 7 Maryland
+  Oregon 42 - 21 Hawaii
+  Rhode Island 14 - 31 Oklahoma
+  California 24 - 17 South Carolina
+  Pennsylvania 42 - 21 Montana
+  Indiana 28 - 21 Nebraska
+  South Dakota 14 - 7 Connecticut
+  Minnesota 21 - 24 New Mexico
+  Utah 52 - 42 Texas
+  Colorado 10 - 24 Vermont
+  Ohio 28 - 48 Georgia
+  Massachusetts 10 - 17 Kentucky
+  Idaho 31 - 22 Alabama
+  Alaska 26 - 31 Maine
+  West Virginia 21 - 38 Florida
+  Louisiana 21 - 31 Nevada
+  Delaware 20 - 7 New York
+  Wisconsin 0 - 52 Tennessee
+
+Final Regular Season Standings
+Florida (Southeast): 7-0-0  WP=1.000  SoS=0.388  PF=252  PA=98  DIFF=154
+Tennessee (Appalachia): 7-0-0  WP=1.000  SoS=0.367  PF=310  PA=103  DIFF=207
+Iowa (Plains): 6-0-0  WP=1.000  SoS=0.333  PF=204  PA=98  DIFF=106
+Delaware (Chesapeake): 6-1-0  WP=0.857  SoS=0.548  PF=188  PA=113  DIFF=75
+Hawaii (Pacific): 6-1-0  WP=0.857  SoS=0.449  PF=212  PA=127  DIFF=85
+New Mexico (Southwest): 6-1-0  WP=0.857  SoS=0.429  PF=229  PA=129  DIFF=100
+Pennsylvania (Mid-Atlantic): 6-1-0  WP=0.857  SoS=0.327  PF=263  PA=181  DIFF=82
+Rhode Island (New England): 5-1-0  WP=0.833  SoS=0.510  PF=164  PA=126  DIFF=38
+Virginia (Chesapeake): 5-2-0  WP=0.714  SoS=0.551  PF=204  PA=121  DIFF=83
+Vermont (New England): 5-2-0  WP=0.714  SoS=0.495  PF=181  PA=132  DIFF=49
+Oklahoma (Southwest): 5-2-0  WP=0.714  SoS=0.433  PF=224  PA=157  DIFF=67
+North Carolina (Chesapeake): 5-2-0  WP=0.714  SoS=0.408  PF=210  PA=111  DIFF=99
+New Jersey (Mid-Atlantic): 5-2-0  WP=0.714  SoS=0.388  PF=263  PA=164  DIFF=99
+Michigan (Great Lakes): 5-2-0  WP=0.714  SoS=0.367  PF=212  PA=160  DIFF=52
+Illinois (Great Lakes): 5-2-0  WP=0.714  SoS=0.367  PF=164  PA=153  DIFF=11
+Missouri (Appalachia): 4-3-0  WP=0.571  SoS=0.571  PF=207  PA=180  DIFF=27
+Ohio (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.571  PF=204  PA=195  DIFF=9
+Maryland (Chesapeake): 4-3-0  WP=0.571  SoS=0.551  PF=170  PA=127  DIFF=43
+Indiana (Great Lakes): 4-3-0  WP=0.571  SoS=0.510  PF=230  PA=126  DIFF=104
+Washington (Pacific): 4-3-0  WP=0.571  SoS=0.490  PF=194  PA=165  DIFF=29
+North Dakota (Plains): 4-3-0  WP=0.571  SoS=0.490  PF=151  PA=207  DIFF=-56
+Georgia (Southeast): 4-3-0  WP=0.571  SoS=0.490  PF=209  PA=168  DIFF=41
+Alaska (Pacific): 4-3-0  WP=0.571  SoS=0.449  PF=244  PA=170  DIFF=74
+Kentucky (Appalachia): 4-3-0  WP=0.571  SoS=0.449  PF=161  PA=156  DIFF=5
+South Dakota (Plains): 4-3-0  WP=0.571  SoS=0.429  PF=167  PA=166  DIFF=1
+Idaho (Rocky): 4-3-0  WP=0.571  SoS=0.429  PF=177  PA=203  DIFF=-26
+Arizona (Southwest): 3-4-0  WP=0.429  SoS=0.653  PF=167  PA=155  DIFF=12
+West Virginia (Appalachia): 3-4-0  WP=0.429  SoS=0.653  PF=152  PA=180  DIFF=-28
+Alabama (Southeast): 3-4-0  WP=0.429  SoS=0.551  PF=188  PA=181  DIFF=7
+Oregon (Pacific): 3-4-0  WP=0.429  SoS=0.551  PF=171  PA=194  DIFF=-23
+Maine (New England): 3-4-0  WP=0.429  SoS=0.495  PF=151  PA=202  DIFF=-51
+Utah (Rocky): 3-4-0  WP=0.429  SoS=0.490  PF=220  PA=178  DIFF=42
+Texas (Southwest): 3-4-0  WP=0.429  SoS=0.490  PF=155  PA=236  DIFF=-81
+New York (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.612  PF=144  PA=176  DIFF=-32
+Wisconsin (Great Lakes): 2-5-0  WP=0.286  SoS=0.571  PF=115  PA=248  DIFF=-133
+Connecticut (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.571  PF=103  PA=134  DIFF=-31
+California (Pacific): 2-5-0  WP=0.286  SoS=0.531  PF=176  PA=215  DIFF=-39
+Nebraska (Plains): 2-5-0  WP=0.286  SoS=0.510  PF=229  PA=214  DIFF=15
+Arkansas (Appalachia): 2-5-0  WP=0.286  SoS=0.510  PF=185  PA=243  DIFF=-58
+Nevada (Southwest): 2-5-0  WP=0.286  SoS=0.510  PF=157  PA=217  DIFF=-60
+Montana (Rocky): 2-5-0  WP=0.286  SoS=0.510  PF=160  PA=262  DIFF=-102
+Colorado (Rocky): 2-5-0  WP=0.286  SoS=0.469  PF=151  PA=168  DIFF=-17
+Wyoming (Rocky): 2-5-0  WP=0.286  SoS=0.388  PF=178  PA=223  DIFF=-45
+New Hampshire (New England): 1-4-0  WP=0.200  SoS=0.567  PF=90  PA=177  DIFF=-87
+Massachusetts (New England): 1-6-0  WP=0.143  SoS=0.658  PF=165  PA=183  DIFF=-18
+South Carolina (Chesapeake): 1-6-0  WP=0.143  SoS=0.592  PF=125  PA=249  DIFF=-124
+Louisiana (Southeast): 1-6-0  WP=0.143  SoS=0.469  PF=125  PA=247  DIFF=-122
+Minnesota (Great Lakes): 0-7-0  WP=0.000  SoS=0.633  PF=83  PA=285  DIFF=-202
+Kansas (Plains): 0-7-0  WP=0.000  SoS=0.612  PF=138  PA=274  DIFF=-136
+Mississippi (Southeast): 0-7-0  WP=0.000  SoS=0.612  PF=99  PA=344  DIFF=-245
+
+Playoff Field (Seeds):
+Seed 1: Florida (Southeast)
+Seed 2: Tennessee (Appalachia)
+Seed 3: Iowa (Plains)
+Seed 4: Delaware (Chesapeake)
+Seed 5: Hawaii (Pacific)
+Seed 6: New Mexico (Southwest)
+Seed 7: Pennsylvania (Mid-Atlantic)
+Seed 8: Rhode Island (New England)
+Seed 9: Michigan (Great Lakes)
+Seed 10: Idaho (Rocky)
+Seed 11: Virginia (Chesapeake)
+Seed 12: Vermont (New England)
+Seed 13: Oklahoma (Southwest)
+Seed 14: North Carolina (Chesapeake)
+Seed 15: New Jersey (Mid-Atlantic)
+Seed 16: Illinois (Great Lakes)
+
+=== CROSSOVERS ===
+
+--- Crossover Week 1 ---
+  Alaska 47 - 10 New Hampshire
+  Alabama 14 - 16 Arkansas
+  California 35 - 28 Arizona
+  Connecticut 16 - 28 Colorado
+  Indiana 24 - 20 Georgia
+  Louisiana 45 - 41 Kansas
+  Maine 27 - 17 Kentucky
+  Minnesota 14 - 61 Maryland
+  Massachusetts 17 - 21 Missouri
+  Mississippi 0 - 55 Montana
+  Nevada 31 - 34 Nebraska
+  North Dakota 9 - 21 New York
+  Oregon 17 - 40 Ohio
+  South Dakota 24 - 23 South Carolina
+  Texas 10 - 24 Utah
+
+--- Crossover Week 2 ---
+  New Hampshire 24 - 28 Washington
+  West Virginia 31 - 27 Alabama
+  Arizona 38 - 21 Wisconsin
+  Connecticut 17 - 7 Wyoming
+  Georgia 27 - 7 Alaska
+  Louisiana 6 - 31 Arkansas
+  Maine 21 - 7 California
+  Maryland 18 - 9 Colorado
+  Massachusetts 41 - 14 Indiana
+  Kansas 35 - 24 Mississippi
+  Kentucky 16 - 23 Nevada
+  New York 35 - 19 Minnesota
+  Ohio 20 - 21 Missouri
+  Montana 28 - 31 South Carolina
+  Texas 49 - 28 Nebraska
+
+--- Crossover Week 3 ---
+  North Dakota 27 - 33 New Hampshire
+  Alabama 26 - 19 Oregon
+  South Dakota 31 - 35 Arizona
+  Connecticut 31 - 35 Utah
+  Georgia 17 - 23 Washington
+  Louisiana 0 - 35 West Virginia
+  Maine 38 - 14 Wisconsin
+  Maryland 38 - 9 Wyoming
+  Alaska 14 - 34 Massachusetts
+  Mississippi 9 - 69 Arkansas
+  California 12 - 42 Nevada
+  New York 18 - 17 Colorado
+  Ohio 42 - 14 Indiana
+  South Carolina 21 - 20 Kansas
+  Kentucky 17 - 35 Texas
+
+--- Crossover Week 4 ---
+  Minnesota 34 - 26 New Hampshire
+
+--- Crossover Week 5 ---
+  New Hampshire 19 - 52 Missouri
+
+--- Crossover Week 6 ---
+
+Crossover scheduling complete.
+
+
+=== PLAYOFFS ===
+
+--- Playoff Round 1 ---
+Matchup: Florida (Seed 1) vs Illinois (Seed 16)
+  Final: Florida 44 - Illinois 28
+Matchup: Rhode Island (Seed 8) vs Michigan (Seed 9)
+  Final: Rhode Island 21 - Michigan 42
+Matchup: Delaware (Seed 4) vs Oklahoma (Seed 13)
+  Final: Delaware 24 - Oklahoma 38
+Matchup: Hawaii (Seed 5) vs Vermont (Seed 12)
+  Final: Hawaii 23 - Vermont 31
+Matchup: Tennessee (Seed 2) vs New Jersey (Seed 15)
+  Final: Tennessee 17 - New Jersey 35
+Matchup: Pennsylvania (Seed 7) vs Idaho (Seed 10)
+  Final: Pennsylvania 47 - Idaho 7
+Matchup: Iowa (Seed 3) vs North Carolina (Seed 14)
+  Final: Iowa 31 - North Carolina 13
+Matchup: New Mexico (Seed 6) vs Virginia (Seed 11)
+  Final: New Mexico 24 - Virginia 26
+
+--- Playoff Round 2 ---
+--- Consolation Games Round 1 ---
+  Tennessee 24 - 23 Delaware
+  New Mexico 31 - 28 Hawaii
+  Idaho 31 - 36 Rhode Island
+  Illinois 21 - 24 North Carolina
+
+Matchup: Florida (Seed 1) vs Michigan (Seed 9)
+  Final: Florida 14 - Michigan 17
+Matchup: Oklahoma (Seed 13) vs Vermont (Seed 12)
+  Final: Oklahoma 3 - Vermont 38
+Matchup: New Jersey (Seed 15) vs Pennsylvania (Seed 7)
+  Final: New Jersey 14 - Pennsylvania 35
+Matchup: Iowa (Seed 3) vs Virginia (Seed 11)
+  Final: Iowa 40 - Virginia 49
+
+--- Playoff Round 3 ---
+--- Consolation Games Round 2 ---
+  Florida 28 - 25 Tennessee
+  Iowa 49 - 21 Delaware
+  Hawaii 49 - 45 Rhode Island
+  Idaho 21 - 38 New Mexico
+  North Carolina 49 - 14 Oklahoma
+  New Jersey 42 - 17 Illinois
+
+Matchup: Michigan (Seed 9) vs Vermont (Seed 12)
+  Final: Michigan 24 - Vermont 17
+Matchup: Pennsylvania (Seed 7) vs Virginia (Seed 11)
+  Final: Pennsylvania 42 - Virginia 35
+
+--- Playoff Round 4 ---
+--- Consolation Games Round 3 ---
+  Iowa 27 - 17 Florida
+  Hawaii 35 - 42 Tennessee
+  Delaware 41 - 7 New Mexico
+  Rhode Island 33 - 21 Virginia
+  Vermont 35 - 7 Idaho
+  Oklahoma 41 - 13 New Jersey
+  North Carolina 41 - 7 Illinois
+
+Matchup: Michigan (Seed 9) vs Pennsylvania (Seed 7)
+  Final: Michigan 3 - Pennsylvania 40
+
+=== CHAMPION: Pennsylvania (Seed 7) ===
+
+RECORD PID: 22535 SEASON_YEAR: 2028 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+League data written to /home/codewriter3000/Coding/football-sim/seasons/league_None.json
+MAIN PID: 22539 SEASON_YEAR: 2029 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+Week 1
+  Tennessee 10 - 17 Utah
+  California 23 - 14 South Carolina
+  Florida 45 - 0 Mississippi
+  South Dakota 49 - 27 Nebraska
+  Kentucky 28 - 44 West Virginia
+  Rhode Island 38 - 14 Ohio
+  Washington 21 - 24 Alaska
+  Connecticut 12 - 14 New York
+  Vermont 45 - 14 Montana
+  Wisconsin 14 - 21 Illinois
+  Indiana 21 - 28 Missouri
+  New Mexico 30 - 42 Nevada
+  Hawaii 12 - 21 Oregon
+  Texas 14 - 49 Arizona
+  Arkansas 14 - 19 Colorado
+  Wyoming 21 - 39 Iowa
+  Michigan 44 - 14 Minnesota
+  Delaware 49 - 37 Virginia
+  New Jersey 28 - 42 Pennsylvania
+  Oklahoma 28 - 7 Massachusetts
+  North Dakota 52 - 7 Kansas
+  Georgia 37 - 17 Alabama
+  Maryland 27 - 14 North Carolina
+  New Hampshire 7 - 21 Maine
+
+Week 2
+  Alaska 37 - 17 Oregon
+  Michigan 45 - 7 Indiana
+  Maine 33 - 0 New York
+  Montana 28 - 51 Delaware
+  Ohio 10 - 28 Pennsylvania
+  Wisconsin 45 - 35 Minnesota
+  Hawaii 17 - 19 California
+  Mississippi 26 - 29 Georgia
+  Alabama 5 - 7 Illinois
+  Nebraska 66 - 14 Kansas
+  Washington 24 - 28 Utah
+  Massachusetts 45 - 28 Vermont
+  Texas 21 - 52 Oklahoma
+  North Carolina 61 - 7 South Carolina
+  Iowa 31 - 27 South Dakota
+  Tennessee 35 - 56 West Virginia
+  Arkansas 16 - 59 New Jersey
+  Maryland 23 - 14 Virginia
+  New Hampshire 10 - 2 Connecticut
+  Colorado 28 - 14 Nevada
+  Wyoming 20 - 14 Idaho
+  Louisiana 7 - 44 Florida
+  Kentucky 17 - 38 Missouri
+  Arizona 34 - 10 New Mexico
+
+Week 3
+  North Dakota 35 - 21 Oregon
+  Wisconsin 14 - 61 Indiana
+  Washington 24 - 41 Ohio
+  Mississippi 21 - 50 South Dakota
+  Idaho 35 - 20 Alaska
+  Pennsylvania 41 - 38 Hawaii
+  Maryland 40 - 7 Delaware
+  Montana 14 - 42 Utah
+  Missouri 63 - 49 Kansas
+  Iowa 33 - 0 Connecticut
+  Texas 0 - 51 North Carolina
+  Arkansas 28 - 45 West Virginia
+  Vermont 51 - 14 New Hampshire
+  Tennessee 49 - 7 Kentucky
+  Virginia 55 - 28 South Carolina
+  Alabama 24 - 21 Florida
+  Nevada 7 - 35 Maine
+  Massachusetts 61 - 7 Minnesota
+  Louisiana 35 - 27 Georgia
+  Oklahoma 24 - 35 Arizona
+  Illinois 28 - 20 Michigan
+  New York 14 - 38 New Jersey
+  Wyoming 14 - 46 Colorado
+
+Week 4
+  Washington 21 - 38 Oregon
+  Kentucky 35 - 28 Pennsylvania
+  Hawaii 37 - 10 South Carolina
+  South Dakota 21 - 30 Idaho
+  Minnesota 14 - 41 Indiana
+  Mississippi 14 - 35 Louisiana
+  North Carolina 33 - 24 Delaware
+  West Virginia 21 - 14 Missouri
+  Florida 45 - 28 Nebraska
+  Montana 10 - 31 Colorado
+  Wyoming 24 - 33 Utah
+  Texas 7 - 56 Tennessee
+  Oklahoma 24 - 28 Nevada
+  Iowa 59 - 7 Kansas
+  Alaska 24 - 21 New Mexico
+  Michigan 31 - 35 Virginia
+  Ohio 16 - 0 New York
+  Rhode Island 13 - 24 Massachusetts
+  Vermont 14 - 34 Maine
+  Georgia 17 - 21 New Jersey
+  New Hampshire 24 - 19 Wisconsin
+  Illinois 38 - 20 California
+  North Dakota 21 - 14 Maryland
+
+Week 5
+  Washington 23 - 21 California
+  Kansas 7 - 38 South Dakota
+  Delaware 9 - 30 Michigan
+  North Carolina 59 - 56 Virginia
+  Arkansas 42 - 56 Tennessee
+  Hawaii 21 - 31 Alaska
+  Colorado 20 - 30 Idaho
+  Wyoming 21 - 72 Maryland
+  Illinois 42 - 7 Minnesota
+  North Dakota 52 - 28 Nebraska
+  Texas 14 - 40 Nevada
+  Vermont 55 - 59 Rhode Island
+  Ohio 42 - 28 New Jersey
+  Arizona 14 - 28 West Virginia
+  Maine 30 - 10 Massachusetts
+  Mississippi 21 - 77 Alabama
+  Louisiana 0 - 37 Indiana
+  Pennsylvania 14 - 28 Connecticut
+  Florida 31 - 37 Georgia
+  New Mexico 31 - 42 Oklahoma
+
+Week 6
+  North Carolina 41 - 9 Mississippi
+  North Dakota 66 - 28 South Dakota
+  Kentucky 69 - 14 Arkansas
+  Kansas 14 - 31 Louisiana
+  Hawaii 10 - 21 Washington
+  Virginia 35 - 30 Oregon
+  Tennessee 62 - 0 Missouri
+  Wyoming 44 - 51 Montana
+  Connecticut 0 - 13 New Jersey
+  Rhode Island 45 - 21 New Hampshire
+  Texas 10 - 24 New Mexico
+  California 17 - 28 Alaska
+  Illinois 0 - 43 Indiana
+  West Virginia 42 - 14 Florida
+  Nebraska 31 - 37 Iowa
+  South Carolina 14 - 22 Delaware
+  Idaho 21 - 24 Utah
+  New York 31 - 30 Pennsylvania
+  Oklahoma 38 - 31 Alabama
+  Michigan 54 - 21 Wisconsin
+  Arizona 38 - 24 Nevada
+  Colorado 21 - 42 Georgia
+  Vermont 37 - 28 Ohio
+
+Week 7
+  North Dakota 27 - 31 Iowa
+  California 10 - 30 Oregon
+  Kentucky 14 - 35 Maryland
+  Ohio 42 - 28 Connecticut
+  Rhode Island 17 - 20 Maine
+  Alabama 33 - 10 Louisiana
+  Nebraska 24 - 49 Arizona
+  Arkansas 17 - 52 Missouri
+  New York 44 - 16 New Mexico
+  Massachusetts 63 - 42 New Hampshire
+  Utah 16 - 28 Colorado
+  Montana 0 - 19 Idaho
+  Michigan 49 - 21 Kansas
+  South Carolina 28 - 37 Florida
+  Washington 34 - 21 Wyoming
+
+Week 8
+  Vermont 24 - 35 North Dakota
+  Georgia 30 - 14 California
+  South Carolina 14 - 27 Maryland
+  Illinois 35 - 38 Rhode Island
+  New Mexico 37 - 14 Wisconsin
+  Mississippi 0 - 14 Connecticut
+  Alaska 29 - 14 Arkansas
+  Nebraska 42 - 23 Indiana
+  New York 21 - 17 Oklahoma
+  Oregon 31 - 27 Maine
+  Hawaii 49 - 7 Minnesota
+  Delaware 31 - 14 Kentucky
+  Tennessee 21 - 17 New Jersey
+  Louisiana 42 - 21 Montana
+  Missouri 17 - 31 Iowa
+  Texas 14 - 31 Pennsylvania
+  Idaho 56 - 52 Virginia
+  South Dakota 28 - 10 Nevada
+  North Carolina 44 - 7 New Hampshire
+  Alabama 38 - 17 Utah
+  Massachusetts 38 - 17 West Virginia
+
+Final Regular Season Standings
+Iowa (Plains): 7-0-0  WP=1.000  SoS=0.388  PF=261  PA=130  DIFF=131
+North Dakota (Plains): 6-1-0  WP=0.857  SoS=0.531  PF=288  PA=153  DIFF=135
+West Virginia (Appalachia): 6-1-0  WP=0.857  SoS=0.527  PF=253  PA=171  DIFF=82
+Maine (New England): 6-1-0  WP=0.857  SoS=0.524  PF=200  PA=86  DIFF=114
+Maryland (Chesapeake): 6-1-0  WP=0.857  SoS=0.449  PF=238  PA=105  DIFF=133
+Alaska (Pacific): 6-1-0  WP=0.857  SoS=0.367  PF=193  PA=146  DIFF=47
+North Carolina (Chesapeake): 6-1-0  WP=0.857  SoS=0.306  PF=303  PA=130  DIFF=173
+Arizona (Southwest): 5-1-0  WP=0.833  SoS=0.405  PF=219  PA=124  DIFF=95
+Massachusetts (New England): 5-2-0  WP=0.714  SoS=0.524  PF=248  PA=165  DIFF=83
+Idaho (Rocky): 5-2-0  WP=0.714  SoS=0.510  PF=205  PA=157  DIFF=48
+Utah (Rocky): 5-2-0  WP=0.714  SoS=0.490  PF=177  PA=159  DIFF=18
+Georgia (Southeast): 5-2-0  WP=0.714  SoS=0.469  PF=219  PA=165  DIFF=54
+Tennessee (Appalachia): 5-2-0  WP=0.714  SoS=0.429  PF=289  PA=146  DIFF=143
+Illinois (Great Lakes): 5-2-0  WP=0.714  SoS=0.425  PF=171  PA=147  DIFF=24
+Colorado (Rocky): 5-2-0  WP=0.714  SoS=0.408  PF=193  PA=140  DIFF=53
+Michigan (Great Lakes): 5-2-0  WP=0.714  SoS=0.350  PF=273  PA=135  DIFF=138
+Rhode Island (New England): 4-2-0  WP=0.667  SoS=0.595  PF=210  PA=169  DIFF=41
+Oregon (Pacific): 4-3-0  WP=0.571  SoS=0.571  PF=188  PA=177  DIFF=11
+Alabama (Southeast): 4-3-0  WP=0.571  SoS=0.551  PF=225  PA=151  DIFF=74
+New York (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.531  PF=124  PA=162  DIFF=-38
+Ohio (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.503  PF=193  PA=183  DIFF=10
+New Jersey (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.490  PF=204  PA=152  DIFF=52
+Missouri (Appalachia): 4-3-0  WP=0.571  SoS=0.490  PF=212  PA=218  DIFF=-6
+Oklahoma (Southwest): 4-3-0  WP=0.571  SoS=0.486  PF=225  PA=174  DIFF=51
+South Dakota (Plains): 4-3-0  WP=0.571  SoS=0.469  PF=241  PA=192  DIFF=49
+Delaware (Chesapeake): 4-3-0  WP=0.571  SoS=0.469  PF=193  PA=196  DIFF=-3
+Indiana (Great Lakes): 4-3-0  WP=0.571  SoS=0.432  PF=233  PA=143  DIFF=90
+Florida (Southeast): 4-3-0  WP=0.571  SoS=0.429  PF=237  PA=166  DIFF=71
+Pennsylvania (Mid-Atlantic): 4-3-0  WP=0.571  SoS=0.367  PF=214  PA=184  DIFF=30
+Louisiana (Southeast): 4-3-0  WP=0.571  SoS=0.367  PF=160  PA=190  DIFF=-30
+Virginia (Chesapeake): 3-4-0  WP=0.429  SoS=0.612  PF=284  PA=276  DIFF=8
+Vermont (New England): 3-4-0  WP=0.429  SoS=0.585  PF=254  PA=229  DIFF=25
+Nevada (Southwest): 3-4-0  WP=0.429  SoS=0.548  PF=165  PA=197  DIFF=-32
+Washington (Pacific): 3-4-0  WP=0.429  SoS=0.490  PF=168  PA=183  DIFF=-15
+Nebraska (Plains): 2-5-0  WP=0.286  SoS=0.629  PF=246  PA=269  DIFF=-23
+Kentucky (Appalachia): 2-5-0  WP=0.286  SoS=0.592  PF=184  PA=239  DIFF=-55
+New Hampshire (New England): 2-5-0  WP=0.286  SoS=0.568  PF=125  PA=245  DIFF=-120
+Connecticut (Mid-Atlantic): 2-5-0  WP=0.286  SoS=0.510  PF=84  PA=126  DIFF=-42
+California (Pacific): 2-5-0  WP=0.286  SoS=0.510  PF=124  PA=180  DIFF=-56
+New Mexico (Southwest): 2-5-0  WP=0.286  SoS=0.490  PF=169  PA=210  DIFF=-41
+Hawaii (Pacific): 2-5-0  WP=0.286  SoS=0.388  PF=184  PA=150  DIFF=34
+Wisconsin (Great Lakes): 1-5-0  WP=0.167  SoS=0.429  PF=127  PA=232  DIFF=-105
+Wyoming (Rocky): 1-6-0  WP=0.143  SoS=0.653  PF=165  PA=289  DIFF=-124
+Montana (Rocky): 1-6-0  WP=0.143  SoS=0.551  PF=138  PA=274  DIFF=-136
+Arkansas (Appalachia): 0-7-0  WP=0.000  SoS=0.653  PF=145  PA=329  DIFF=-184
+Kansas (Plains): 0-7-0  WP=0.000  SoS=0.653  PF=119  PA=358  DIFF=-239
+Texas (Southwest): 0-7-0  WP=0.000  SoS=0.609  PF=80  PA=303  DIFF=-223
+Mississippi (Southeast): 0-7-0  WP=0.000  SoS=0.592  PF=91  PA=291  DIFF=-200
+South Carolina (Chesapeake): 0-7-0  WP=0.000  SoS=0.551  PF=115  PA=262  DIFF=-147
+Minnesota (Great Lakes): 0-6-0  WP=0.000  SoS=0.528  PF=84  PA=282  DIFF=-198
+
+Playoff Field (Seeds):
+Seed 1: Iowa (Plains)
+Seed 2: West Virginia (Appalachia)
+Seed 3: Maine (New England)
+Seed 4: Maryland (Chesapeake)
+Seed 5: Alaska (Pacific)
+Seed 6: Arizona (Southwest)
+Seed 7: Idaho (Rocky)
+Seed 8: Georgia (Southeast)
+Seed 9: Illinois (Great Lakes)
+Seed 10: New York (Mid-Atlantic)
+Seed 11: North Dakota (Plains)
+Seed 12: North Carolina (Chesapeake)
+Seed 13: Massachusetts (New England)
+Seed 14: Utah (Rocky)
+Seed 15: Tennessee (Appalachia)
+Seed 16: Colorado (Rocky)
+
+=== CROSSOVERS ===
+
+--- Crossover Week 1 ---
+  Rhode Island 58 - 14 Minnesota
+  Alabama 22 - 7 Wisconsin
+  Arkansas 17 - 59 Connecticut
+  Delaware 14 - 13 California
+  Hawaii 34 - 35 Florida
+  Indiana 35 - 14 Louisiana
+  Kansas 30 - 10 Mississippi
+  Kentucky 40 - 27 Nevada
+  Michigan 42 - 28 New Hampshire
+  New Jersey 27 - 35 Missouri
+  New Mexico 42 - 14 Montana
+  Nebraska 28 - 63 Ohio
+  Oregon 27 - 30 Oklahoma
+  Pennsylvania 49 - 42 South Dakota
+  South Carolina 28 - 51 Washington
+  Texas 31 - 49 Wyoming
+
+--- Crossover Week 2 ---
+  Minnesota 14 - 59 Vermont
+  Rhode Island 40 - 7 Wisconsin
+  Virginia 42 - 28 Arkansas
+  California 21 - 24 Alabama
+  Connecticut 37 - 28 Hawaii
+  Indiana 15 - 27 Delaware
+  Florida 42 - 38 Kansas
+  Louisiana 14 - 45 Kentucky
+  Mississippi 14 - 37 Michigan
+  Nevada 24 - 31 Missouri
+  New Hampshire 17 - 24 Montana
+  Nebraska 28 - 34 New Jersey
+  New Mexico 31 - 17 Oregon
+  South Dakota 30 - 38 Ohio
+  Oklahoma 45 - 42 Washington
+  Wyoming 14 - 69 Pennsylvania
+
+--- Crossover Week 3 ---
+  Minnesota 24 - 21 South Carolina
+  Arkansas 28 - 49 Rhode Island
+  Wisconsin 7 - 56 Texas
+  Vermont 28 - 31 California
+  Hawaii 24 - 10 Virginia
+  Alabama 38 - 35 Indiana
+  Kansas 23 - 24 Connecticut
+  Delaware 34 - 31 Kentucky
+  Michigan 35 - 10 Florida
+  Missouri 49 - 14 Louisiana
+  Mississippi 17 - 27 Montana
+  Nebraska 42 - 7 Nevada
+  Oregon 38 - 21 New Hampshire
+  New Jersey 42 - 24 South Dakota
+  New Mexico 24 - 28 Washington
+  Ohio 42 - 30 Wyoming
+
+--- Crossover Week 4 ---
+  Minnesota 35 - 47 Oklahoma
+  Pennsylvania 70 - 7 Wisconsin
+
+--- Crossover Week 5 ---
+
+Crossover scheduling complete.
+
+
+=== PLAYOFFS ===
+
+--- Playoff Round 1 ---
+Matchup: Iowa (Seed 1) vs Colorado (Seed 16)
+  Final: Iowa 51 - Colorado 7
+Matchup: Georgia (Seed 8) vs Illinois (Seed 9)
+  Final: Georgia 38 - Illinois 3
+Matchup: Maryland (Seed 4) vs Massachusetts (Seed 13)
+  Final: Maryland 14 - Massachusetts 34
+Matchup: Alaska (Seed 5) vs North Carolina (Seed 12)
+  Final: Alaska 17 - North Carolina 26
+Matchup: West Virginia (Seed 2) vs Tennessee (Seed 15)
+  Final: West Virginia 10 - Tennessee 35
+Matchup: Idaho (Seed 7) vs New York (Seed 10)
+  Final: Idaho 52 - New York 17
+Matchup: Maine (Seed 3) vs Utah (Seed 14)
+  Final: Maine 27 - Utah 16
+Matchup: Arizona (Seed 6) vs North Dakota (Seed 11)
+  Final: Arizona 17 - North Dakota 42
+
+--- Playoff Round 2 ---
+--- Consolation Games Round 1 ---
+  Maryland 17 - 14 West Virginia
+  Alaska 31 - 17 Arizona
+  Illinois 23 - 30 New York
+  Utah 41 - 45 Colorado
+
+Matchup: Iowa (Seed 1) vs Georgia (Seed 8)
+  Final: Iowa 31 - Georgia 21
+Matchup: Massachusetts (Seed 13) vs North Carolina (Seed 12)
+  Final: Massachusetts 26 - North Carolina 12
+Matchup: Tennessee (Seed 15) vs Idaho (Seed 7)
+  Final: Tennessee 38 - Idaho 12
+Matchup: Maine (Seed 3) vs North Dakota (Seed 11)
+  Final: Maine 17 - North Dakota 35
+
+--- Playoff Round 3 ---
+--- Consolation Games Round 2 ---
+  West Virginia 10 - 42 Maine
+  Maryland 40 - 7 Alaska
+  Arizona 45 - 7 Idaho
+  Illinois 19 - 42 Georgia
+  North Carolina 33 - 30 New York
+  Utah 35 - 42 Colorado
+
+Matchup: Iowa (Seed 1) vs Massachusetts (Seed 13)
+  Final: Iowa 17 - Massachusetts 27
+Matchup: Tennessee (Seed 15) vs North Dakota (Seed 11)
+  Final: Tennessee 28 - North Dakota 21
+
+--- Playoff Round 4 ---
+--- Consolation Games Round 3 ---
+  Iowa 17 - 20 West Virginia
+  Maine 20 - 10 Maryland
+  Idaho 28 - 10 Alaska
+  Arizona 24 - 7 Georgia
+  North Dakota 26 - 7 Illinois
+  New York 38 - 16 Utah
+  North Carolina 23 - 21 Colorado
+
+Matchup: Massachusetts (Seed 13) vs Tennessee (Seed 15)
+  Final: Massachusetts 28 - Tennessee 42
+
+=== CHAMPION: Tennessee (Seed 15) ===
+
+RECORD PID: 22539 SEASON_YEAR: 2029 FILE: /home/codewriter3000/Coding/football-sim/src/game_logic/constants.py
+League data written to /home/codewriter3000/Coding/football-sim/seasons/league_None.json
